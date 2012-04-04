@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Расчётно-кассовое обслуживание</key>
+	<array/>
+	<key>Инкассация</key>
+	<array/>
+	<key>Размещение временно свободных денежных средств</key>
+	<array/>
+	<key>Инструменты для организации приема платежей</key>
+	<array/>
+	<key>Валютные операции</key>
+	<array/>
+	<key>Банковские карты для бизнеса</key>
+	<array/>
+	<key>Кредитование</key>
+	<array>
+		<string>Овердрафт</string>
+		<string>Экспресс-овердрафт</string>
+		<string>Микрокредитование без налога</string>
+		<string>Краткосрочные кредиты/кредитные линии</string>
+		<string>Программа долгосрочного кредитования</string>
+	</array>
+	<key>Гарантийные операции</key>
+	<array/>
+	<key>Ценные бумаги</key>
+	<array/>
+	<key>Управление личными финансами</key>
+	<array/>
+</dict>
+</plist>

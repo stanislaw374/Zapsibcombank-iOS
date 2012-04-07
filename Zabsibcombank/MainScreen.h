@@ -16,5 +16,6 @@
 
 - (IBAction)onServiceButtonClick:(UIButton *)sender;
 - (IBAction)showAddresses;
+- (IBAction)showInetbank;
 
 @end

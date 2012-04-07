@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Services</key>
+	<array>
+		<dict>
+			<key>id</key>
+			<integer>0</integer>
+			<key>name</key>
+			<string>Расчётно-кассовое обслуживание</string>
+			<key>sections</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>1</integer>
+			<key>name</key>
+			<string>Инкассация</string>
+			<key>sections</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>2</integer>
+			<key>name</key>
+			<string>Размещение временно свободных денежных средств</string>
+			<key>sections</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>3</integer>
+			<key>name</key>
+			<string>Инструменты для организации приема платежей</string>
+			<key>sections</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>4</integer>
+			<key>name</key>
+			<string>Валютные операции</string>
+			<key>sections</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>5</integer>
+			<key>name</key>
+			<string>Банковские карты для бизнеса</string>
+			<key>sections</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>6</integer>
+			<key>name</key>
+			<string>Кредитование</string>
+			<key>sections</key>
+			<array>
+				<dict>
+					<key>id</key>
+					<integer>0</integer>
+					<key>name</key>
+					<string>Овердрафт</string>
+				</dict>
+                <dict>
+					<key>id</key>
+					<integer>1</integer>
+					<key>name</key>
+					<string>Экспресс-овердрафт</string>
+				</dict>
+                <dict>
+					<key>id</key>
+					<integer>2</integer>
+					<key>name</key>
+					<string>Микрокредитование без залога</string>
+				</dict>
+                <dict>
+					<key>id</key>
+					<integer>3</integer>
+					<key>name</key>
+					<string>Краткосрочные кредиты/кредитные линии</string>
+				</dict>
+                <dict>
+					<key>id</key>
+					<integer>4</integer>
+					<key>name</key>
+                    <string>Программа долгосрочного кредитования</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>7</integer>
+			<key>name</key>
+			<string>Гарантийные операции</string>
+			<key>sections</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>8</integer>
+			<key>name</key>
+			<string>Ценные бумаги</string>
+			<key>sections</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>9</integer>
+			<key>name</key>
+			<string>Управление личными финансами</string>
+			<key>sections</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

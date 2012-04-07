@@ -1,0 +1,943 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		860199EB152B067800766295 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860199EA152B067800766295 /* AVFoundation.framework */; };
+		860199ED152B067F00766295 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860199EC152B067F00766295 /* CoreData.framework */; };
+		860199EF152B068900766295 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860199EE152B068900766295 /* CoreLocation.framework */; };
+		860199F1152B069300766295 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860199F0152B069300766295 /* QuartzCore.framework */; };
+		860199F3152B06A400766295 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860199F2152B06A400766295 /* MessageUI.framework */; };
+		860199F5152B06AD00766295 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860199F4152B06AD00766295 /* OpenGLES.framework */; };
+		860199F7152B06B600766295 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860199F6152B06B600766295 /* Security.framework */; };
+		860199F9152B06C100766295 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860199F8152B06C100766295 /* SystemConfiguration.framework */; };
+		860199FB152B06CD00766295 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 860199FA152B06CD00766295 /* libsqlite3.dylib */; };
+		860199FD152B06D800766295 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 860199FC152B06D800766295 /* libstdc++.dylib */; };
+		860199FF152B06E800766295 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 860199FE152B06E800766295 /* libxml2.dylib */; };
+		86019A01152B06F900766295 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 86019A00152B06F900766295 /* libz.dylib */; };
+		86019A09152B0B4200766295 /* PointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 86019A08152B0B4200766295 /* PointAnnotation.m */; };
+		8606B02E1529722E0026ED0A /* OCProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 8606B02D1529722E0026ED0A /* OCProgress.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		86810AC21530C4C000F5492A /* Cities.m in Sources */ = {isa = PBXBuildFile; fileRef = 86810AAD1530C4BF00F5492A /* Cities.m */; };
+		86810AC31530C4C000F5492A /* CitiesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86810AAF1530C4BF00F5492A /* CitiesView.m */; };
+		86810AC41530C4C000F5492A /* CitiesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86810AB01530C4BF00F5492A /* CitiesView.xib */; };
+		86810AC51530C4C000F5492A /* DetailsScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 86810AB21530C4BF00F5492A /* DetailsScreen.m */; };
+		86810AC61530C4C000F5492A /* DetailsScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86810AB31530C4BF00F5492A /* DetailsScreen.xib */; };
+		86810AC71530C4C000F5492A /* MainScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 86810AB51530C4C000F5492A /* MainScreen.m */; };
+		86810AC81530C4C000F5492A /* MainScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86810AB61530C4C000F5492A /* MainScreen.xib */; };
+		86810AC91530C4C000F5492A /* MapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86810AB71530C4C000F5492A /* MapCell.xib */; };
+		86810ACA1530C4C000F5492A /* MapScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 86810AB91530C4C000F5492A /* MapScreen.m */; };
+		86810ACB1530C4C000F5492A /* MapScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86810ABA1530C4C000F5492A /* MapScreen.xib */; };
+		86810ACC1530C4C000F5492A /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 86810ABC1530C4C000F5492A /* News.m */; };
+		86810ACD1530C4C000F5492A /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86810ABD1530C4C000F5492A /* NewsCell.xib */; };
+		86810ACE1530C4C000F5492A /* Objects.m in Sources */ = {isa = PBXBuildFile; fileRef = 86810ABF1530C4C000F5492A /* Objects.m */; };
+		86810ACF1530C4C000F5492A /* Services.m in Sources */ = {isa = PBXBuildFile; fileRef = 86810AC11530C4C000F5492A /* Services.m */; };
+		86810B021530C50400F5492A /* addresses_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AD21530C50400F5492A /* addresses_icon.png */; };
+		86810B031530C50400F5492A /* button_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AD31530C50400F5492A /* button_1.png */; };
+		86810B041530C50400F5492A /* button_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AD41530C50400F5492A /* button_10.png */; };
+		86810B051530C50400F5492A /* button_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AD51530C50400F5492A /* button_2.png */; };
+		86810B061530C50400F5492A /* button_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AD61530C50400F5492A /* button_3.png */; };
+		86810B071530C50400F5492A /* button_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AD71530C50400F5492A /* button_4.png */; };
+		86810B081530C50400F5492A /* button_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AD81530C50400F5492A /* button_5.png */; };
+		86810B091530C50400F5492A /* button_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AD91530C50400F5492A /* button_6.png */; };
+		86810B0A1530C50400F5492A /* button_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810ADA1530C50400F5492A /* button_7.png */; };
+		86810B0B1530C50400F5492A /* button_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810ADB1530C50400F5492A /* button_8.png */; };
+		86810B0C1530C50400F5492A /* button_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810ADC1530C50400F5492A /* button_9.png */; };
+		86810B0D1530C50400F5492A /* button_about_bank.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810ADD1530C50400F5492A /* button_about_bank.png */; };
+		86810B0E1530C50400F5492A /* button_internet_bank.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810ADE1530C50400F5492A /* button_internet_bank.png */; };
+		86810B0F1530C50400F5492A /* button_president_message.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810ADF1530C50400F5492A /* button_president_message.png */; };
+		86810B101530C50400F5492A /* button_ratings.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AE01530C50400F5492A /* button_ratings.png */; };
+		86810B111530C50400F5492A /* currency_block.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AE11530C50400F5492A /* currency_block.png */; };
+		86810B121530C50400F5492A /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AE21530C50400F5492A /* Default-Landscape.png */; };
+		86810B131530C50400F5492A /* info_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AE31530C50400F5492A /* info_icon.png */; };
+		86810B141530C50400F5492A /* inside_all_service_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AE41530C50400F5492A /* inside_all_service_button.png */; };
+		86810B151530C50400F5492A /* inside_all_service_button_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AE51530C50400F5492A /* inside_all_service_button_active.png */; };
+		86810B161530C50400F5492A /* inside_all_service_current.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AE61530C50400F5492A /* inside_all_service_current.png */; };
+		86810B171530C50400F5492A /* inside_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AE71530C50400F5492A /* inside_background.png */; };
+		86810B181530C50400F5492A /* inside_home_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AE81530C50400F5492A /* inside_home_button.png */; };
+		86810B191530C50400F5492A /* inside_second_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AE91530C50400F5492A /* inside_second_bar.png */; };
+		86810B1A1530C50400F5492A /* inside_second_bar_current_page.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AEA1530C50400F5492A /* inside_second_bar_current_page.png */; };
+		86810B1B1530C50400F5492A /* inside_topbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AEB1530C50400F5492A /* inside_topbar.png */; };
+		86810B1C1530C50400F5492A /* inside_topbar_44.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AEC1530C50400F5492A /* inside_topbar_44.png */; };
+		86810B1D1530C50400F5492A /* inside_topbar_back_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AED1530C50400F5492A /* inside_topbar_back_button.png */; };
+		86810B1E1530C50400F5492A /* loading_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AEE1530C50400F5492A /* loading_background.png */; };
+		86810B1F1530C50400F5492A /* loading_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AEF1530C50400F5492A /* loading_logo.png */; };
+		86810B201530C50400F5492A /* loading_progress_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AF01530C50400F5492A /* loading_progress_bar.png */; };
+		86810B211530C50400F5492A /* loading_progress_bar_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AF11530C50400F5492A /* loading_progress_bar_back.png */; };
+		86810B221530C50400F5492A /* loading_progress_bar_pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AF21530C50400F5492A /* loading_progress_bar_pattern.png */; };
+		86810B231530C50400F5492A /* main_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AF31530C50400F5492A /* main_background.png */; };
+		86810B241530C50400F5492A /* main_page_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AF41530C50400F5492A /* main_page_logo.png */; };
+		86810B251530C50400F5492A /* map_pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AF51530C50400F5492A /* map_pin.png */; };
+		86810B261530C50400F5492A /* menu_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AF61530C50400F5492A /* menu_background.png */; };
+		86810B271530C50400F5492A /* menu_close_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AF71530C50400F5492A /* menu_close_button.png */; };
+		86810B281530C50400F5492A /* news_block.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AF81530C50400F5492A /* news_block.png */; };
+		86810B291530C50400F5492A /* rub.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AF91530C50400F5492A /* rub.png */; };
+		86810B2A1530C50400F5492A /* scrollbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AFA1530C50400F5492A /* scrollbar.png */; };
+		86810B2B1530C50400F5492A /* services_0_pages_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AFB1530C50400F5492A /* services_0_pages_0.png */; };
+		86810B2C1530C50400F5492A /* services_0_pages_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AFC1530C50400F5492A /* services_0_pages_1.png */; };
+		86810B2D1530C50400F5492A /* services_0_pages_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AFD1530C50400F5492A /* services_0_pages_2.png */; };
+		86810B2E1530C50400F5492A /* usd.png in Resources */ = {isa = PBXBuildFile; fileRef = 86810AFE1530C50400F5492A /* usd.png */; };
+		86810B2F1530C50400F5492A /* Cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86810B001530C50400F5492A /* Cities.plist */; };
+		86810B301530C50400F5492A /* Services.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86810B011530C50400F5492A /* Services.plist */; };
+		86810B371530C52400F5492A /* SCAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 86810B321530C52400F5492A /* SCAppUtils.m */; };
+		86810B381530C52400F5492A /* SCClassUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 86810B341530C52400F5492A /* SCClassUtils.m */; };
+		86810B391530C52400F5492A /* UINavigationBar+SCBackgroundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 86810B361530C52400F5492A /* UINavigationBar+SCBackgroundImage.m */; };
+		869447641530CDEA0057C8F6 /* libYandexMapKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 869447621530CDEA0057C8F6 /* libYandexMapKit.a */; };
+		869447651530CDEA0057C8F6 /* YandexMapKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 869447631530CDEA0057C8F6 /* YandexMapKit.bundle */; };
+		86D1936815296AC00071E8F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D1936715296AC00071E8F1 /* UIKit.framework */; };
+		86D1936A15296AC00071E8F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D1936915296AC00071E8F1 /* Foundation.framework */; };
+		86D1936C15296AC00071E8F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D1936B15296AC00071E8F1 /* CoreGraphics.framework */; };
+		86D1937415296AC00071E8F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D1937315296AC00071E8F1 /* main.m */; };
+		86D1937815296AC00071E8F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D1937715296AC00071E8F1 /* AppDelegate.m */; };
+		86D1938615296AC10071E8F1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D1938515296AC10071E8F1 /* SenTestingKit.framework */; };
+		86D1938715296AC10071E8F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D1936715296AC00071E8F1 /* UIKit.framework */; };
+		86D1938815296AC10071E8F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D1936915296AC00071E8F1 /* Foundation.framework */; };
+		86D193E315296CBD0071E8F1 /* LoadingScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D193E115296CBD0071E8F1 /* LoadingScreen.m */; };
+		86D193E415296CBD0071E8F1 /* LoadingScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86D193E215296CBD0071E8F1 /* LoadingScreen.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86D1938915296AC10071E8F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86D1935A15296AC00071E8F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86D1936215296AC00071E8F1;
+			remoteInfo = Zabsibcombank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		860199EA152B067800766295 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		860199EC152B067F00766295 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		860199EE152B068900766295 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		860199F0152B069300766295 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		860199F2152B06A400766295 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		860199F4152B06AD00766295 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		860199F6152B06B600766295 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		860199F8152B06C100766295 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		860199FA152B06CD00766295 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		860199FC152B06D800766295 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		860199FE152B06E800766295 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		86019A00152B06F900766295 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		86019A07152B0B4200766295 /* PointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointAnnotation.h; sourceTree = "<group>"; };
+		86019A08152B0B4200766295 /* PointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointAnnotation.m; sourceTree = "<group>"; };
+		8606B02C1529722E0026ED0A /* OCProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCProgress.h; sourceTree = "<group>"; };
+		8606B02D1529722E0026ED0A /* OCProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCProgress.m; sourceTree = "<group>"; };
+		8606B030152974730026ED0A /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		86810AAC1530C4BF00F5492A /* Cities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cities.h; path = Zabsibcombank/Cities.h; sourceTree = "<group>"; };
+		86810AAD1530C4BF00F5492A /* Cities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cities.m; path = Zabsibcombank/Cities.m; sourceTree = "<group>"; };
+		86810AAE1530C4BF00F5492A /* CitiesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CitiesView.h; path = Zabsibcombank/CitiesView.h; sourceTree = "<group>"; };
+		86810AAF1530C4BF00F5492A /* CitiesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CitiesView.m; path = Zabsibcombank/CitiesView.m; sourceTree = "<group>"; };
+		86810AB01530C4BF00F5492A /* CitiesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CitiesView.xib; path = Zabsibcombank/CitiesView.xib; sourceTree = "<group>"; };
+		86810AB11530C4BF00F5492A /* DetailsScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailsScreen.h; path = Zabsibcombank/DetailsScreen.h; sourceTree = "<group>"; };
+		86810AB21530C4BF00F5492A /* DetailsScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailsScreen.m; path = Zabsibcombank/DetailsScreen.m; sourceTree = "<group>"; };
+		86810AB31530C4BF00F5492A /* DetailsScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailsScreen.xib; path = Zabsibcombank/DetailsScreen.xib; sourceTree = "<group>"; };
+		86810AB41530C4C000F5492A /* MainScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScreen.h; path = Zabsibcombank/MainScreen.h; sourceTree = "<group>"; };
+		86810AB51530C4C000F5492A /* MainScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScreen.m; path = Zabsibcombank/MainScreen.m; sourceTree = "<group>"; };
+		86810AB61530C4C000F5492A /* MainScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainScreen.xib; path = Zabsibcombank/MainScreen.xib; sourceTree = "<group>"; };
+		86810AB71530C4C000F5492A /* MapCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapCell.xib; path = Zabsibcombank/MapCell.xib; sourceTree = "<group>"; };
+		86810AB81530C4C000F5492A /* MapScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapScreen.h; path = Zabsibcombank/MapScreen.h; sourceTree = "<group>"; };
+		86810AB91530C4C000F5492A /* MapScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapScreen.m; path = Zabsibcombank/MapScreen.m; sourceTree = "<group>"; };
+		86810ABA1530C4C000F5492A /* MapScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapScreen.xib; path = Zabsibcombank/MapScreen.xib; sourceTree = "<group>"; };
+		86810ABB1530C4C000F5492A /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = News.h; path = Zabsibcombank/News.h; sourceTree = "<group>"; };
+		86810ABC1530C4C000F5492A /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = News.m; path = Zabsibcombank/News.m; sourceTree = "<group>"; };
+		86810ABD1530C4C000F5492A /* NewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewsCell.xib; path = Zabsibcombank/NewsCell.xib; sourceTree = "<group>"; };
+		86810ABE1530C4C000F5492A /* Objects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Objects.h; path = Zabsibcombank/Objects.h; sourceTree = "<group>"; };
+		86810ABF1530C4C000F5492A /* Objects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Objects.m; path = Zabsibcombank/Objects.m; sourceTree = "<group>"; };
+		86810AC01530C4C000F5492A /* Services.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Services.h; path = Zabsibcombank/Services.h; sourceTree = "<group>"; };
+		86810AC11530C4C000F5492A /* Services.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Services.m; path = Zabsibcombank/Services.m; sourceTree = "<group>"; };
+		86810AD21530C50400F5492A /* addresses_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addresses_icon.png; sourceTree = "<group>"; };
+		86810AD31530C50400F5492A /* button_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_1.png; sourceTree = "<group>"; };
+		86810AD41530C50400F5492A /* button_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_10.png; sourceTree = "<group>"; };
+		86810AD51530C50400F5492A /* button_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_2.png; sourceTree = "<group>"; };
+		86810AD61530C50400F5492A /* button_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_3.png; sourceTree = "<group>"; };
+		86810AD71530C50400F5492A /* button_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_4.png; sourceTree = "<group>"; };
+		86810AD81530C50400F5492A /* button_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_5.png; sourceTree = "<group>"; };
+		86810AD91530C50400F5492A /* button_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_6.png; sourceTree = "<group>"; };
+		86810ADA1530C50400F5492A /* button_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_7.png; sourceTree = "<group>"; };
+		86810ADB1530C50400F5492A /* button_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_8.png; sourceTree = "<group>"; };
+		86810ADC1530C50400F5492A /* button_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_9.png; sourceTree = "<group>"; };
+		86810ADD1530C50400F5492A /* button_about_bank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_about_bank.png; sourceTree = "<group>"; };
+		86810ADE1530C50400F5492A /* button_internet_bank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_internet_bank.png; sourceTree = "<group>"; };
+		86810ADF1530C50400F5492A /* button_president_message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_president_message.png; sourceTree = "<group>"; };
+		86810AE01530C50400F5492A /* button_ratings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_ratings.png; sourceTree = "<group>"; };
+		86810AE11530C50400F5492A /* currency_block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = currency_block.png; sourceTree = "<group>"; };
+		86810AE21530C50400F5492A /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
+		86810AE31530C50400F5492A /* info_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_icon.png; sourceTree = "<group>"; };
+		86810AE41530C50400F5492A /* inside_all_service_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inside_all_service_button.png; sourceTree = "<group>"; };
+		86810AE51530C50400F5492A /* inside_all_service_button_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inside_all_service_button_active.png; sourceTree = "<group>"; };
+		86810AE61530C50400F5492A /* inside_all_service_current.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inside_all_service_current.png; sourceTree = "<group>"; };
+		86810AE71530C50400F5492A /* inside_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inside_background.png; sourceTree = "<group>"; };
+		86810AE81530C50400F5492A /* inside_home_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inside_home_button.png; sourceTree = "<group>"; };
+		86810AE91530C50400F5492A /* inside_second_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inside_second_bar.png; sourceTree = "<group>"; };
+		86810AEA1530C50400F5492A /* inside_second_bar_current_page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inside_second_bar_current_page.png; sourceTree = "<group>"; };
+		86810AEB1530C50400F5492A /* inside_topbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inside_topbar.png; sourceTree = "<group>"; };
+		86810AEC1530C50400F5492A /* inside_topbar_44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inside_topbar_44.png; sourceTree = "<group>"; };
+		86810AED1530C50400F5492A /* inside_topbar_back_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inside_topbar_back_button.png; sourceTree = "<group>"; };
+		86810AEE1530C50400F5492A /* loading_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_background.png; sourceTree = "<group>"; };
+		86810AEF1530C50400F5492A /* loading_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_logo.png; sourceTree = "<group>"; };
+		86810AF01530C50400F5492A /* loading_progress_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_progress_bar.png; sourceTree = "<group>"; };
+		86810AF11530C50400F5492A /* loading_progress_bar_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_progress_bar_back.png; sourceTree = "<group>"; };
+		86810AF21530C50400F5492A /* loading_progress_bar_pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_progress_bar_pattern.png; sourceTree = "<group>"; };
+		86810AF31530C50400F5492A /* main_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_background.png; sourceTree = "<group>"; };
+		86810AF41530C50400F5492A /* main_page_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_page_logo.png; sourceTree = "<group>"; };
+		86810AF51530C50400F5492A /* map_pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pin.png; sourceTree = "<group>"; };
+		86810AF61530C50400F5492A /* menu_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_background.png; sourceTree = "<group>"; };
+		86810AF71530C50400F5492A /* menu_close_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_close_button.png; sourceTree = "<group>"; };
+		86810AF81530C50400F5492A /* news_block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news_block.png; sourceTree = "<group>"; };
+		86810AF91530C50400F5492A /* rub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rub.png; sourceTree = "<group>"; };
+		86810AFA1530C50400F5492A /* scrollbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrollbar.png; sourceTree = "<group>"; };
+		86810AFB1530C50400F5492A /* services_0_pages_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = services_0_pages_0.png; sourceTree = "<group>"; };
+		86810AFC1530C50400F5492A /* services_0_pages_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = services_0_pages_1.png; sourceTree = "<group>"; };
+		86810AFD1530C50400F5492A /* services_0_pages_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = services_0_pages_2.png; sourceTree = "<group>"; };
+		86810AFE1530C50400F5492A /* usd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usd.png; sourceTree = "<group>"; };
+		86810B001530C50400F5492A /* Cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Cities.plist; sourceTree = "<group>"; };
+		86810B011530C50400F5492A /* Services.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Services.plist; sourceTree = "<group>"; };
+		86810B311530C52400F5492A /* SCAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCAppUtils.h; path = Zabsibcombank/SCAppUtils.h; sourceTree = "<group>"; };
+		86810B321530C52400F5492A /* SCAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCAppUtils.m; path = Zabsibcombank/SCAppUtils.m; sourceTree = "<group>"; };
+		86810B331530C52400F5492A /* SCClassUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCClassUtils.h; path = Zabsibcombank/SCClassUtils.h; sourceTree = "<group>"; };
+		86810B341530C52400F5492A /* SCClassUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCClassUtils.m; path = Zabsibcombank/SCClassUtils.m; sourceTree = "<group>"; };
+		86810B351530C52400F5492A /* UINavigationBar+SCBackgroundImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+SCBackgroundImage.h"; path = "Zabsibcombank/UINavigationBar+SCBackgroundImage.h"; sourceTree = "<group>"; };
+		86810B361530C52400F5492A /* UINavigationBar+SCBackgroundImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+SCBackgroundImage.m"; path = "Zabsibcombank/UINavigationBar+SCBackgroundImage.m"; sourceTree = "<group>"; };
+		8694474E1530CDEA0057C8F6 /* YandexMapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YandexMapKit.h; sourceTree = "<group>"; };
+		8694474F1530CDEA0057C8F6 /* YMKAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMKAnnotation.h; sourceTree = "<group>"; };
+		869447501530CDEA0057C8F6 /* YMKAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMKAnnotationView.h; sourceTree = "<group>"; };
+		869447511530CDEA0057C8F6 /* YMKCalloutContentView-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YMKCalloutContentView-Protocol.h"; sourceTree = "<group>"; };
+		869447521530CDEA0057C8F6 /* YMKCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMKCalloutView.h; sourceTree = "<group>"; };
+		869447531530CDEA0057C8F6 /* YMKDraggableAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMKDraggableAnnotation.h; sourceTree = "<group>"; };
+		869447541530CDEA0057C8F6 /* YMKDraggablePinAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMKDraggablePinAnnotationView.h; sourceTree = "<group>"; };
+		869447551530CDEA0057C8F6 /* YMKDraggablePinAnnotationViewDelegate+Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YMKDraggablePinAnnotationViewDelegate+Protocol.h"; sourceTree = "<group>"; };
+		869447561530CDEA0057C8F6 /* YMKGeoObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMKGeoObject.h; sourceTree = "<group>"; };
+		869447571530CDEA0057C8F6 /* YMKHostsConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMKHostsConfiguration.h; sourceTree = "<group>"; };
+		869447581530CDEA0057C8F6 /* YMKMapLayerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMKMapLayerInfo.h; sourceTree = "<group>"; };
+		869447591530CDEA0057C8F6 /* YMKMapLayersConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMKMapLayersConfiguration.h; sourceTree = "<group>"; };
+		8694475A1530CDEA0057C8F6 /* YMKMapStructs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMKMapStructs.h; sourceTree = "<group>"; };
+		8694475B1530CDEA0057C8F6 /* YMKMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMKMapView.h; sourceTree = "<group>"; };
+		8694475C1530CDEA0057C8F6 /* YMKMapViewConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMKMapViewConfiguration.h; sourceTree = "<group>"; };
+		8694475D1530CDEA0057C8F6 /* YMKMapViewDelegate+Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YMKMapViewDelegate+Protocol.h"; sourceTree = "<group>"; };
+		8694475E1530CDEA0057C8F6 /* YMKPinAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMKPinAnnotationView.h; sourceTree = "<group>"; };
+		8694475F1530CDEA0057C8F6 /* YMKRuler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMKRuler.h; sourceTree = "<group>"; };
+		869447601530CDEA0057C8F6 /* YMKTrafficInformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMKTrafficInformer.h; sourceTree = "<group>"; };
+		869447611530CDEA0057C8F6 /* YMKUserLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMKUserLocation.h; sourceTree = "<group>"; };
+		869447621530CDEA0057C8F6 /* libYandexMapKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libYandexMapKit.a; sourceTree = "<group>"; };
+		869447631530CDEA0057C8F6 /* YandexMapKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YandexMapKit.bundle; sourceTree = "<group>"; };
+		86D1936315296AC00071E8F1 /* Zapsibcombank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zapsibcombank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86D1936715296AC00071E8F1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		86D1936915296AC00071E8F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		86D1936B15296AC00071E8F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		86D1936F15296AC00071E8F1 /* Zapsibcombank-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Zapsibcombank-Info.plist"; sourceTree = "<group>"; };
+		86D1937315296AC00071E8F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86D1937515296AC00071E8F1 /* Zapsibcombank-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Zapsibcombank-Prefix.pch"; sourceTree = "<group>"; };
+		86D1937615296AC00071E8F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		86D1937715296AC00071E8F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		86D1938415296AC10071E8F1 /* ZapsibcombankTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZapsibcombankTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86D1938515296AC10071E8F1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		86D193E015296CBD0071E8F1 /* LoadingScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoadingScreen.h; path = Zabsibcombank/LoadingScreen.h; sourceTree = "<group>"; };
+		86D193E115296CBD0071E8F1 /* LoadingScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoadingScreen.m; path = Zabsibcombank/LoadingScreen.m; sourceTree = "<group>"; };
+		86D193E215296CBD0071E8F1 /* LoadingScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoadingScreen.xib; path = Zabsibcombank/LoadingScreen.xib; sourceTree = "<group>"; };
+		86ED0C30152D496F00CC8614 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86D1936015296AC00071E8F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86019A01152B06F900766295 /* libz.dylib in Frameworks */,
+				860199FF152B06E800766295 /* libxml2.dylib in Frameworks */,
+				860199FD152B06D800766295 /* libstdc++.dylib in Frameworks */,
+				860199FB152B06CD00766295 /* libsqlite3.dylib in Frameworks */,
+				860199F9152B06C100766295 /* SystemConfiguration.framework in Frameworks */,
+				860199F7152B06B600766295 /* Security.framework in Frameworks */,
+				860199F5152B06AD00766295 /* OpenGLES.framework in Frameworks */,
+				860199F3152B06A400766295 /* MessageUI.framework in Frameworks */,
+				860199F1152B069300766295 /* QuartzCore.framework in Frameworks */,
+				860199EF152B068900766295 /* CoreLocation.framework in Frameworks */,
+				860199ED152B067F00766295 /* CoreData.framework in Frameworks */,
+				860199EB152B067800766295 /* AVFoundation.framework in Frameworks */,
+				86D1936815296AC00071E8F1 /* UIKit.framework in Frameworks */,
+				86D1936A15296AC00071E8F1 /* Foundation.framework in Frameworks */,
+				86D1936C15296AC00071E8F1 /* CoreGraphics.framework in Frameworks */,
+				869447641530CDEA0057C8F6 /* libYandexMapKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86D1938015296AC10071E8F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86D1938615296AC10071E8F1 /* SenTestingKit.framework in Frameworks */,
+				86D1938715296AC10071E8F1 /* UIKit.framework in Frameworks */,
+				86D1938815296AC10071E8F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86019A0F152B0FBC00766295 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8606B0351529784C0026ED0A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				86810AAC1530C4BF00F5492A /* Cities.h */,
+				86810AAD1530C4BF00F5492A /* Cities.m */,
+				86810AAE1530C4BF00F5492A /* CitiesView.h */,
+				86810AAF1530C4BF00F5492A /* CitiesView.m */,
+				86810AB11530C4BF00F5492A /* DetailsScreen.h */,
+				86810AB21530C4BF00F5492A /* DetailsScreen.m */,
+				86810AB41530C4C000F5492A /* MainScreen.h */,
+				86810AB51530C4C000F5492A /* MainScreen.m */,
+				86810AB81530C4C000F5492A /* MapScreen.h */,
+				86810AB91530C4C000F5492A /* MapScreen.m */,
+				86810ABB1530C4C000F5492A /* News.h */,
+				86810ABC1530C4C000F5492A /* News.m */,
+				86810ABE1530C4C000F5492A /* Objects.h */,
+				86810ABF1530C4C000F5492A /* Objects.m */,
+				86810AC01530C4C000F5492A /* Services.h */,
+				86810AC11530C4C000F5492A /* Services.m */,
+				86D193E015296CBD0071E8F1 /* LoadingScreen.h */,
+				86D193E115296CBD0071E8F1 /* LoadingScreen.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		864E43A915298A8D00457EDF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				86D193E215296CBD0071E8F1 /* LoadingScreen.xib */,
+				86810AB01530C4BF00F5492A /* CitiesView.xib */,
+				86810AB31530C4BF00F5492A /* DetailsScreen.xib */,
+				86810AB61530C4C000F5492A /* MainScreen.xib */,
+				86810AB71530C4C000F5492A /* MapCell.xib */,
+				86810ABA1530C4C000F5492A /* MapScreen.xib */,
+				86810ABD1530C4C000F5492A /* NewsCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		864E43B81529ACCD00457EDF /* Custom NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				86810B311530C52400F5492A /* SCAppUtils.h */,
+				86810B321530C52400F5492A /* SCAppUtils.m */,
+				86810B331530C52400F5492A /* SCClassUtils.h */,
+				86810B341530C52400F5492A /* SCClassUtils.m */,
+				86810B351530C52400F5492A /* UINavigationBar+SCBackgroundImage.h */,
+				86810B361530C52400F5492A /* UINavigationBar+SCBackgroundImage.m */,
+			);
+			name = "Custom NavigationBar";
+			sourceTree = "<group>";
+		};
+		86810AD01530C50400F5492A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				86810AD11530C50400F5492A /* Images */,
+				86810AFF1530C50400F5492A /* Plists */,
+			);
+			name = Resources;
+			path = Zabsibcombank/Resources;
+			sourceTree = "<group>";
+		};
+		86810AD11530C50400F5492A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				86810AD21530C50400F5492A /* addresses_icon.png */,
+				86810AD31530C50400F5492A /* button_1.png */,
+				86810AD41530C50400F5492A /* button_10.png */,
+				86810AD51530C50400F5492A /* button_2.png */,
+				86810AD61530C50400F5492A /* button_3.png */,
+				86810AD71530C50400F5492A /* button_4.png */,
+				86810AD81530C50400F5492A /* button_5.png */,
+				86810AD91530C50400F5492A /* button_6.png */,
+				86810ADA1530C50400F5492A /* button_7.png */,
+				86810ADB1530C50400F5492A /* button_8.png */,
+				86810ADC1530C50400F5492A /* button_9.png */,
+				86810ADD1530C50400F5492A /* button_about_bank.png */,
+				86810ADE1530C50400F5492A /* button_internet_bank.png */,
+				86810ADF1530C50400F5492A /* button_president_message.png */,
+				86810AE01530C50400F5492A /* button_ratings.png */,
+				86810AE11530C50400F5492A /* currency_block.png */,
+				86810AE21530C50400F5492A /* Default-Landscape.png */,
+				86810AE31530C50400F5492A /* info_icon.png */,
+				86810AE41530C50400F5492A /* inside_all_service_button.png */,
+				86810AE51530C50400F5492A /* inside_all_service_button_active.png */,
+				86810AE61530C50400F5492A /* inside_all_service_current.png */,
+				86810AE71530C50400F5492A /* inside_background.png */,
+				86810AE81530C50400F5492A /* inside_home_button.png */,
+				86810AE91530C50400F5492A /* inside_second_bar.png */,
+				86810AEA1530C50400F5492A /* inside_second_bar_current_page.png */,
+				86810AEB1530C50400F5492A /* inside_topbar.png */,
+				86810AEC1530C50400F5492A /* inside_topbar_44.png */,
+				86810AED1530C50400F5492A /* inside_topbar_back_button.png */,
+				86810AEE1530C50400F5492A /* loading_background.png */,
+				86810AEF1530C50400F5492A /* loading_logo.png */,
+				86810AF01530C50400F5492A /* loading_progress_bar.png */,
+				86810AF11530C50400F5492A /* loading_progress_bar_back.png */,
+				86810AF21530C50400F5492A /* loading_progress_bar_pattern.png */,
+				86810AF31530C50400F5492A /* main_background.png */,
+				86810AF41530C50400F5492A /* main_page_logo.png */,
+				86810AF51530C50400F5492A /* map_pin.png */,
+				86810AF61530C50400F5492A /* menu_background.png */,
+				86810AF71530C50400F5492A /* menu_close_button.png */,
+				86810AF81530C50400F5492A /* news_block.png */,
+				86810AF91530C50400F5492A /* rub.png */,
+				86810AFA1530C50400F5492A /* scrollbar.png */,
+				86810AFB1530C50400F5492A /* services_0_pages_0.png */,
+				86810AFC1530C50400F5492A /* services_0_pages_1.png */,
+				86810AFD1530C50400F5492A /* services_0_pages_2.png */,
+				86810AFE1530C50400F5492A /* usd.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		86810AFF1530C50400F5492A /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				86810B001530C50400F5492A /* Cities.plist */,
+				86810B011530C50400F5492A /* Services.plist */,
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		8694474C1530CDEA0057C8F6 /* YandexMapKit */ = {
+			isa = PBXGroup;
+			children = (
+				8694474D1530CDEA0057C8F6 /* Headers */,
+				869447621530CDEA0057C8F6 /* libYandexMapKit.a */,
+				869447631530CDEA0057C8F6 /* YandexMapKit.bundle */,
+			);
+			name = YandexMapKit;
+			path = Zabsibcombank/YandexMapKit;
+			sourceTree = "<group>";
+		};
+		8694474D1530CDEA0057C8F6 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				8694474E1530CDEA0057C8F6 /* YandexMapKit.h */,
+				8694474F1530CDEA0057C8F6 /* YMKAnnotation.h */,
+				869447501530CDEA0057C8F6 /* YMKAnnotationView.h */,
+				869447511530CDEA0057C8F6 /* YMKCalloutContentView-Protocol.h */,
+				869447521530CDEA0057C8F6 /* YMKCalloutView.h */,
+				869447531530CDEA0057C8F6 /* YMKDraggableAnnotation.h */,
+				869447541530CDEA0057C8F6 /* YMKDraggablePinAnnotationView.h */,
+				869447551530CDEA0057C8F6 /* YMKDraggablePinAnnotationViewDelegate+Protocol.h */,
+				869447561530CDEA0057C8F6 /* YMKGeoObject.h */,
+				869447571530CDEA0057C8F6 /* YMKHostsConfiguration.h */,
+				869447581530CDEA0057C8F6 /* YMKMapLayerInfo.h */,
+				869447591530CDEA0057C8F6 /* YMKMapLayersConfiguration.h */,
+				8694475A1530CDEA0057C8F6 /* YMKMapStructs.h */,
+				8694475B1530CDEA0057C8F6 /* YMKMapView.h */,
+				8694475C1530CDEA0057C8F6 /* YMKMapViewConfiguration.h */,
+				8694475D1530CDEA0057C8F6 /* YMKMapViewDelegate+Protocol.h */,
+				8694475E1530CDEA0057C8F6 /* YMKPinAnnotationView.h */,
+				8694475F1530CDEA0057C8F6 /* YMKRuler.h */,
+				869447601530CDEA0057C8F6 /* YMKTrafficInformer.h */,
+				869447611530CDEA0057C8F6 /* YMKUserLocation.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		86D1935815296AC00071E8F1 = {
+			isa = PBXGroup;
+			children = (
+				86D1936E15296AC00071E8F1 /* Supporting Files */,
+				86D1936D15296AC00071E8F1 /* Classes */,
+				86019A0F152B0FBC00766295 /* Models */,
+				8606B0351529784C0026ED0A /* Controllers */,
+				864E43A915298A8D00457EDF /* Views */,
+				86810AD01530C50400F5492A /* Resources */,
+				86D1936615296AC00071E8F1 /* Frameworks */,
+				86D1936415296AC00071E8F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86D1936415296AC00071E8F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86D1936315296AC00071E8F1 /* Zapsibcombank.app */,
+				86D1938415296AC10071E8F1 /* ZapsibcombankTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86D1936615296AC00071E8F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8694474C1530CDEA0057C8F6 /* YandexMapKit */,
+				864E43B81529ACCD00457EDF /* Custom NavigationBar */,
+				86019A00152B06F900766295 /* libz.dylib */,
+				860199FE152B06E800766295 /* libxml2.dylib */,
+				860199FC152B06D800766295 /* libstdc++.dylib */,
+				860199FA152B06CD00766295 /* libsqlite3.dylib */,
+				860199F8152B06C100766295 /* SystemConfiguration.framework */,
+				860199F6152B06B600766295 /* Security.framework */,
+				860199F4152B06AD00766295 /* OpenGLES.framework */,
+				860199F2152B06A400766295 /* MessageUI.framework */,
+				860199F0152B069300766295 /* QuartzCore.framework */,
+				860199EE152B068900766295 /* CoreLocation.framework */,
+				860199EC152B067F00766295 /* CoreData.framework */,
+				860199EA152B067800766295 /* AVFoundation.framework */,
+				86D1936715296AC00071E8F1 /* UIKit.framework */,
+				86D1936915296AC00071E8F1 /* Foundation.framework */,
+				86D1936B15296AC00071E8F1 /* CoreGraphics.framework */,
+				86D1938515296AC10071E8F1 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86D1936D15296AC00071E8F1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				86019A07152B0B4200766295 /* PointAnnotation.h */,
+				86019A08152B0B4200766295 /* PointAnnotation.m */,
+				8606B030152974730026ED0A /* Config.h */,
+				8606B02C1529722E0026ED0A /* OCProgress.h */,
+				8606B02D1529722E0026ED0A /* OCProgress.m */,
+				86D1937615296AC00071E8F1 /* AppDelegate.h */,
+				86D1937715296AC00071E8F1 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = Zabsibcombank;
+			sourceTree = "<group>";
+		};
+		86D1936E15296AC00071E8F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86ED0C2F152D496F00CC8614 /* InfoPlist.strings */,
+				86D1936F15296AC00071E8F1 /* Zapsibcombank-Info.plist */,
+				86D1937315296AC00071E8F1 /* main.m */,
+				86D1937515296AC00071E8F1 /* Zapsibcombank-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = Zabsibcombank;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86D1936215296AC00071E8F1 /* Zapsibcombank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86D1939615296AC10071E8F1 /* Build configuration list for PBXNativeTarget "Zapsibcombank" */;
+			buildPhases = (
+				86D1935F15296AC00071E8F1 /* Sources */,
+				86D1936015296AC00071E8F1 /* Frameworks */,
+				86D1936115296AC00071E8F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zapsibcombank;
+			productName = Zabsibcombank;
+			productReference = 86D1936315296AC00071E8F1 /* Zapsibcombank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		86D1938315296AC10071E8F1 /* ZapsibcombankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86D1939915296AC10071E8F1 /* Build configuration list for PBXNativeTarget "ZapsibcombankTests" */;
+			buildPhases = (
+				86D1937F15296AC10071E8F1 /* Sources */,
+				86D1938015296AC10071E8F1 /* Frameworks */,
+				86D1938115296AC10071E8F1 /* Resources */,
+				86D1938215296AC10071E8F1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86D1938A15296AC10071E8F1 /* PBXTargetDependency */,
+			);
+			name = ZapsibcombankTests;
+			productName = ZabsibcombankTests;
+			productReference = 86D1938415296AC10071E8F1 /* ZapsibcombankTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86D1935A15296AC00071E8F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 86D1935D15296AC00071E8F1 /* Build configuration list for PBXProject "Zapsibcombank" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ru,
+			);
+			mainGroup = 86D1935815296AC00071E8F1;
+			productRefGroup = 86D1936415296AC00071E8F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86D1936215296AC00071E8F1 /* Zapsibcombank */,
+				86D1938315296AC10071E8F1 /* ZapsibcombankTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86D1936115296AC00071E8F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86D193E415296CBD0071E8F1 /* LoadingScreen.xib in Resources */,
+				86810AC41530C4C000F5492A /* CitiesView.xib in Resources */,
+				86810AC61530C4C000F5492A /* DetailsScreen.xib in Resources */,
+				86810AC81530C4C000F5492A /* MainScreen.xib in Resources */,
+				86810AC91530C4C000F5492A /* MapCell.xib in Resources */,
+				86810ACB1530C4C000F5492A /* MapScreen.xib in Resources */,
+				86810ACD1530C4C000F5492A /* NewsCell.xib in Resources */,
+				86810B021530C50400F5492A /* addresses_icon.png in Resources */,
+				86810B031530C50400F5492A /* button_1.png in Resources */,
+				86810B041530C50400F5492A /* button_10.png in Resources */,
+				86810B051530C50400F5492A /* button_2.png in Resources */,
+				86810B061530C50400F5492A /* button_3.png in Resources */,
+				86810B071530C50400F5492A /* button_4.png in Resources */,
+				86810B081530C50400F5492A /* button_5.png in Resources */,
+				86810B091530C50400F5492A /* button_6.png in Resources */,
+				86810B0A1530C50400F5492A /* button_7.png in Resources */,
+				86810B0B1530C50400F5492A /* button_8.png in Resources */,
+				86810B0C1530C50400F5492A /* button_9.png in Resources */,
+				86810B0D1530C50400F5492A /* button_about_bank.png in Resources */,
+				86810B0E1530C50400F5492A /* button_internet_bank.png in Resources */,
+				86810B0F1530C50400F5492A /* button_president_message.png in Resources */,
+				86810B101530C50400F5492A /* button_ratings.png in Resources */,
+				86810B111530C50400F5492A /* currency_block.png in Resources */,
+				86810B121530C50400F5492A /* Default-Landscape.png in Resources */,
+				86810B131530C50400F5492A /* info_icon.png in Resources */,
+				86810B141530C50400F5492A /* inside_all_service_button.png in Resources */,
+				86810B151530C50400F5492A /* inside_all_service_button_active.png in Resources */,
+				86810B161530C50400F5492A /* inside_all_service_current.png in Resources */,
+				86810B171530C50400F5492A /* inside_background.png in Resources */,
+				86810B181530C50400F5492A /* inside_home_button.png in Resources */,
+				86810B191530C50400F5492A /* inside_second_bar.png in Resources */,
+				86810B1A1530C50400F5492A /* inside_second_bar_current_page.png in Resources */,
+				86810B1B1530C50400F5492A /* inside_topbar.png in Resources */,
+				86810B1C1530C50400F5492A /* inside_topbar_44.png in Resources */,
+				86810B1D1530C50400F5492A /* inside_topbar_back_button.png in Resources */,
+				86810B1E1530C50400F5492A /* loading_background.png in Resources */,
+				86810B1F1530C50400F5492A /* loading_logo.png in Resources */,
+				86810B201530C50400F5492A /* loading_progress_bar.png in Resources */,
+				86810B211530C50400F5492A /* loading_progress_bar_back.png in Resources */,
+				86810B221530C50400F5492A /* loading_progress_bar_pattern.png in Resources */,
+				86810B231530C50400F5492A /* main_background.png in Resources */,
+				86810B241530C50400F5492A /* main_page_logo.png in Resources */,
+				86810B251530C50400F5492A /* map_pin.png in Resources */,
+				86810B261530C50400F5492A /* menu_background.png in Resources */,
+				86810B271530C50400F5492A /* menu_close_button.png in Resources */,
+				86810B281530C50400F5492A /* news_block.png in Resources */,
+				86810B291530C50400F5492A /* rub.png in Resources */,
+				86810B2A1530C50400F5492A /* scrollbar.png in Resources */,
+				86810B2B1530C50400F5492A /* services_0_pages_0.png in Resources */,
+				86810B2C1530C50400F5492A /* services_0_pages_1.png in Resources */,
+				86810B2D1530C50400F5492A /* services_0_pages_2.png in Resources */,
+				86810B2E1530C50400F5492A /* usd.png in Resources */,
+				86810B2F1530C50400F5492A /* Cities.plist in Resources */,
+				86810B301530C50400F5492A /* Services.plist in Resources */,
+				869447651530CDEA0057C8F6 /* YandexMapKit.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86D1938115296AC10071E8F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86D1938215296AC10071E8F1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86D1935F15296AC00071E8F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86D1937415296AC00071E8F1 /* main.m in Sources */,
+				86D1937815296AC00071E8F1 /* AppDelegate.m in Sources */,
+				86D193E315296CBD0071E8F1 /* LoadingScreen.m in Sources */,
+				8606B02E1529722E0026ED0A /* OCProgress.m in Sources */,
+				86019A09152B0B4200766295 /* PointAnnotation.m in Sources */,
+				86810AC21530C4C000F5492A /* Cities.m in Sources */,
+				86810AC31530C4C000F5492A /* CitiesView.m in Sources */,
+				86810AC51530C4C000F5492A /* DetailsScreen.m in Sources */,
+				86810AC71530C4C000F5492A /* MainScreen.m in Sources */,
+				86810ACA1530C4C000F5492A /* MapScreen.m in Sources */,
+				86810ACC1530C4C000F5492A /* News.m in Sources */,
+				86810ACE1530C4C000F5492A /* Objects.m in Sources */,
+				86810ACF1530C4C000F5492A /* Services.m in Sources */,
+				86810B371530C52400F5492A /* SCAppUtils.m in Sources */,
+				86810B381530C52400F5492A /* SCClassUtils.m in Sources */,
+				86810B391530C52400F5492A /* UINavigationBar+SCBackgroundImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86D1937F15296AC10071E8F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86D1938A15296AC10071E8F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86D1936215296AC00071E8F1 /* Zapsibcombank */;
+			targetProxy = 86D1938915296AC10071E8F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		86ED0C2F152D496F00CC8614 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86ED0C30152D496F00CC8614 /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86D1939415296AC10071E8F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Stanislav Yazhenskikh (Q8995BS68E)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2EF9DE1C-6F39-4625-862C-1D00DBCEA6F5";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		86D1939515296AC10071E8F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Stanislav Yazhenskikh (Q8995BS68E)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2EF9DE1C-6F39-4625-862C-1D00DBCEA6F5";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86D1939715296AC10071E8F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Zabsibcombank/Zapsibcombank-Prefix.pch";
+				INFOPLIST_FILE = "Zabsibcombank/Zapsibcombank-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Zabsibcombank/YandexMapKit\"",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = Zapsibcombank;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		86D1939815296AC10071E8F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Zabsibcombank/Zapsibcombank-Prefix.pch";
+				INFOPLIST_FILE = "Zabsibcombank/Zapsibcombank-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Zabsibcombank/YandexMapKit\"",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = Zapsibcombank;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		86D1939A15296AC10071E8F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Zabsibcombank.app/Zabsibcombank";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks/**",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks/**",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Zabsibcombank/Zabsibcombank-Prefix.pch";
+				INFOPLIST_FILE = "ZabsibcombankTests/ZapsibcombankTests-Info.plist";
+				PRODUCT_NAME = ZapsibcombankTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		86D1939B15296AC10071E8F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Zabsibcombank.app/Zabsibcombank";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks/**",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks/**",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Zabsibcombank/Zabsibcombank-Prefix.pch";
+				INFOPLIST_FILE = "ZabsibcombankTests/ZapsibcombankTests-Info.plist";
+				PRODUCT_NAME = ZapsibcombankTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		86ED0C2B152D47D000CC8614 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Creative LLC";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "31005715-2DED-431D-AE80-39AFB2F85F8F";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Adhoc;
+		};
+		86ED0C2C152D47D000CC8614 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Zabsibcombank/Zapsibcombank-Prefix.pch";
+				INFOPLIST_FILE = "Zabsibcombank/Zapsibcombank-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Zabsibcombank/YandexMapKit\"",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = Zapsibcombank;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Adhoc;
+		};
+		86ED0C2D152D47D000CC8614 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Zabsibcombank.app/Zabsibcombank";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks/**",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks/**",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Zabsibcombank/Zabsibcombank-Prefix.pch";
+				INFOPLIST_FILE = "ZabsibcombankTests/ZapsibcombankTests-Info.plist";
+				PRODUCT_NAME = ZapsibcombankTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Adhoc;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86D1935D15296AC00071E8F1 /* Build configuration list for PBXProject "Zapsibcombank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86D1939415296AC10071E8F1 /* Debug */,
+				86D1939515296AC10071E8F1 /* Release */,
+				86ED0C2B152D47D000CC8614 /* Adhoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86D1939615296AC10071E8F1 /* Build configuration list for PBXNativeTarget "Zapsibcombank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86D1939715296AC10071E8F1 /* Debug */,
+				86D1939815296AC10071E8F1 /* Release */,
+				86ED0C2C152D47D000CC8614 /* Adhoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86D1939915296AC10071E8F1 /* Build configuration list for PBXNativeTarget "ZapsibcombankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86D1939A15296AC10071E8F1 /* Debug */,
+				86D1939B15296AC10071E8F1 /* Release */,
+				86ED0C2D152D47D000CC8614 /* Adhoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86D1935A15296AC00071E8F1 /* Project object */;
+}

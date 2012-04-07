@@ -47,8 +47,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    UIColor *progressRemainingColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"loading_progress_bar_back.png"]];
-    UIColor *progressColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"loading_progress_bar_pattern.png"]];
+//    UIColor *progressRemainingColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"loading_progress_bar_back.png"]];
+//    UIColor *progressColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"loading_progress_bar_pattern.png"]];
     
 //    OCProgress *objProgresscontroller = [[OCProgress alloc] initWithFrame:self.progressView.frame];
 //    objProgresscontroller.minValue = 0;
@@ -61,7 +61,7 @@
 //    [self.view addSubview:objProgresscontroller];
 //    self.progressView = objProgresscontroller;
     
-    [NSTimer scheduledTimerWithTimeInterval:0.01f target:self selector:@selector(onTimerFired:) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:0.001f target:self selector:@selector(onTimerFired:) userInfo:nil repeats:YES];
     
     self.progressBar.layer.cornerRadius = 5;
     self.progressBar.layer.masksToBounds = YES;
@@ -86,7 +86,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-	return YES;
+	return interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight;
 }
 
 - (void)onTimerFired:(NSTimer *)timer {

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
+   LastUpgradeVersion = "0430"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "86D1936215296AC00071E8F1"
-               BuildableName = "Zabsibcombank.app"
-               BlueprintName = "Zabsibcombank"
-               ReferencedContainer = "container:Zabsibcombank.xcodeproj">
+               BuildableName = "Zapsibcombank.app"
+               BlueprintName = "Zapsibcombank"
+               ReferencedContainer = "container:Zapsibcombank.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "86D1938315296AC10071E8F1"
-               BuildableName = "ZabsibcombankTests.octest"
-               BlueprintName = "ZabsibcombankTests"
-               ReferencedContainer = "container:Zabsibcombank.xcodeproj">
+               BuildableName = "ZapsibcombankTests.octest"
+               BlueprintName = "ZapsibcombankTests"
+               ReferencedContainer = "container:Zapsibcombank.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -42,27 +43,28 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "86D1936215296AC00071E8F1"
-            BuildableName = "Zabsibcombank.app"
-            BlueprintName = "Zabsibcombank"
-            ReferencedContainer = "container:Zabsibcombank.xcodeproj">
+            BuildableName = "Zapsibcombank.app"
+            BlueprintName = "Zapsibcombank"
+            ReferencedContainer = "container:Zapsibcombank.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
    <LaunchAction
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.GDB"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Debug"
+      ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "86D1936215296AC00071E8F1"
-            BuildableName = "Zabsibcombank.app"
-            BlueprintName = "Zabsibcombank"
-            ReferencedContainer = "container:Zabsibcombank.xcodeproj">
+            BuildableName = "Zapsibcombank.app"
+            BlueprintName = "Zapsibcombank"
+            ReferencedContainer = "container:Zapsibcombank.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -83,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "86D1936215296AC00071E8F1"
-            BuildableName = "Zabsibcombank.app"
-            BlueprintName = "Zabsibcombank"
-            ReferencedContainer = "container:Zabsibcombank.xcodeproj">
+            BuildableName = "Zapsibcombank.app"
+            BlueprintName = "Zapsibcombank"
+            ReferencedContainer = "container:Zapsibcombank.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -93,7 +95,7 @@
       buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Adhoc"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

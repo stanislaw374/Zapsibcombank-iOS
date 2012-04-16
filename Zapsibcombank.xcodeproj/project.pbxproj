@@ -21,6 +21,8 @@
 		86019A01152B06F900766295 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 86019A00152B06F900766295 /* libz.dylib */; };
 		86019A09152B0B4200766295 /* PointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 86019A08152B0B4200766295 /* PointAnnotation.m */; };
 		8606B02E1529722E0026ED0A /* OCProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 8606B02D1529722E0026ED0A /* OCProgress.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		865DAA2B15358DAE00272DFC /* Information.plist in Resources */ = {isa = PBXBuildFile; fileRef = 865DAA2A15358DAE00272DFC /* Information.plist */; };
+		867739751536F8D20047EC01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86ED0C2F152D496F00CC8614 /* InfoPlist.strings */; };
 		86810AC21530C4C000F5492A /* Cities.m in Sources */ = {isa = PBXBuildFile; fileRef = 86810AAD1530C4BF00F5492A /* Cities.m */; };
 		86810AC31530C4C000F5492A /* CitiesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86810AAF1530C4BF00F5492A /* CitiesView.m */; };
 		86810AC41530C4C000F5492A /* CitiesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86810AB01530C4BF00F5492A /* CitiesView.xib */; };
@@ -87,6 +89,40 @@
 		86810B391530C52400F5492A /* UINavigationBar+SCBackgroundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 86810B361530C52400F5492A /* UINavigationBar+SCBackgroundImage.m */; };
 		869447641530CDEA0057C8F6 /* libYandexMapKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 869447621530CDEA0057C8F6 /* libYandexMapKit.a */; };
 		869447651530CDEA0057C8F6 /* YandexMapKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 869447631530CDEA0057C8F6 /* YandexMapKit.bundle */; };
+		869D91971538038900AFAFF5 /* Currencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 869D91961538038900AFAFF5 /* Currencies.m */; };
+		869D919B153803DF00AFAFF5 /* Currency.m in Sources */ = {isa = PBXBuildFile; fileRef = 869D919A153803DF00AFAFF5 /* Currency.m */; };
+		869D919D1538239300AFAFF5 /* CurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 869D919C1538239300AFAFF5 /* CurrencyCell.xib */; };
+		86A06BFE1535673C0069813C /* about_bank_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A06BF41535673C0069813C /* about_bank_photo.png */; };
+		86A06BFF1535673C0069813C /* about_block.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A06BF51535673C0069813C /* about_block.png */; };
+		86A06C001535673C0069813C /* about_create_logo_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A06BF61535673C0069813C /* about_create_logo_10.png */; };
+		86A06C011535673C0069813C /* about_zapsib_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A06BF71535673C0069813C /* about_zapsib_logo.png */; };
+		86A06C021535673C0069813C /* button_about_bank_selected_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A06BF81535673C0069813C /* button_about_bank_selected_03.png */; };
+		86A06C031535673C0069813C /* button_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A06BF91535673C0069813C /* button_home.png */; };
+		86A06C041535673C0069813C /* button_president_selected_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A06BFA1535673C0069813C /* button_president_selected_03.png */; };
+		86A06C051535673C0069813C /* button_ratings_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A06BFB1535673C0069813C /* button_ratings_selected.png */; };
+		86A06C061535673C0069813C /* president_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A06BFC1535673C0069813C /* president_photo.png */; };
+		86A06C071535673C0069813C /* text_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A06BFD1535673C0069813C /* text_background.png */; };
+		86A06C0B153567630069813C /* AboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A06C09153567630069813C /* AboutView.m */; };
+		86A06C0C153567630069813C /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86A06C0A153567630069813C /* AboutView.xib */; };
+		86B6101D153BD0F300E64A0D /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B6101A153BD0F300E64A0D /* HTMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		86B6101E153BD0F300E64A0D /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B6101C153BD0F300E64A0D /* HTMLParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		86BA8FB11537E739009D57D4 /* New.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BA8FB01537E739009D57D4 /* New.m */; };
+		86BA8FB51537E8B8009D57D4 /* NSURLConnection+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BA8FB41537E8B8009D57D4 /* NSURLConnection+Block.m */; };
+		86BA8FD11537EC82009D57D4 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BA8FB91537EC82009D57D4 /* NSObject+SBJson.m */; };
+		86BA8FD21537EC82009D57D4 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BA8FBC1537EC82009D57D4 /* SBJsonParser.m */; };
+		86BA8FD31537EC82009D57D4 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BA8FBE1537EC82009D57D4 /* SBJsonStreamParser.m */; };
+		86BA8FD41537EC82009D57D4 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BA8FC01537EC82009D57D4 /* SBJsonStreamParserAccumulator.m */; };
+		86BA8FD51537EC82009D57D4 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BA8FC21537EC82009D57D4 /* SBJsonStreamParserAdapter.m */; };
+		86BA8FD61537EC82009D57D4 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BA8FC41537EC82009D57D4 /* SBJsonStreamParserState.m */; };
+		86BA8FD71537EC82009D57D4 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BA8FC61537EC82009D57D4 /* SBJsonStreamWriter.m */; };
+		86BA8FD81537EC82009D57D4 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BA8FC81537EC82009D57D4 /* SBJsonStreamWriterAccumulator.m */; };
+		86BA8FD91537EC82009D57D4 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BA8FCA1537EC82009D57D4 /* SBJsonStreamWriterState.m */; };
+		86BA8FDA1537EC82009D57D4 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BA8FCC1537EC82009D57D4 /* SBJsonTokeniser.m */; };
+		86BA8FDB1537EC82009D57D4 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BA8FCE1537EC82009D57D4 /* SBJsonUTF8Stream.m */; };
+		86BA8FDC1537EC82009D57D4 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BA8FD01537EC82009D57D4 /* SBJsonWriter.m */; };
+		86BA8FE01537F690009D57D4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BA8FDF1537F690009D57D4 /* MBProgressHUD.m */; };
+		86BA8FE91537F9C0009D57D4 /* NewTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BA8FE71537F9C0009D57D4 /* NewTextView.m */; };
+		86BA8FEA1537F9C0009D57D4 /* NewTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86BA8FE81537F9C0009D57D4 /* NewTextView.xib */; };
 		86D1936815296AC00071E8F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D1936715296AC00071E8F1 /* UIKit.framework */; };
 		86D1936A15296AC00071E8F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D1936915296AC00071E8F1 /* Foundation.framework */; };
 		86D1936C15296AC00071E8F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D1936B15296AC00071E8F1 /* CoreGraphics.framework */; };
@@ -97,6 +133,7 @@
 		86D1938815296AC10071E8F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D1936915296AC00071E8F1 /* Foundation.framework */; };
 		86D193E315296CBD0071E8F1 /* LoadingScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D193E115296CBD0071E8F1 /* LoadingScreen.m */; };
 		86D193E415296CBD0071E8F1 /* LoadingScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86D193E215296CBD0071E8F1 /* LoadingScreen.xib */; };
+		86F15D301536A454001C228D /* Information.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F15D2F1536A454001C228D /* Information.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +164,7 @@
 		8606B02C1529722E0026ED0A /* OCProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCProgress.h; sourceTree = "<group>"; };
 		8606B02D1529722E0026ED0A /* OCProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCProgress.m; sourceTree = "<group>"; };
 		8606B030152974730026ED0A /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		865DAA2A15358DAE00272DFC /* Information.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Information.plist; sourceTree = "<group>"; };
 		86810AAC1530C4BF00F5492A /* Cities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cities.h; path = Zabsibcombank/Cities.h; sourceTree = "<group>"; };
 		86810AAD1530C4BF00F5492A /* Cities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cities.m; path = Zabsibcombank/Cities.m; sourceTree = "<group>"; };
 		86810AAE1530C4BF00F5492A /* CitiesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CitiesView.h; path = Zabsibcombank/CitiesView.h; sourceTree = "<group>"; };
@@ -224,6 +262,62 @@
 		869447611530CDEA0057C8F6 /* YMKUserLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMKUserLocation.h; sourceTree = "<group>"; };
 		869447621530CDEA0057C8F6 /* libYandexMapKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libYandexMapKit.a; sourceTree = "<group>"; };
 		869447631530CDEA0057C8F6 /* YandexMapKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YandexMapKit.bundle; sourceTree = "<group>"; };
+		869D91951538038900AFAFF5 /* Currencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Currencies.h; path = Zabsibcombank/Currencies.h; sourceTree = "<group>"; };
+		869D91961538038900AFAFF5 /* Currencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Currencies.m; path = Zabsibcombank/Currencies.m; sourceTree = "<group>"; };
+		869D9199153803DF00AFAFF5 /* Currency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Currency.h; path = Zabsibcombank/Currency.h; sourceTree = "<group>"; };
+		869D919A153803DF00AFAFF5 /* Currency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Currency.m; path = Zabsibcombank/Currency.m; sourceTree = "<group>"; };
+		869D919C1538239300AFAFF5 /* CurrencyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CurrencyCell.xib; path = Zabsibcombank/CurrencyCell.xib; sourceTree = "<group>"; };
+		86A06BF41535673C0069813C /* about_bank_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_bank_photo.png; sourceTree = "<group>"; };
+		86A06BF51535673C0069813C /* about_block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_block.png; sourceTree = "<group>"; };
+		86A06BF61535673C0069813C /* about_create_logo_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_create_logo_10.png; sourceTree = "<group>"; };
+		86A06BF71535673C0069813C /* about_zapsib_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_zapsib_logo.png; sourceTree = "<group>"; };
+		86A06BF81535673C0069813C /* button_about_bank_selected_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_about_bank_selected_03.png; sourceTree = "<group>"; };
+		86A06BF91535673C0069813C /* button_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_home.png; sourceTree = "<group>"; };
+		86A06BFA1535673C0069813C /* button_president_selected_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_president_selected_03.png; sourceTree = "<group>"; };
+		86A06BFB1535673C0069813C /* button_ratings_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_ratings_selected.png; sourceTree = "<group>"; };
+		86A06BFC1535673C0069813C /* president_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = president_photo.png; sourceTree = "<group>"; };
+		86A06BFD1535673C0069813C /* text_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text_background.png; sourceTree = "<group>"; };
+		86A06C08153567630069813C /* AboutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutView.h; path = Zabsibcombank/AboutView.h; sourceTree = "<group>"; };
+		86A06C09153567630069813C /* AboutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutView.m; path = Zabsibcombank/AboutView.m; sourceTree = "<group>"; };
+		86A06C0A153567630069813C /* AboutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AboutView.xib; path = Zabsibcombank/AboutView.xib; sourceTree = "<group>"; };
+		86B61019153BD0F300E64A0D /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
+		86B6101A153BD0F300E64A0D /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
+		86B6101B153BD0F300E64A0D /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
+		86B6101C153BD0F300E64A0D /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
+		86BA8FAF1537E739009D57D4 /* New.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = New.h; path = Zabsibcombank/New.h; sourceTree = "<group>"; };
+		86BA8FB01537E739009D57D4 /* New.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = New.m; path = Zabsibcombank/New.m; sourceTree = "<group>"; };
+		86BA8FB31537E8B8009D57D4 /* NSURLConnection+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnection+Block.h"; sourceTree = "<group>"; };
+		86BA8FB41537E8B8009D57D4 /* NSURLConnection+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+Block.m"; sourceTree = "<group>"; };
+		86BA8FB81537EC82009D57D4 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		86BA8FB91537EC82009D57D4 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		86BA8FBA1537EC82009D57D4 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		86BA8FBB1537EC82009D57D4 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		86BA8FBC1537EC82009D57D4 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		86BA8FBD1537EC82009D57D4 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		86BA8FBE1537EC82009D57D4 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		86BA8FBF1537EC82009D57D4 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		86BA8FC01537EC82009D57D4 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		86BA8FC11537EC82009D57D4 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		86BA8FC21537EC82009D57D4 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		86BA8FC31537EC82009D57D4 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		86BA8FC41537EC82009D57D4 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		86BA8FC51537EC82009D57D4 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		86BA8FC61537EC82009D57D4 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		86BA8FC71537EC82009D57D4 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		86BA8FC81537EC82009D57D4 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		86BA8FC91537EC82009D57D4 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		86BA8FCA1537EC82009D57D4 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		86BA8FCB1537EC82009D57D4 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		86BA8FCC1537EC82009D57D4 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		86BA8FCD1537EC82009D57D4 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		86BA8FCE1537EC82009D57D4 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		86BA8FCF1537EC82009D57D4 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		86BA8FD01537EC82009D57D4 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		86BA8FDE1537F690009D57D4 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		86BA8FDF1537F690009D57D4 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		86BA8FE61537F9C0009D57D4 /* NewTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewTextView.h; path = Zabsibcombank/NewTextView.h; sourceTree = "<group>"; };
+		86BA8FE71537F9C0009D57D4 /* NewTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewTextView.m; path = Zabsibcombank/NewTextView.m; sourceTree = "<group>"; };
+		86BA8FE81537F9C0009D57D4 /* NewTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewTextView.xib; path = Zabsibcombank/NewTextView.xib; sourceTree = "<group>"; };
 		86D1936315296AC00071E8F1 /* Zapsibcombank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zapsibcombank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D1936715296AC00071E8F1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		86D1936915296AC00071E8F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -239,6 +333,8 @@
 		86D193E115296CBD0071E8F1 /* LoadingScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoadingScreen.m; path = Zabsibcombank/LoadingScreen.m; sourceTree = "<group>"; };
 		86D193E215296CBD0071E8F1 /* LoadingScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoadingScreen.xib; path = Zabsibcombank/LoadingScreen.xib; sourceTree = "<group>"; };
 		86ED0C30152D496F00CC8614 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		86F15D2E1536A454001C228D /* Information.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Information.h; path = Zabsibcombank/Information.h; sourceTree = "<group>"; };
+		86F15D2F1536A454001C228D /* Information.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Information.m; path = Zabsibcombank/Information.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +377,12 @@
 		86019A0F152B0FBC00766295 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				86F15D2E1536A454001C228D /* Information.h */,
+				86F15D2F1536A454001C228D /* Information.m */,
+				86BA8FAF1537E739009D57D4 /* New.h */,
+				86BA8FB01537E739009D57D4 /* New.m */,
+				869D9199153803DF00AFAFF5 /* Currency.h */,
+				869D919A153803DF00AFAFF5 /* Currency.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -306,6 +408,12 @@
 				86810AC11530C4C000F5492A /* Services.m */,
 				86D193E015296CBD0071E8F1 /* LoadingScreen.h */,
 				86D193E115296CBD0071E8F1 /* LoadingScreen.m */,
+				86A06C08153567630069813C /* AboutView.h */,
+				86A06C09153567630069813C /* AboutView.m */,
+				86BA8FE61537F9C0009D57D4 /* NewTextView.h */,
+				86BA8FE71537F9C0009D57D4 /* NewTextView.m */,
+				869D91951538038900AFAFF5 /* Currencies.h */,
+				869D91961538038900AFAFF5 /* Currencies.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -315,11 +423,14 @@
 			children = (
 				86D193E215296CBD0071E8F1 /* LoadingScreen.xib */,
 				86810AB01530C4BF00F5492A /* CitiesView.xib */,
-				86810AB31530C4BF00F5492A /* DetailsScreen.xib */,
 				86810AB61530C4C000F5492A /* MainScreen.xib */,
+				86810AB31530C4BF00F5492A /* DetailsScreen.xib */,
 				86810AB71530C4C000F5492A /* MapCell.xib */,
 				86810ABA1530C4C000F5492A /* MapScreen.xib */,
+				86A06C0A153567630069813C /* AboutView.xib */,
 				86810ABD1530C4C000F5492A /* NewsCell.xib */,
+				86BA8FE81537F9C0009D57D4 /* NewTextView.xib */,
+				869D919C1538239300AFAFF5 /* CurrencyCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -350,6 +461,16 @@
 		86810AD11530C50400F5492A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				86A06BF41535673C0069813C /* about_bank_photo.png */,
+				86A06BF51535673C0069813C /* about_block.png */,
+				86A06BF61535673C0069813C /* about_create_logo_10.png */,
+				86A06BF71535673C0069813C /* about_zapsib_logo.png */,
+				86A06BF81535673C0069813C /* button_about_bank_selected_03.png */,
+				86A06BF91535673C0069813C /* button_home.png */,
+				86A06BFA1535673C0069813C /* button_president_selected_03.png */,
+				86A06BFB1535673C0069813C /* button_ratings_selected.png */,
+				86A06BFC1535673C0069813C /* president_photo.png */,
+				86A06BFD1535673C0069813C /* text_background.png */,
 				86810AD21530C50400F5492A /* addresses_icon.png */,
 				86810AD31530C50400F5492A /* button_1.png */,
 				86810AD41530C50400F5492A /* button_10.png */,
@@ -404,6 +525,7 @@
 			children = (
 				86810B001530C50400F5492A /* Cities.plist */,
 				86810B011530C50400F5492A /* Services.plist */,
+				865DAA2A15358DAE00272DFC /* Information.plist */,
 			);
 			path = Plists;
 			sourceTree = "<group>";
@@ -446,6 +568,70 @@
 			path = Headers;
 			sourceTree = "<group>";
 		};
+		86B61020153BD0FA00E64A0D /* HTML Parser */ = {
+			isa = PBXGroup;
+			children = (
+				86B61019153BD0F300E64A0D /* HTMLNode.h */,
+				86B6101A153BD0F300E64A0D /* HTMLNode.m */,
+				86B6101B153BD0F300E64A0D /* HTMLParser.h */,
+				86B6101C153BD0F300E64A0D /* HTMLParser.m */,
+			);
+			name = "HTML Parser";
+			sourceTree = "<group>";
+		};
+		86BA8FB61537EC5D009D57D4 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				86B61020153BD0FA00E64A0D /* HTML Parser */,
+				86BA8FDD1537F683009D57D4 /* MBProgressHud */,
+				86BA8FB71537EC66009D57D4 /* SBJson */,
+				8694474C1530CDEA0057C8F6 /* YandexMapKit */,
+				864E43B81529ACCD00457EDF /* Custom NavigationBar */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		86BA8FB71537EC66009D57D4 /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				86BA8FB81537EC82009D57D4 /* NSObject+SBJson.h */,
+				86BA8FB91537EC82009D57D4 /* NSObject+SBJson.m */,
+				86BA8FBA1537EC82009D57D4 /* SBJson.h */,
+				86BA8FBB1537EC82009D57D4 /* SBJsonParser.h */,
+				86BA8FBC1537EC82009D57D4 /* SBJsonParser.m */,
+				86BA8FBD1537EC82009D57D4 /* SBJsonStreamParser.h */,
+				86BA8FBE1537EC82009D57D4 /* SBJsonStreamParser.m */,
+				86BA8FBF1537EC82009D57D4 /* SBJsonStreamParserAccumulator.h */,
+				86BA8FC01537EC82009D57D4 /* SBJsonStreamParserAccumulator.m */,
+				86BA8FC11537EC82009D57D4 /* SBJsonStreamParserAdapter.h */,
+				86BA8FC21537EC82009D57D4 /* SBJsonStreamParserAdapter.m */,
+				86BA8FC31537EC82009D57D4 /* SBJsonStreamParserState.h */,
+				86BA8FC41537EC82009D57D4 /* SBJsonStreamParserState.m */,
+				86BA8FC51537EC82009D57D4 /* SBJsonStreamWriter.h */,
+				86BA8FC61537EC82009D57D4 /* SBJsonStreamWriter.m */,
+				86BA8FC71537EC82009D57D4 /* SBJsonStreamWriterAccumulator.h */,
+				86BA8FC81537EC82009D57D4 /* SBJsonStreamWriterAccumulator.m */,
+				86BA8FC91537EC82009D57D4 /* SBJsonStreamWriterState.h */,
+				86BA8FCA1537EC82009D57D4 /* SBJsonStreamWriterState.m */,
+				86BA8FCB1537EC82009D57D4 /* SBJsonTokeniser.h */,
+				86BA8FCC1537EC82009D57D4 /* SBJsonTokeniser.m */,
+				86BA8FCD1537EC82009D57D4 /* SBJsonUTF8Stream.h */,
+				86BA8FCE1537EC82009D57D4 /* SBJsonUTF8Stream.m */,
+				86BA8FCF1537EC82009D57D4 /* SBJsonWriter.h */,
+				86BA8FD01537EC82009D57D4 /* SBJsonWriter.m */,
+			);
+			name = SBJson;
+			sourceTree = "<group>";
+		};
+		86BA8FDD1537F683009D57D4 /* MBProgressHud */ = {
+			isa = PBXGroup;
+			children = (
+				86BA8FDE1537F690009D57D4 /* MBProgressHUD.h */,
+				86BA8FDF1537F690009D57D4 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHud;
+			sourceTree = "<group>";
+		};
 		86D1935815296AC00071E8F1 = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +641,7 @@
 				8606B0351529784C0026ED0A /* Controllers */,
 				864E43A915298A8D00457EDF /* Views */,
 				86810AD01530C50400F5492A /* Resources */,
+				86BA8FB61537EC5D009D57D4 /* Vendor */,
 				86D1936615296AC00071E8F1 /* Frameworks */,
 				86D1936415296AC00071E8F1 /* Products */,
 			);
@@ -472,8 +659,6 @@
 		86D1936615296AC00071E8F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8694474C1530CDEA0057C8F6 /* YandexMapKit */,
-				864E43B81529ACCD00457EDF /* Custom NavigationBar */,
 				86019A00152B06F900766295 /* libz.dylib */,
 				860199FE152B06E800766295 /* libxml2.dylib */,
 				860199FC152B06D800766295 /* libstdc++.dylib */,
@@ -499,11 +684,12 @@
 			children = (
 				86019A07152B0B4200766295 /* PointAnnotation.h */,
 				86019A08152B0B4200766295 /* PointAnnotation.m */,
-				8606B030152974730026ED0A /* Config.h */,
 				8606B02C1529722E0026ED0A /* OCProgress.h */,
 				8606B02D1529722E0026ED0A /* OCProgress.m */,
 				86D1937615296AC00071E8F1 /* AppDelegate.h */,
 				86D1937715296AC00071E8F1 /* AppDelegate.m */,
+				86BA8FB31537E8B8009D57D4 /* NSURLConnection+Block.h */,
+				86BA8FB41537E8B8009D57D4 /* NSURLConnection+Block.m */,
 			);
 			name = Classes;
 			path = Zabsibcombank;
@@ -516,6 +702,7 @@
 				86D1936F15296AC00071E8F1 /* Zapsibcombank-Info.plist */,
 				86D1937315296AC00071E8F1 /* main.m */,
 				86D1937515296AC00071E8F1 /* Zapsibcombank-Prefix.pch */,
+				8606B030152974730026ED0A /* Config.h */,
 			);
 			name = "Supporting Files";
 			path = Zabsibcombank;
@@ -647,6 +834,21 @@
 				86810B2F1530C50400F5492A /* Cities.plist in Resources */,
 				86810B301530C50400F5492A /* Services.plist in Resources */,
 				869447651530CDEA0057C8F6 /* YandexMapKit.bundle in Resources */,
+				86A06BFE1535673C0069813C /* about_bank_photo.png in Resources */,
+				86A06BFF1535673C0069813C /* about_block.png in Resources */,
+				86A06C001535673C0069813C /* about_create_logo_10.png in Resources */,
+				86A06C011535673C0069813C /* about_zapsib_logo.png in Resources */,
+				86A06C021535673C0069813C /* button_about_bank_selected_03.png in Resources */,
+				86A06C031535673C0069813C /* button_home.png in Resources */,
+				86A06C041535673C0069813C /* button_president_selected_03.png in Resources */,
+				86A06C051535673C0069813C /* button_ratings_selected.png in Resources */,
+				86A06C061535673C0069813C /* president_photo.png in Resources */,
+				86A06C071535673C0069813C /* text_background.png in Resources */,
+				86A06C0C153567630069813C /* AboutView.xib in Resources */,
+				865DAA2B15358DAE00272DFC /* Information.plist in Resources */,
+				867739751536F8D20047EC01 /* InfoPlist.strings in Resources */,
+				86BA8FEA1537F9C0009D57D4 /* NewTextView.xib in Resources */,
+				869D919D1538239300AFAFF5 /* CurrencyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,6 +898,28 @@
 				86810B371530C52400F5492A /* SCAppUtils.m in Sources */,
 				86810B381530C52400F5492A /* SCClassUtils.m in Sources */,
 				86810B391530C52400F5492A /* UINavigationBar+SCBackgroundImage.m in Sources */,
+				86A06C0B153567630069813C /* AboutView.m in Sources */,
+				86F15D301536A454001C228D /* Information.m in Sources */,
+				86BA8FB11537E739009D57D4 /* New.m in Sources */,
+				86BA8FB51537E8B8009D57D4 /* NSURLConnection+Block.m in Sources */,
+				86BA8FD11537EC82009D57D4 /* NSObject+SBJson.m in Sources */,
+				86BA8FD21537EC82009D57D4 /* SBJsonParser.m in Sources */,
+				86BA8FD31537EC82009D57D4 /* SBJsonStreamParser.m in Sources */,
+				86BA8FD41537EC82009D57D4 /* SBJsonStreamParserAccumulator.m in Sources */,
+				86BA8FD51537EC82009D57D4 /* SBJsonStreamParserAdapter.m in Sources */,
+				86BA8FD61537EC82009D57D4 /* SBJsonStreamParserState.m in Sources */,
+				86BA8FD71537EC82009D57D4 /* SBJsonStreamWriter.m in Sources */,
+				86BA8FD81537EC82009D57D4 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				86BA8FD91537EC82009D57D4 /* SBJsonStreamWriterState.m in Sources */,
+				86BA8FDA1537EC82009D57D4 /* SBJsonTokeniser.m in Sources */,
+				86BA8FDB1537EC82009D57D4 /* SBJsonUTF8Stream.m in Sources */,
+				86BA8FDC1537EC82009D57D4 /* SBJsonWriter.m in Sources */,
+				86BA8FE01537F690009D57D4 /* MBProgressHUD.m in Sources */,
+				86BA8FE91537F9C0009D57D4 /* NewTextView.m in Sources */,
+				869D91971538038900AFAFF5 /* Currencies.m in Sources */,
+				869D919B153803DF00AFAFF5 /* Currency.m in Sources */,
+				86B6101D153BD0F300E64A0D /* HTMLNode.m in Sources */,
+				86B6101E153BD0F300E64A0D /* HTMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -785,6 +1009,7 @@
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Zabsibcombank/Zapsibcombank-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"/usr/include/libxml2\"";
 				INFOPLIST_FILE = "Zabsibcombank/Zapsibcombank-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -802,6 +1027,7 @@
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Zabsibcombank/Zapsibcombank-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"/usr/include/libxml2\"";
 				INFOPLIST_FILE = "Zabsibcombank/Zapsibcombank-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -873,9 +1099,11 @@
 		86ED0C2C152D47D000CC8614 /* Adhoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Creative LLC";
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Zabsibcombank/Zapsibcombank-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"/usr/include/libxml2\"";
 				INFOPLIST_FILE = "Zabsibcombank/Zapsibcombank-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -883,6 +1111,7 @@
 				);
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = Zapsibcombank;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "554C4C37-9930-4CDA-BCEC-31319ACCB458";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Adhoc;

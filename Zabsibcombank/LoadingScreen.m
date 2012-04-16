@@ -12,7 +12,7 @@
 #import "SCAppUtils.h"
 #import <QuartzCore/QuartzCore.h>
 
-#define MAX_PROGRESS 180
+#define MAX_PROGRESS 184
 
 @interface LoadingScreen()
 - (void)onTimerFired:(NSTimer *)timer;

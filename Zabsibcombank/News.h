@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "New.h"
 
-@interface News : NSObject <UITableViewDataSource, UITableViewDelegate>
-
-- (void)update;
-
+@interface News : NSObject <UITableViewDataSource, UITableViewDelegate, NewDelegate>
+@property (nonatomic, unsafe_unretained) IBOutlet UIView *view;
+@property (nonatomic, unsafe_unretained) IBOutlet UITableView *tableView;
+- (void)loadNews;
 @end

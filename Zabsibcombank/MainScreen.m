@@ -11,16 +11,28 @@
 #import "DetailsScreen.h"
 #import "MapScreen.h"
 #import "Services.h"
+#import "AboutView.h"
+#import <QuartzCore/QuartzCore.h>
+#import "Information.h"
 
 @interface MainScreen()
 - (void)initMenu;
+- (void)initUI;
 - (void)showService:(UIButton *)sender;
 @end
 
 @implementation MainScreen
 @synthesize news = _news;
+@synthesize currencies = _currencies;
 @synthesize lblCurrencyDate = _lblCurrencyDate;
 @synthesize btnAddresses = _btnAddresses;
+@synthesize aboutBankView = _aboutBankView;
+@synthesize aboutBankContentView = _aboutBankContentView;
+@synthesize mainView = _mainView;
+@synthesize btnAboutBank = _btnAboutBank;
+@synthesize btnPresidentsStatement = _btnPresidentsStatement;
+@synthesize btnRatingsAndLicenses = _btnRatingsAndLicenses;
+@synthesize imgPhoto = _imgPhoto;
 
 - (News *)news {
     if (!_news) {
@@ -67,15 +79,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self.news update];
-    
-    NSDateFormatter *df = [[NSDateFormatter alloc] init];
-    df.dateFormat = @"dd.MM.yyyy";
-    self.lblCurrencyDate.text = [df stringFromDate:[NSDate date]];
-    
-    //CGSize textSize = [[self.btnAddresses titleForState:UIControlStateNormal] sizeWithFont:[UIFont boldSystemFontOfSize:15]];
-    
     [self initMenu];
+    [self initUI];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -93,6 +98,14 @@
     [self setNews:nil];
     [self setLblCurrencyDate:nil];
     [self setBtnAddresses:nil];
+    [self setAboutBankView:nil];
+    [self setAboutBankContentView:nil];
+    [self setMainView:nil];
+    [self setBtnAboutBank:nil];
+    [self setBtnPresidentsStatement:nil];
+    [self setBtnRatingsAndLicenses:nil];
+    [self setImgPhoto:nil];
+    [self setCurrencies:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -107,7 +120,7 @@
 - (void)initMenu {
     NSArray *services = [Services all];
 
-    CGPoint btnOrigin = CGPointMake(40, 196);
+    CGPoint btnOrigin = CGPointMake(0, 40);
     CGSize btnSize = CGSizeMake(294, 78);
     const int sx = 20, sy = 20;
     int dx = 0, dy = 0, i = 0, row = 0, column = 0;
@@ -130,8 +143,15 @@
             dy += btn.frame.size.height + sy;
         }
         
-        [self.view addSubview:btn];
+        [self.mainView addSubview:btn];
     }
+}
+
+- (void)initUI {    
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    df.dateFormat = @"dd.MM.yyyy";
+    self.lblCurrencyDate.text = [df stringFromDate:[NSDate date]];
+    self.aboutBankView.layer.cornerRadius = 5;
 }
 
 - (void)showService:(UIButton *)sender {
@@ -147,6 +167,49 @@
     }]; 
     NSDictionary *service = [[Services all] objectAtIndex:serviceIndex];
     detailsScreen.service = service;
+}
+
+- (IBAction)showAbout {
+    AboutView *aboutView = [[AboutView alloc] init];
+    aboutView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentModalViewController:aboutView animated:YES];
+}
+
+- (IBAction)showAboutBank:(id)sender {
+    self.btnPresidentsStatement.selected = NO;
+    self.btnRatingsAndLicenses.selected = NO;
+    UIButton *btn = (UIButton *)sender;
+    btn.selected = !btn.selected;
+    self.imgPhoto.image = [UIImage imageNamed:@"about_bank_photo.png"];
+    [self.aboutBankContentView loadHTMLString:[Information aboutBank] baseURL:nil];
+    self.aboutBankView.hidden = !btn.selected;
+}
+
+- (IBAction)showPresidentsStatement:(id)sender {
+    self.btnAboutBank.selected = NO;
+    self.btnRatingsAndLicenses.selected = NO;
+    UIButton *btn = (UIButton *)sender;
+    btn.selected = !btn.selected;
+    self.imgPhoto.image = [UIImage imageNamed:@"president_photo.png"];
+    [self.aboutBankContentView loadHTMLString:[Information presidentsStatement] baseURL:nil];
+    self.aboutBankView.hidden = !btn.selected;
+}
+
+- (IBAction)showRatingsAndLicenses:(id)sender {
+    self.btnAboutBank.selected = NO;
+    self.btnPresidentsStatement.selected = NO;
+    UIButton *btn = (UIButton *)sender;
+    btn.selected = !btn.selected;
+    self.imgPhoto.image = [UIImage imageNamed:@"about_bank_photo.png"];
+    [self.aboutBankContentView loadHTMLString:[Information ratingsAndLicenses] baseURL:nil];
+    self.aboutBankView.hidden = !btn.selected;
+}
+
+- (IBAction)goMain {
+    self.aboutBankView.hidden = YES;
+    self.btnAboutBank.selected = NO;
+    self.btnPresidentsStatement.selected = NO;
+    self.btnRatingsAndLicenses.selected = NO;
 }
 
 @end

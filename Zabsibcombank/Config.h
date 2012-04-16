@@ -9,4 +9,7 @@
 #ifndef Zabsibcombank_Config_h
 #define Zabsibcombank_Config_h
 
+#define API_PATH @"http://wscb.crtweb.ru/api"
+#define API_URL [NSURL URLWithString:API_PATH]
+
 #endif

@@ -7,7 +7,6 @@
 //
 
 #import "LoadingScreen.h"
-#import "OCProgress.h"
 #import "MainScreen.h"
 #import "SCAppUtils.h"
 #import <QuartzCore/QuartzCore.h>

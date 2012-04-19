@@ -11,13 +11,16 @@
 
 #import <Foundation/Foundation.h>
 #import "YandexMapKit.h"
+#import "MapObject.h"
 
-@interface PointAnnotation : NSObject <YMKDraggableAnnotation>
+@interface PointAnnotation : NSObject <YMKAnnotation>
 
 + (id)pointAnnotation;
 
-@property (nonatomic, copy) NSString * title;
-@property (nonatomic, copy) NSString * subtitle;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *subtitle;
 @property (nonatomic) YMKMapCoordinate coordinate;
+
+@property (nonatomic, strong) MapObject *mapObject;
 
 @end

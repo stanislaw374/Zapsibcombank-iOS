@@ -9,8 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "YandexMapKit.h"
 #import "CitiesView.h"
+#import "City.h"
 
-@interface MapScreen : UIViewController <YMKMapViewDelegate, CitiesPickerDelegate, UITableViewDataSource, UITableViewDelegate>
+@interface MapScreen : UIViewController <YMKMapViewDelegate, CitiesPickerDelegate, UITableViewDataSource, UITableViewDelegate, CityDelegate>
+{
+    //BOOL _isLoading;
+}
 @property (unsafe_unretained, nonatomic) IBOutlet YMKMapView *mapView;
 @property (unsafe_unretained, nonatomic) IBOutlet UIButton *btnCity;
 @property (unsafe_unretained, nonatomic) IBOutlet UIImageView *arrow;
@@ -18,6 +22,8 @@
 @property (unsafe_unretained, nonatomic) IBOutlet UIButton *btnOffices;
 @property (unsafe_unretained, nonatomic) IBOutlet UIButton *btnAll;
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *lblAnnotationsCategory;
+@property (unsafe_unretained, nonatomic) IBOutlet UITableView *tableView;
+@property (unsafe_unretained, nonatomic) IBOutlet UIScrollView *contentScrollView;
 - (IBAction)goBack;
 - (IBAction)goMain;
 - (IBAction)chooseCity:(UIButton *)button;

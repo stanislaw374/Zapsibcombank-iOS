@@ -20,5 +20,6 @@
 @synthesize title;
 @synthesize subtitle;
 @synthesize coordinate;
+@synthesize mapObject = _mapObject;
 
 @end

@@ -20,14 +20,7 @@ static NSArray *_all;
 @synthesize offices = _offices;
 @synthesize delegate = _delegate;
 
-//- (NSArray *)atms {
-//    if (!_atms) {
-//        _atms = [NSArray array];
-//    }
-//    return _atms;
-//}
-
-+ (void)getWithDelegate:(id<CityDelegate>)delegate {
++ (void)getWithDelegate:(id<CityDelegate>)delegate {    
     if (!_all) {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             NSURL *url = [NSURL URLWithString:@"/api/cities/" relativeToURL:API_URL];
@@ -97,7 +90,6 @@ static NSArray *_all;
                 }
                 self.atms = result;
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    //_isATMsLoaded = YES;
                     [self.delegate cityObjectsDidLoad];
                 });
             }

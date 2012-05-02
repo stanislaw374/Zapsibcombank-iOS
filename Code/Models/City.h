@@ -12,18 +12,11 @@
 @optional
 - (void)citiesDidLoad:(NSArray *)cities;
 - (void)citiesDidFailWithError:(NSError *)error;
-//- (void)atmsDidLoad;
-//- (void)atmsDidFailWithError:(NSError *)error;
-//- (void)officesDidLoad;
-//- (void)officesDidFailWithError:(NSError *)error;
 - (void)cityObjectsDidLoad;
 - (void)cityObjectsDidFailWithError:(NSError *)error;
 @end
 
 @interface City : NSObject 
-{
-    //BOOL _isATMsLoaded;
-}
 @property (nonatomic, unsafe_unretained) id <CityDelegate> delegate;
 
 @property (nonatomic) int ID;

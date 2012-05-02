@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @protocol NewDelegate <NSObject>
+@optional
 - (void)newsDidLoad:(NSArray *)news;
 - (void)newsDidFailWithError:(NSError *)error;
 @end

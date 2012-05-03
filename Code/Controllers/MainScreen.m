@@ -9,6 +9,7 @@
 #import "MainScreen.h"
 #import "News.h"
 #import "DetailsScreen.h"
+#import "RaschetScreen.h"
 #import "MapScreen.h"
 #import "Services.h"
 #import "AboutView.h"
@@ -155,8 +156,15 @@
 }
 
 - (void)showService:(UIButton *)sender {
-    DetailsScreen *detailsScreen = [[DetailsScreen alloc] init];
-    [self.navigationController pushViewController:detailsScreen animated:YES];
+    // определение экрана перехода 
+    UIViewController *screen;
+    if (sender.tag == 0) {
+            screen = [[RaschetScreen alloc] init];
+    } else {
+        screen = [[DetailsScreen alloc] init];
+    }
+    
+    [self.navigationController pushViewController:screen animated:YES];
     
     int serviceIndex = [[Services all] indexOfObjectPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
         NSDictionary *service = (NSDictionary *)obj;
@@ -166,7 +174,11 @@
         return NO;
     }]; 
     NSDictionary *service = [[Services all] objectAtIndex:serviceIndex];
-    detailsScreen.service = service;
+    if (sender.tag == 0){
+        ((RaschetScreen *)screen).service = service;
+    } else {
+        ((DetailsScreen *)screen).service = service;
+    }
 }
 
 - (IBAction)showAbout {

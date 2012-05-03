@@ -143,6 +143,9 @@
 		86D1938615296AC10071E8F1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D1938515296AC10071E8F1 /* SenTestingKit.framework */; };
 		86D1938715296AC10071E8F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D1936715296AC00071E8F1 /* UIKit.framework */; };
 		86D1938815296AC10071E8F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D1936915296AC00071E8F1 /* Foundation.framework */; };
+		CC77B7A91551335800AF4A6C /* raschet.png in Resources */ = {isa = PBXBuildFile; fileRef = CC77B7A81551335800AF4A6C /* raschet.png */; };
+		CCCB860E15512F7C00DE3BDF /* RaschetScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCB860C15512F7C00DE3BDF /* RaschetScreen.m */; };
+		CCCB860F15512F7C00DE3BDF /* RaschetScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCCB860D15512F7C00DE3BDF /* RaschetScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -355,6 +358,10 @@
 		86D1936B15296AC00071E8F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		86D1938415296AC10071E8F1 /* ZapsibcombankTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZapsibcombankTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D1938515296AC10071E8F1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CC77B7A81551335800AF4A6C /* raschet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = raschet.png; sourceTree = "<group>"; };
+		CCCB860B15512F7C00DE3BDF /* RaschetScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaschetScreen.h; sourceTree = "<group>"; };
+		CCCB860C15512F7C00DE3BDF /* RaschetScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaschetScreen.m; sourceTree = "<group>"; };
+		CCCB860D15512F7C00DE3BDF /* RaschetScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RaschetScreen.xib; path = ../../Code/Controllers/RaschetScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -424,6 +431,7 @@
 		8694711D154062080037F901 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CC77B7A81551335800AF4A6C /* raschet.png */,
 				8694711E154062080037F901 /* about_bank_photo.png */,
 				8694711F154062080037F901 /* about_block.png */,
 				86947120154062080037F901 /* about_create_logo_10.png */,
@@ -504,6 +512,7 @@
 		8694715D154062080037F901 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CCCB86031551265600DE3BDF /* Pages */,
 				8694715E154062080037F901 /* AboutView.xib */,
 				8694715F154062080037F901 /* CitiesView.xib */,
 				86947160154062080037F901 /* CurrencyCell.xib */,
@@ -645,6 +654,7 @@
 		86A2217A155103AD0034122A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CCCB86051551266C00DE3BDF /* Pages */,
 				86A2217B155103AD0034122A /* AboutView.h */,
 				86A2217C155103AD0034122A /* AboutView.m */,
 				86A2217D155103AD0034122A /* CitiesView.h */,
@@ -749,6 +759,23 @@
 				86D1938515296AC10071E8F1 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCCB86031551265600DE3BDF /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				CCCB860D15512F7C00DE3BDF /* RaschetScreen.xib */,
+			);
+			name = Pages;
+			sourceTree = "<group>";
+		};
+		CCCB86051551266C00DE3BDF /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				CCCB860B15512F7C00DE3BDF /* RaschetScreen.h */,
+				CCCB860C15512F7C00DE3BDF /* RaschetScreen.m */,
+			);
+			name = Pages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -899,6 +926,8 @@
 				8650828715415A6A00EAC038 /* Icon-Small@2x.png in Resources */,
 				8650828815415A6A00EAC038 /* iTunesArtwork in Resources */,
 				8650828915415A6A00EAC038 /* iTunesArtwork@2x in Resources */,
+				CCCB860F15512F7C00DE3BDF /* RaschetScreen.xib in Resources */,
+				CC77B7A91551335800AF4A6C /* raschet.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -972,6 +1001,7 @@
 				86A221C0155103AD0034122A /* SCAppUtils.m in Sources */,
 				86A221C1155103AD0034122A /* SCClassUtils.m in Sources */,
 				86A221C2155103AD0034122A /* UINavigationBar+SCBackgroundImage.m in Sources */,
+				CCCB860E15512F7C00DE3BDF /* RaschetScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

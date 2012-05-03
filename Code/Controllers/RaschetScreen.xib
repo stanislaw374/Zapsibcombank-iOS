@@ -79,7 +79,7 @@
 											<object class="IBUIImageView" id="989803797">
 												<reference key="NSNextResponder" ref="950418118"/>
 												<int key="NSvFlags">288</int>
-												<string key="NSFrameSize">{1024, 768}</string>
+												<string key="NSFrameSize">{1024, 1780}</string>
 												<reference key="NSSuperview" ref="950418118"/>
 												<reference key="NSNextKeyView" ref="136783760"/>
 												<string key="NSReuseIdentifierKey">_NS:569</string>
@@ -87,7 +87,7 @@
 												<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 												<object class="NSCustomResource" key="IBUIImage">
 													<string key="NSClassName">NSImage</string>
-													<string key="NSResourceName">services_0_pages_2.png</string>
+													<string key="NSResourceName">raschet.png</string>
 												</object>
 											</object>
 											<object class="IBUIButton" id="136783760">
@@ -147,6 +147,7 @@
 									</object>
 								</object>
 								<reference key="IBUIGestureRecognizers" ref="0"/>
+								<string key="IBUIContentStretch">{{0.75, 0}, {1, 1}}</string>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 							</object>
 							<object class="IBUIView" id="379783825">
@@ -168,7 +169,7 @@
 										</object>
 									</object>
 								</array>
-								<string key="NSFrameSize">{1024, 669}</string>
+								<string key="NSFrame">{{1000, 1000}, {1024, 669}}</string>
 								<reference key="NSSuperview" ref="1044738568"/>
 								<reference key="NSNextKeyView" ref="127214309"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -182,13 +183,14 @@
 							</object>
 							<object class="IBUIView" id="729310867">
 								<reference key="NSNextResponder" ref="1044738568"/>
-								<int key="NSvFlags">-2147483374</int>
+								<int key="NSvFlags">274</int>
 								<array class="NSMutableArray" key="NSSubviews">
 									<object class="IBUIImageView" id="132842335">
 										<reference key="NSNextResponder" ref="729310867"/>
 										<int key="NSvFlags">274</int>
 										<string key="NSFrameSize">{1024, 669}</string>
 										<reference key="NSSuperview" ref="729310867"/>
+										<reference key="NSNextKeyView"/>
 										<string key="NSReuseIdentifierKey">_NS:569</string>
 										<reference key="IBUIGestureRecognizers" ref="0"/>
 										<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -198,7 +200,7 @@
 										</object>
 									</object>
 								</array>
-								<string key="NSFrameSize">{1024, 669}</string>
+								<string key="NSFrame">{{1000, 1000}, {1024, 669}}</string>
 								<reference key="NSSuperview" ref="1044738568"/>
 								<reference key="NSNextKeyView" ref="132842335"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -996,9 +998,9 @@
 			<string key="inside_topbar_back_button.png">{63, 30}</string>
 			<string key="menu_background.png">{1024, 718}</string>
 			<string key="menu_close_button.png">{47, 47}</string>
+			<string key="raschet.png">{1024, 1780}</string>
 			<string key="services_0_pages_0.png">{1024, 669}</string>
 			<string key="services_0_pages_1.png">{1024, 669}</string>
-			<string key="services_0_pages_2.png">{1024, 768}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">1181</string>
 	</data>

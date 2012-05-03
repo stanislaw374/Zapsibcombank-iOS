@@ -1,0 +1,33 @@
+//
+//  RaschetScreen.h
+//  Zapsibcombank
+//
+//  Created by Кирилл Кунст on 02.05.12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface RaschetScreen : UIViewController<UIScrollViewDelegate>
+@property (nonatomic, strong) NSDictionary *service;
+@property (nonatomic, strong) NSDictionary *section;
+
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *lblTitle;
+@property (unsafe_unretained, nonatomic) IBOutlet UIScrollView *menu;
+@property (unsafe_unretained, nonatomic) IBOutlet UIImageView *arrow;
+@property (unsafe_unretained, nonatomic) IBOutlet UIView *allServicesView;
+@property (unsafe_unretained, nonatomic) IBOutlet UIImageView *arrow2;
+@property (unsafe_unretained, nonatomic) IBOutlet UIButton *btnAllServices;
+@property (unsafe_unretained, nonatomic) IBOutlet UIView *page1;
+@property (unsafe_unretained, nonatomic) IBOutlet UIView *page2;
+@property (unsafe_unretained, nonatomic) IBOutlet UIView *page3;
+@property (unsafe_unretained, nonatomic) IBOutlet UIScrollView *sectionsScrollView;
+@property (unsafe_unretained, nonatomic) IBOutlet UIView *pages;
+
+- (IBAction)onSectionButtonClick:(UIButton *)button;
+- (IBAction)onCancelButtonClick:(id)sender;
+- (IBAction)onAllServicesButtonClick:(id)sender;
+- (IBAction)onMainButtonClick:(id)sender;
+- (IBAction)onCloseButtonClick:(id)sender;
+- (IBAction)viewDragged:(UIPanGestureRecognizer *)gesture;
+@end

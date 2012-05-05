@@ -89,19 +89,16 @@
     
     // Release any cached data, images, etc that aren't in use.
 }
-
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
     self.section = nil;
     self.pagesCount = 3;
     self.currentPage = 0;
-    
-    self.sectionsScrollView.contentSize = CGSizeMake(1024, 1780);
+    self.sectionsScrollView.contentSize = CGSizeMake(1024, 1778);
     
     //    self.imageView1.image = [UIImage imageNamed:[NSString stringWithFormat:@"services_%d_pages_%d", 0, _currentPage - 1]];
     //    self.imageView2.image = [UIImage imageNamed:[NSString stringWithFormat:@"services_%d_pages_%d", 0, _currentPage]];

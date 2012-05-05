@@ -10,7 +10,10 @@
 			<key>name</key>
 			<string>Расчётно-кассовое обслуживание</string>
 			<key>sections</key>
-			<array/>
+			<dict>
+				<key>New item</key>
+				<string>Расчетно-кассовое обслуживание</string>
+			</dict>
 		</dict>
 		<dict>
 			<key>id</key>
@@ -65,29 +68,29 @@
 					<key>name</key>
 					<string>Овердрафт</string>
 				</dict>
-                <dict>
+				<dict>
 					<key>id</key>
 					<integer>1</integer>
 					<key>name</key>
 					<string>Экспресс-овердрафт</string>
 				</dict>
-                <dict>
+				<dict>
 					<key>id</key>
 					<integer>2</integer>
 					<key>name</key>
 					<string>Микрокредитование без залога</string>
 				</dict>
-                <dict>
+				<dict>
 					<key>id</key>
 					<integer>3</integer>
 					<key>name</key>
 					<string>Краткосрочные кредиты/кредитные линии</string>
 				</dict>
-                <dict>
+				<dict>
 					<key>id</key>
 					<integer>4</integer>
 					<key>name</key>
-                    <string>Программа долгосрочного кредитования</string>
+					<string>Программа долгосрочного кредитования</string>
 				</dict>
 			</array>
 		</dict>

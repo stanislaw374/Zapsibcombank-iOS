@@ -143,6 +143,7 @@
 		86D1938615296AC10071E8F1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D1938515296AC10071E8F1 /* SenTestingKit.framework */; };
 		86D1938715296AC10071E8F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D1936715296AC00071E8F1 /* UIKit.framework */; };
 		86D1938815296AC10071E8F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D1936915296AC00071E8F1 /* Foundation.framework */; };
+		86E5F94B1556A37000E0F0DF /* Zapsibcombank-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86E5F94A1556A37000E0F0DF /* Zapsibcombank-Info.plist */; };
 		CC4BC5EE1554DE9A0057E65B /* 01_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = CC4BC5BD1554DE9A0057E65B /* 01_photo.png */; };
 		CC4BC5EF1554DE9A0057E65B /* 02_0.png in Resources */ = {isa = PBXBuildFile; fileRef = CC4BC5BE1554DE9A0057E65B /* 02_0.png */; };
 		CC4BC5F01554DE9A0057E65B /* 02_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CC4BC5BF1554DE9A0057E65B /* 02_1.png */; };
@@ -274,7 +275,6 @@
 		8650827F15415A6A00EAC038 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		8650828015415A6A00EAC038 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		8650828115415A6A00EAC038 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
-		8650828A15415A9D00EAC038 /* Zapsibcombank-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Zapsibcombank-Info.plist"; sourceTree = "<group>"; };
 		8694711E154062080037F901 /* about_bank_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_bank_photo.png; sourceTree = "<group>"; };
 		8694711F154062080037F901 /* about_block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_block.png; sourceTree = "<group>"; };
 		86947120154062080037F901 /* about_create_logo_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_create_logo_10.png; sourceTree = "<group>"; };
@@ -453,6 +453,7 @@
 		86D1936B15296AC00071E8F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		86D1938415296AC10071E8F1 /* ZapsibcombankTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZapsibcombankTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D1938515296AC10071E8F1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		86E5F94A1556A37000E0F0DF /* Zapsibcombank-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Zapsibcombank-Info.plist"; sourceTree = SOURCE_ROOT; };
 		CC4BC5BD1554DE9A0057E65B /* 01_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01_photo.png; sourceTree = "<group>"; };
 		CC4BC5BE1554DE9A0057E65B /* 02_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02_0.png; sourceTree = "<group>"; };
 		CC4BC5BF1554DE9A0057E65B /* 02_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02_1.png; sourceTree = "<group>"; };
@@ -611,7 +612,6 @@
 			children = (
 				8650827915415A6A00EAC038 /* Icons */,
 				8694711D154062080037F901 /* Images */,
-				86947155154062080037F901 /* Localizations */,
 				86947158154062080037F901 /* Plists */,
 				8694715D154062080037F901 /* Views */,
 			);
@@ -681,17 +681,10 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
-		86947155154062080037F901 /* Localizations */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Localizations;
-			sourceTree = "<group>";
-		};
 		86947158154062080037F901 /* Plists */ = {
 			isa = PBXGroup;
 			children = (
-				8650828A15415A9D00EAC038 /* Zapsibcombank-Info.plist */,
+				86E5F94A1556A37000E0F0DF /* Zapsibcombank-Info.plist */,
 				86947159154062080037F901 /* Cities.plist */,
 				8694715A154062080037F901 /* Information.plist */,
 				8694715B154062080037F901 /* Services.plist */,
@@ -1414,6 +1407,7 @@
 				CC4BC699155547650057E65B /* 06_1_+.png in Resources */,
 				CC4BC69A155547650057E65B /* 06_tab_+.png in Resources */,
 				CC4BC69B155547650057E65B /* 07_tab_+.png in Resources */,
+				86E5F94B1556A37000E0F0DF /* Zapsibcombank-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

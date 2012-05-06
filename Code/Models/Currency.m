@@ -54,10 +54,16 @@
                 NSArray *columns = [row findChildTags:@"td"];
                 
                 NSMutableDictionary *c = [NSMutableDictionary dictionary];
-                [c setObject:((HTMLNode *)[columns objectAtIndex:0]).contents forKey:@"currency"];
-                [c setObject:((HTMLNode *)[columns objectAtIndex:1]).contents forKey:@"purchase"];
-                [c setObject:((HTMLNode *)[columns objectAtIndex:2]).contents forKey:@"sale"];
-                [c setObject:((HTMLNode *)[columns objectAtIndex:3]).contents forKey:@"cb"];                            
+                
+                @try {
+                    [c setObject:((HTMLNode *)[columns objectAtIndex:0]).contents forKey:@"currency"];
+                    [c setObject:((HTMLNode *)[columns objectAtIndex:1]).contents forKey:@"purchase"];
+                    [c setObject:((HTMLNode *)[columns objectAtIndex:2]).contents forKey:@"sale"];
+                    [c setObject:((HTMLNode *)[columns objectAtIndex:3]).contents forKey:@"cb"];                            
+                }
+                @catch (NSException *e) {
+                    NSLog(@"%@ Fatal error: %@", NSStringFromSelector(_cmd), e.description);
+                }
                 
                 [currency.course addObject:c];
             }

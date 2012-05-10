@@ -41,6 +41,12 @@
 					<key>name</key>
 					<string>Дистанционное банковское обслуживание</string>
 				</dict>
+				<dict>
+					<key>id</key>
+					<integer>5</integer>
+					<key>name</key>
+					<string>Инкассация</string>
+				</dict>
 			</array>
 		</dict>
 		<dict>
@@ -57,7 +63,20 @@
 			<key>name</key>
 			<string>Размещение временно свободных денежных средств</string>
 			<key>sections</key>
-			<array/>
+			<array>
+				<dict>
+					<key>id</key>
+					<integer>0</integer>
+					<key>name</key>
+					<string>Депозиты</string>
+				</dict>
+				<dict>
+					<key>id</key>
+					<integer>1</integer>
+					<key>name</key>
+					<string>Векселя</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>id</key>

@@ -2,13 +2,18 @@
 //  BillsViewController.m
 //  Zapsibcombank
 //
-//  Created by Stanislaw Lazienki on 09.05.12.
+//  Created by Yazhenskikh Stanislaw on 09.05.12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import "BillsViewController.h"
 
+@interface BillsViewController()
+@property (unsafe_unretained, nonatomic) IBOutlet UIScrollView *scrollView;
+@end
+
 @implementation BillsViewController
+@synthesize scrollView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,10 +38,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.scrollView.contentSize = CGSizeMake(1024, 1152);    
 }
 
 - (void)viewDidUnload
 {
+    [self setScrollView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -44,8 +51,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
-	return YES;
+    return UIInterfaceOrientationIsLandscape(interfaceOrientation);
 }
 
 @end

@@ -11,10 +11,11 @@
 #import "DetailsScreen.h"
 #import "RaschetScreen.h"
 #import "MapScreen.h"
-#import "Services.h"
+#import "Service.h"
 #import "AboutView.h"
 #import <QuartzCore/QuartzCore.h>
 #import "Information.h"
+#import "ServicesViewController.h"
 
 @interface MainScreen()
 - (void)initMenu;
@@ -41,12 +42,6 @@
     }
     return _news;
 }
-
-//- (IBAction)onServiceButtonClick:(UIButton *)sender {
-//    DetailsScreen *detailsScreen = [[DetailsScreen alloc] init];
-//    [self.navigationController pushViewController:detailsScreen animated:YES];
-//    detailsScreen.service = sender.titleLabel.text;
-//}
 
 - (IBAction)showAddresses {
     MapScreen *mapScreen = [[MapScreen alloc] init];
@@ -80,18 +75,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self initMenu];
-    [self initUI];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    //self.navigationController.navigationBarHidden = YES;
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-    //self.navigationController.navigationBarHidden = NO;
+    [self initUI];
 }
 
 - (void)viewDidUnload
@@ -119,21 +107,21 @@
 }
 
 - (void)initMenu {
-    NSArray *services = [Services all];
+    NSArray *services = [Service services];
 
     CGPoint btnOrigin = CGPointMake(0, 40);
     CGSize btnSize = CGSizeMake(294, 78);
     const int sx = 20, sy = 20;
     int dx = 0, dy = 0, i = 0, row = 0, column = 0;
-    for (NSDictionary *service in services) {
+    for (Service *service in services) {
         UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(btnOrigin.x + dx, btnOrigin.y + dy, btnSize.width, btnSize.height)];
         [btn setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"button_%d.png", (i++ % 10) + 1]] forState:UIControlStateNormal];
         btn.contentEdgeInsets = UIEdgeInsetsMake(0, 20, 0, 0);
-        [btn setTitle:[service objectForKey:@"name"] forState:UIControlStateNormal];
+        [btn setTitle:service.name forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         btn.titleLabel.font = [UIFont boldSystemFontOfSize:15];
         btn.titleLabel.lineBreakMode = UILineBreakModeWordWrap;        
-        btn.tag = [[service objectForKey:@"id"] intValue];
+        btn.tag = service.ID;
         [btn addTarget:self action:@selector(showService:) forControlEvents:UIControlEventTouchUpInside];
         
         dx += btn.frame.size.width + sx;
@@ -148,7 +136,9 @@
     }
 }
 
-- (void)initUI {    
+- (void)initUI { 
+    [self initMenu];
+    
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
     df.dateFormat = @"dd.MM.yyyy";
     self.lblCurrencyDate.text = [df stringFromDate:[NSDate date]];
@@ -156,6 +146,22 @@
 }
 
 - (void)showService:(UIButton *)sender {
+    int indexOfService = [[Service services] indexOfObjectPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
+        Service *s = (Service *)obj;
+        if (s.ID == sender.tag) {
+            *stop = YES;
+            return YES;
+        }
+        else return NO;
+    }];
+    Service *serviceToShow = [[Service services] objectAtIndex:indexOfService];
+    ServicesViewController *view = [[ServicesViewController alloc] init];
+    view.service = serviceToShow;
+    [self.navigationController pushViewController:view animated:YES];
+    return;
+    
+    
+    
     // определение экрана перехода 
     UIViewController *screen;
     if (sender.tag == 0) {
@@ -166,14 +172,16 @@
     
     [self.navigationController pushViewController:screen animated:YES];
     
-    int serviceIndex = [[Services all] indexOfObjectPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
-        NSDictionary *service = (NSDictionary *)obj;
-        if ([[service objectForKey:@"id"] intValue] == sender.tag) {
+    int serviceIndex = [[Service services] indexOfObjectPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
+        Service *service = (Service *)obj;
+        if (service.ID == sender.tag) {
+            *stop = YES;
             return YES;
         }
         return NO;
     }]; 
-    NSDictionary *service = [[Services all] objectAtIndex:serviceIndex];
+    
+    Service *service = [[Service services] objectAtIndex:serviceIndex];
     if (sender.tag == 0){
         ((RaschetScreen *)screen).service = service;
     } else {

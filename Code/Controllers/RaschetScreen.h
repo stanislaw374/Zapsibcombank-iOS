@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Service, Section;
 
 @interface RaschetScreen : UIViewController<UIScrollViewDelegate>
-@property (nonatomic, strong) NSDictionary *service;
-@property (nonatomic, strong) NSDictionary *section;
+@property (nonatomic, strong) Service *service;
+@property (nonatomic, strong) Section *section;
 
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *lblTitle;
 @property (unsafe_unretained, nonatomic) IBOutlet UIScrollView *menu;

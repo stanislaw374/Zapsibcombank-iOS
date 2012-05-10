@@ -8,7 +8,7 @@
 
 #import "RaschetScreen.h"
 #import "MainScreen.h"
-#import "Services.h"
+#import "Service.h"
 
 #define TAG_ANIMATION_TRANSITION 11
 
@@ -54,21 +54,21 @@
     return _menuButtons;
 }
 
-- (void)setService:(NSDictionary *)service {
+- (void)setService:(Service *)service {
     _service = service;
     
-    self.lblTitle.text = [_service objectForKey:@"name"];
+    self.lblTitle.text = self.service.name;
     
     [self initMenu];
     [self initMainMenu];
 }
 
-- (void)setSection:(NSDictionary *)section {
+- (void)setSection:(Section *)section {
     _section = section;
     
     if (section != nil) {
         self.arrow.hidden = NO;
-        UIButton *bnt = (UIButton *)[self.menu viewWithTag:[[_section objectForKey:@"id"]intValue]];    
+        UIButton *bnt = (UIButton *)[self.menu viewWithTag:self.section.ID];    
         [bnt setSelected:YES];
     }
 }
@@ -185,13 +185,13 @@
         [subview removeFromSuperview];
     }
     [self.menuButtons removeAllObjects];
-    NSArray *sections = [self.service objectForKey:@"sections"];
-    for (NSDictionary *section in sections) {
-        CGSize btnSize = [[section objectForKey:@"name"] sizeWithFont:[UIFont systemFontOfSize:fontHeight] constrainedToSize:CGSizeMake(9999, 44)];
+    NSArray *sections = self.service.sections;
+    for (Section *section in sections) {
+        CGSize btnSize = [section.name sizeWithFont:[UIFont systemFontOfSize:fontHeight] constrainedToSize:CGSizeMake(9999, 44)];
         UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(dx, fontHeight, btnSize.width, btnSize.height)];
-        btn.tag = [[section objectForKey:@"id"] intValue];
+        btn.tag = section.ID;
         btn.titleLabel.font = [UIFont systemFontOfSize:fontHeight];
-        [btn setTitle:[section objectForKey:@"name"] forState:UIControlStateNormal];
+        [btn setTitle:section.name forState:UIControlStateNormal];
         dx += btn.frame.size.width + sx;
         [btn addTarget:self action:@selector(onSectionButtonClick:) forControlEvents:UIControlEventTouchUpInside];
         [btn setTitleColor:[UIColor colorWithRed:1 green:192/255.0 blue:0 alpha:1] forState:UIControlStateSelected];
@@ -202,23 +202,23 @@
 }
 
 - (void)initMainMenu {
-    NSArray *services = [Services all];
+    NSArray *services = [Service services];
     
     int sx = 30, sy = 30;
     int row = 0, column = 0;
     int dx = 40, dy = 40;
     
     for (int i = 0; i < services.count; i++) {
-        NSDictionary *service = [services objectAtIndex:i];
+        Service *service = [services objectAtIndex:i];
         int buttonNumber = i % 10;
         UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(dx, dy, 294, 78)];
         [btn setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"button_%d.png", buttonNumber + 1]] forState:UIControlStateNormal];
-        [btn setTitle:[service objectForKey:@"name"] forState:UIControlStateNormal];
+        [btn setTitle:service.name forState:UIControlStateNormal];
         btn.titleLabel.font = [UIFont boldSystemFontOfSize:15];
         btn.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
         btn.contentEdgeInsets = UIEdgeInsetsMake(0, 20, 0, 0);
         [btn addTarget:self action:@selector(onServiceButtonClick:) forControlEvents:UIControlEventTouchUpInside];
-        btn.tag = [[service objectForKey:@"id"] intValue];
+        btn.tag = service.ID;
         dx += btn.frame.size.width + sx;
         if (++column == 3) {
             row++;
@@ -239,11 +239,11 @@
     
     NSLog(@"%@", [button titleForState:UIControlStateNormal]);
     
-    NSArray *sections = [self.service objectForKey:@"sections"];
+    NSArray *sections = self.service.sections;
     int sectionIndex = [sections indexOfObjectPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
-        NSDictionary *section = (NSDictionary *)obj;       
+        Section *section = (Section *)obj;       
         
-        if ([[section objectForKey:@"name"] isEqualToString:[button titleForState:UIControlStateNormal]]) {
+        if ([section.name isEqualToString:[button titleForState:UIControlStateNormal]]) {
             return YES;
         }
         return NO;

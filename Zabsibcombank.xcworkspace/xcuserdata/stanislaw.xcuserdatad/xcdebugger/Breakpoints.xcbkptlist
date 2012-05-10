@@ -10,5 +10,12 @@
          symbolName = "Raschet breakpoint"
          moduleName = "">
       </SymbolicBreakpoint>
+      <SymbolicBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         symbolName = "v"
+         moduleName = "">
+      </SymbolicBreakpoint>
    </SymbolicBreakpoints>
 </Bucket>

@@ -1166,7 +1166,6 @@ v9GA0LXQtNGD0YHQvNC+0YLRgNC10L3QvdGL0YUg0LfQsNC60L7QvdC+0LTQsNGC0LXQu9GM0YHRgtCy
 										<string key="NSFrameSize">{1024, 3852}</string>
 										<reference key="NSSuperview" ref="729310867"/>
 										<reference key="NSWindow"/>
-										<reference key="NSNextKeyView"/>
 										<string key="NSReuseIdentifierKey">_NS:569</string>
 										<reference key="IBUIGestureRecognizers" ref="0"/>
 										<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1786,7 +1785,7 @@ A</string>
 												<string key="NSFrame">{{17, 4290}, {523, 21}}</string>
 												<reference key="NSSuperview" ref="957474733"/>
 												<reference key="NSWindow"/>
-												<reference key="NSNextKeyView" ref="136445687"/>
+												<reference key="NSNextKeyView" ref="319435912"/>
 												<string key="NSReuseIdentifierKey">_NS:9</string>
 												<bool key="IBUIOpaque">NO</bool>
 												<bool key="IBUIClipsSubviews">YES</bool>
@@ -1810,6 +1809,7 @@ A</string>
 												<string key="NSFrame">{{17, 4309}, {987, 80}}</string>
 												<reference key="NSSuperview" ref="957474733"/>
 												<reference key="NSWindow"/>
+												<reference key="NSNextKeyView" ref="136445687"/>
 												<string key="NSReuseIdentifierKey">_NS:9</string>
 												<bool key="IBUIOpaque">NO</bool>
 												<bool key="IBUIClipsSubviews">YES</bool>

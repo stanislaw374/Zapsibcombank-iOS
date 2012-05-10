@@ -7,8 +7,9 @@
 //
 
 #import "NewTextView.h"
+#import "MBProgressHUD.h"
 
-@interface NewTextView ()
+@interface NewTextView () <UIWebViewDelegate>
 
 @end
 
@@ -42,6 +43,9 @@
 //    self.textView.frame = frame;
 //    self.contentSizeForViewInPopover = size;
     
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    [self.textView loadHTMLString:@"" baseURL:nil];
+    self.textView.delegate = self;
     [self.textView loadHTMLString:self.text baseURL:nil];
 }
 
@@ -57,6 +61,11 @@
 {
     // Return YES for supported orientations
 	return interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight;
+}
+
+#pragma mark - UIWebViewDelegate
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
 }
 
 @end

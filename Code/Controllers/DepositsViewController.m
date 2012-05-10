@@ -6,13 +6,27 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "CashManagementViewController.h"
+#import "DepositsViewController.h"
 
-@interface CashManagementViewController ()
+@interface DepositsViewController ()
+@property (unsafe_unretained, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *lblOvernightDeposit;
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *lblStandardDeposit;
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *lblConstructorDeposit;
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *lblPartnerDeposit;
 
+- (IBAction)showOvernightDeposit;
+- (IBAction)showStandardDeposit;
+- (IBAction)showConstructorDeposit;
+- (IBAction)showPartnerDeposit;
 @end
 
-@implementation CashManagementViewController
+@implementation DepositsViewController
+@synthesize scrollView;
+@synthesize lblOvernightDeposit;
+@synthesize lblStandardDeposit;
+@synthesize lblConstructorDeposit;
+@synthesize lblPartnerDeposit;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,11 +40,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    // Do any additional setup after loading the view from its nib.    
+    self.scrollView.contentSize = CGSizeMake(1024, 4854);
 }
 
 - (void)viewDidUnload
 {
+    [self setLblOvernightDeposit:nil];
+    [self setLblStandardDeposit:nil];
+    [self setLblConstructorDeposit:nil];
+    [self setLblPartnerDeposit:nil];
+    [self setScrollView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -38,7 +58,20 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	return YES;
+	return UIInterfaceOrientationIsLandscape(interfaceOrientation);
+}
+
+- (IBAction)showOvernightDeposit {
+    
+}
+
+- (IBAction)showStandardDeposit {
+}
+
+- (IBAction)showConstructorDeposit {
+}
+
+- (IBAction)showPartnerDeposit {
 }
 
 @end

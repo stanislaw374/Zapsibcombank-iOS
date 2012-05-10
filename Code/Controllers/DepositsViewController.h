@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CashManagementViewController : UIViewController
+@interface DepositsViewController : UIViewController
 
 @end

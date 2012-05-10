@@ -8,8 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Services : NSObject
+@interface Section : NSObject
+@property (nonatomic) int ID;
+@property (nonatomic, strong) NSString *name;
+@end
 
-+ (id)all;
+@interface Service : NSObject
+@property (nonatomic) int ID;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSArray *sections;
+
++ (id)services;
 
 @end

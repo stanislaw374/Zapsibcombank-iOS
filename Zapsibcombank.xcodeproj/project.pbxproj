@@ -141,6 +141,8 @@
 		86549CCB155B371900B69385 /* button_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 86549CC1155B371900B69385 /* button_7.png */; };
 		86549CCC155B371900B69385 /* button_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 86549CC2155B371900B69385 /* button_8.png */; };
 		86549CCD155B371900B69385 /* button_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 86549CC3155B371900B69385 /* button_9.png */; };
+		866D427E155B78CB00C03BA7 /* 01_01_person1.png in Resources */ = {isa = PBXBuildFile; fileRef = 866D427C155B78CB00C03BA7 /* 01_01_person1.png */; };
+		866D427F155B78CB00C03BA7 /* 01_01_person2.png in Resources */ = {isa = PBXBuildFile; fileRef = 866D427D155B78CB00C03BA7 /* 01_01_person2.png */; };
 		8690D1F4155ABEEB0055E7D5 /* BillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8690D1F2155ABEEA0055E7D5 /* BillsViewController.m */; };
 		8690D1F5155ABEEB0055E7D5 /* BillsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8690D1F3155ABEEB0055E7D5 /* BillsViewController.xib */; };
 		8690D1FF155AC14F0055E7D5 /* 02_02_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8690D1F7155AC14E0055E7D5 /* 02_02_1.png */; };
@@ -554,6 +556,8 @@
 		86549CC1155B371900B69385 /* button_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_7.png; sourceTree = "<group>"; };
 		86549CC2155B371900B69385 /* button_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_8.png; sourceTree = "<group>"; };
 		86549CC3155B371900B69385 /* button_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_9.png; sourceTree = "<group>"; };
+		866D427C155B78CB00C03BA7 /* 01_01_person1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01_01_person1.png; sourceTree = "<group>"; };
+		866D427D155B78CB00C03BA7 /* 01_01_person2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01_01_person2.png; sourceTree = "<group>"; };
 		8690D1F1155ABEEA0055E7D5 /* BillsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillsViewController.h; sourceTree = "<group>"; };
 		8690D1F2155ABEEA0055E7D5 /* BillsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillsViewController.m; sourceTree = "<group>"; };
 		8690D1F3155ABEEB0055E7D5 /* BillsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BillsViewController.xib; sourceTree = "<group>"; };
@@ -1054,6 +1058,8 @@
 		86423E7D155B0B6F0030E07F /* 1. Cash services */ = {
 			isa = PBXGroup;
 			children = (
+				866D427C155B78CB00C03BA7 /* 01_01_person1.png */,
+				866D427D155B78CB00C03BA7 /* 01_01_person2.png */,
 				86423E80155B0B6F0030E07F /* 01_01_arrow_1.png */,
 				86423E81155B0B6F0030E07F /* 01_01_arrow_2.png */,
 				86423E82155B0B6F0030E07F /* 01_01_arrow_3.png */,
@@ -2157,6 +2163,8 @@
 				86EB29E7155B4F7B0013E8B6 /* 00_top_bar.png in Resources */,
 				86EB29E8155B4F7B0013E8B6 /* 00_top_bar44.png in Resources */,
 				86EB29ED155B51E00013E8B6 /* AllServicesViewController.xib in Resources */,
+				866D427E155B78CB00C03BA7 /* 01_01_person1.png in Resources */,
+				866D427F155B78CB00C03BA7 /* 01_01_person2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

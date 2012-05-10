@@ -10,10 +10,12 @@
 
 @interface CashServicesViewController()
 @property (unsafe_unretained, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *persons;
 @end
 
 @implementation CashServicesViewController
 @synthesize scrollView;
+@synthesize persons;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,11 +41,21 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.scrollView.contentSize = CGSizeMake(1024, 1717);
+    
+    for (int i = 0; i < self.persons.count; i++) {
+        UIImageView *person = [self.persons objectAtIndex:i];
+        [UIView animateWithDuration:0.5f delay:0.25f * i options:UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse animations:^{
+            CGRect frame = person.frame;
+            frame.origin.y -= 20;
+            person.frame = frame;
+        } completion:nil];
+    }
 }
 
 - (void)viewDidUnload
 {
     [self setScrollView:nil];
+    [self setPersons:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

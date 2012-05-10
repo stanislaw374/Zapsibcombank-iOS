@@ -213,9 +213,7 @@
             break;
     }
     
-    self.currentSectionViewController.view.frame = CGRectMake(0, 0, self.contentView.frame.size.width, self.contentView.frame.size.height);
-
-    
+    self.currentSectionViewController.view.frame = CGRectMake(0, 0, self.contentView.frame.size.width, self.contentView.frame.size.height);    
     [self.contentView addSubview:self.currentSectionViewController.view];
 }
      

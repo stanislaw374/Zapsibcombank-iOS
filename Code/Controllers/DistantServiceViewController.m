@@ -102,74 +102,79 @@
 }
 
 - (IBAction)animateLabels:(id)sender {
-   // [self animatePlus];
-    [[self.btnPlus layer] removeAllAnimations];
-    self.btnPlus.transform = CGAffineTransformMakeScale(1, 1);
-    [UIView animateWithDuration:1.0f
-                     animations:^{
-         CGRect frame = speedImage.frame;
-         frame.origin.x += 420;
-         speedImage.frame = frame;
-                         
-         frame = usabilityImage.frame;
-         frame.origin.x += 615;
-         usabilityImage.frame = frame; 
-        frame = accessImage.frame;
-        frame.origin.x += 420;
-        accessImage.frame = frame;
-                         
-                     }completion:^(BOOL finished){
-                         [UIView animateWithDuration:1.0f
-                                          animations:^{
-                                              CGRect frame = speedText.frame;
-                                              frame.origin.x -= 917;
-                                              speedText.frame = frame;
-                                              
-                                              frame = txtAccess_1.frame;
-                                              frame.origin.x -= 917;
-                                              txtAccess_1.frame = frame; 
-                                              frame = txtAccess_2.frame;
-                                              frame.origin.x -= 917;
-                                              txtAccess_2.frame = frame;
-                                              frame = txtAccess_3.frame;
-                                              frame.origin.x -= 917;
-                                              txtAccess_3.frame = frame;
-                                              
-                                              frame = txtUsability_1.frame;
-                                              frame.origin.x -= 718;
-                                              txtUsability_1.frame = frame;
-                                              frame = txtUsability_2.frame;
-                                              frame.origin.x -= 718;
-                                              txtUsability_2.frame = frame;
-                                              frame = txtUsability_3.frame;
-                                              frame.origin.x -= 718;
-                                              txtUsability_3.frame = frame;
-                                              
-                                          }completion:nil];
-                     }];
-    
-    
+    // [self animatePlus];
+    if ([sender tag] == 1){
+        [sender setTag:3];
+        [[self.btnPlus layer] removeAllAnimations];
+        self.btnPlus.transform = CGAffineTransformMakeScale(1, 1);
+        [UIView animateWithDuration:1.0f
+                         animations:^{
+                             CGRect frame = speedImage.frame;
+                             frame.origin.x += 420;
+                             speedImage.frame = frame;
+                             
+                             frame = usabilityImage.frame;
+                             frame.origin.x += 615;
+                             usabilityImage.frame = frame; 
+                             frame = accessImage.frame;
+                             frame.origin.x += 420;
+                             accessImage.frame = frame;
+                             
+                         }completion:^(BOOL finished){
+                             [UIView animateWithDuration:1.0f
+                                              animations:^{
+                                                  CGRect frame = speedText.frame;
+                                                  frame.origin.x -= 917;
+                                                  speedText.frame = frame;
+                                                  
+                                                  frame = txtAccess_1.frame;
+                                                  frame.origin.x -= 917;
+                                                  txtAccess_1.frame = frame; 
+                                                  frame = txtAccess_2.frame;
+                                                  frame.origin.x -= 917;
+                                                  txtAccess_2.frame = frame;
+                                                  frame = txtAccess_3.frame;
+                                                  frame.origin.x -= 917;
+                                                  txtAccess_3.frame = frame;
+                                                  
+                                                  frame = txtUsability_1.frame;
+                                                  frame.origin.x -= 718;
+                                                  txtUsability_1.frame = frame;
+                                                  frame = txtUsability_2.frame;
+                                                  frame.origin.x -= 718;
+                                                  txtUsability_2.frame = frame;
+                                                  frame = txtUsability_3.frame;
+                                                  frame.origin.x -= 718;
+                                                  txtUsability_3.frame = frame;
+                                                  
+                                              }completion:nil];
+                         }];
+        
+    }
 }
 
 - (IBAction)animateFrame:(id)sender {
-    [[self.btnFrame layer] removeAllAnimations];
-    self.btnFrame.transform = CGAffineTransformMakeScale(1, 1);
-    self.scrollView.contentSize = CGSizeMake(1024, 2136);
-    [UIView animateWithDuration:1.0f
-                     animations:^{
-                         CGRect frame = btnFrame.frame;
-                         frame.origin.x += 892;
-                         btnFrame.frame = frame;
-                         
-                         frame = txtFrame.frame;
-                         frame.origin.x += 1242;
-                         txtFrame.frame = frame; 
-                         
-                         frame = self.hideView.frame;
-                         frame.size.height += 530;
-                         hideView.frame = frame;
-                         
-                         
-                     }completion:nil];
+    if ([sender tag] == 2){
+        [sender setTag:4];
+        [[self.btnFrame layer] removeAllAnimations];
+        self.btnFrame.transform = CGAffineTransformMakeScale(1, 1);
+        self.scrollView.contentSize = CGSizeMake(1024, 2136);
+        [UIView animateWithDuration:1.0f
+                         animations:^{
+                             CGRect frame = btnFrame.frame;
+                             frame.origin.x += 892;
+                             btnFrame.frame = frame;
+                             
+                             frame = txtFrame.frame;
+                             frame.origin.x += 1242;
+                             txtFrame.frame = frame; 
+                             
+                             frame = self.hideView.frame;
+                             frame.size.height += 530;
+                             hideView.frame = frame;
+                             
+                             
+                         }completion:nil];
+    }
 }
 @end

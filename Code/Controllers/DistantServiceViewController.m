@@ -25,6 +25,9 @@
 @synthesize txtAccess_3;
 @synthesize txtAccess_2;
 @synthesize btnPlus;
+@synthesize btnFrame;
+@synthesize txtFrame;
+@synthesize hideView;
 @synthesize scrollView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -51,16 +54,23 @@
     [super viewDidLoad];
     //[self animatePlus];
     // Do any additional setup after loading the view from its nib.
-    self.scrollView.contentSize = CGSizeMake(1024, 2136);
+    self.scrollView.contentSize = CGSizeMake(1024, 1606);
 }
 
 -(void) viewDidAppear:(BOOL)animated{
     [self animatePlus];
+    [self animateFrameButton];
 }
 
 -(void)animatePlus{
     [UIView animateWithDuration:0.5f delay:0.25f options:UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse | UIViewAnimationOptionAllowUserInteraction  animations:^{
         self.btnPlus.transform = CGAffineTransformMakeScale(1.3, 1.3);
+    }completion:nil];
+}
+
+-(void) animateFrameButton{
+    [UIView animateWithDuration:0.5f delay:0.25f options:UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse | UIViewAnimationOptionAllowUserInteraction  animations:^{
+        self.btnFrame.transform = CGAffineTransformMakeScale(1.3, 1.3);
     }completion:nil];
 }
 - (void)viewDidUnload
@@ -77,6 +87,9 @@
     [self setTxtAccess_2:nil];
     [self setTxtAccess_3:nil];
     [self setBtnPlus:nil];
+    [self setBtnFrame:nil];
+    [self setTxtFrame:nil];
+    [self setHideView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -136,5 +149,27 @@
                      }];
     
     
+}
+
+- (IBAction)animateFrame:(id)sender {
+    [[self.btnFrame layer] removeAllAnimations];
+    self.btnFrame.transform = CGAffineTransformMakeScale(1, 1);
+    self.scrollView.contentSize = CGSizeMake(1024, 2136);
+    [UIView animateWithDuration:1.0f
+                     animations:^{
+                         CGRect frame = btnFrame.frame;
+                         frame.origin.x += 892;
+                         btnFrame.frame = frame;
+                         
+                         frame = txtFrame.frame;
+                         frame.origin.x += 1242;
+                         txtFrame.frame = frame; 
+                         
+                         frame = self.hideView.frame;
+                         frame.size.height += 530;
+                         hideView.frame = frame;
+                         
+                         
+                     }completion:nil];
 }
 @end

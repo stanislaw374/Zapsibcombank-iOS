@@ -20,8 +20,13 @@
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *txtAccess_3;
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *txtAccess_2;
 @property (unsafe_unretained, nonatomic) IBOutlet UIButton *btnPlus;
+@property (unsafe_unretained, nonatomic) IBOutlet UIButton *btnFrame;
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *txtFrame;
+@property (unsafe_unretained, nonatomic) IBOutlet UIView *hideView;
 
 -(void)animatePlus;
+-(void) animateFrameButton;
 - (IBAction)animateLabels:(id)sender;
+- (IBAction)animateFrame:(id)sender;
 
 @end

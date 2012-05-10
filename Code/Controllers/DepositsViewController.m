@@ -109,40 +109,50 @@
         [sender setTag:3];
         [[self.bluePlus layer] removeAllAnimations];
         self.bluePlus.transform = CGAffineTransformMakeScale(1, 1);
-        [UIView animateWithDuration:1.0f
+        [UIView animateWithDuration:1.0f delay:0 options:0
                          animations:^{
                              CGRect frame = imgRed.frame;
                              frame.origin.x += 540;
                              imgRed.frame = frame;
-                             
                              frame = txtRed.frame;
                              frame.origin.x -= 458;
-                             txtRed.frame = frame; 
+                             txtRed.frame = frame;
                              
-                         }completion:^(BOOL finished){
-                             [UIView animateWithDuration:1.0f
+                         }completion: ^(BOOL finished){
+                             [UIView animateWithDuration:1.0f delay:0 options:0
                                               animations:^{
-                                                  CGRect frame = imgViolet.frame;
-                                                  frame.origin.x += 558;
-                                                  imgViolet.frame = frame;
-                                                  
-                                                  frame = txtViolet.frame;
+                                                  CGRect frame = txtRed.frame;
                                                   frame.origin.x -= 458;
-                                                  txtViolet.frame = frame;                                              
-                                              
-                                              }completion:^(BOOL finished){
-                                                  [UIView animateWithDuration:1.0f
-                                                                   animations:^{
-                                                                       CGRect frame = imgGreen.frame;
-                                                                       frame.origin.x += 540;
-                                                                       imgGreen.frame = frame;
-                                                                       
-                                                                       frame = txtGreen.frame;
-                                                                       frame.origin.x -= 458;
-                                                                       txtGreen.frame = frame;                                              
-                                                                       
-                                                                   }completion:nil];
-                                              }];
+                                                  txtRed.frame = frame;
+                                              }completion: nil];
+                         }];
+        [UIView animateWithDuration:1.0f delay:1 options:0
+                         animations:^{
+                             CGRect frame = imgViolet.frame;
+                             frame.origin.x += 558;
+                             imgViolet.frame = frame;
+                             
+                         }completion: ^(BOOL finished){
+                             [UIView animateWithDuration:1.0f delay:0 options:0
+                                              animations:^{
+                                                  CGRect frame = txtViolet.frame;
+                                                  frame.origin.x -= 458;
+                                                  txtViolet.frame = frame;
+                                              }completion: nil];
+                         }];
+        [UIView animateWithDuration:1.0f delay:2 options:0
+                         animations:^{
+                             CGRect frame = imgGreen.frame;
+                             frame.origin.x += 540;
+                             imgGreen.frame = frame;
+                             
+                         }completion: ^(BOOL finished){
+                             [UIView animateWithDuration:1.0f delay:0 options:0
+                                              animations:^{
+                                                  CGRect frame = txtGreen.frame;
+                                                  frame.origin.x -= 458;
+                                                  txtGreen.frame = frame;
+                                              }completion: nil];
                          }];
         
     }

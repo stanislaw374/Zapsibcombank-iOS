@@ -9,7 +9,8 @@
 #import "CashServicesViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface CashServicesViewController() {
+@interface CashServicesViewController() 
+{
     CGPoint _arrowLocations[3];
     CGPoint _labelLocations[3];
     BOOL _isPlusClicked;
@@ -116,7 +117,7 @@
     self.plus.transform = CGAffineTransformMakeScale(1, 1);
     
     // Анимация выплывающих стрелок и текста
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < self.arrows.count; i++) {
         UIImageView *arrow = [self.arrows objectAtIndex:i];
         UILabel *label = [self.labels objectAtIndex:i];
         
@@ -125,9 +126,11 @@
             frame.origin = _arrowLocations[i];
             arrow.frame = frame;
         } completion:^(BOOL finished) {
-            CGRect frame = label.frame;
-            frame.origin = _labelLocations[i];
-            label.frame = frame;
+            [UIView animateWithDuration:0.5f delay:0 options:0 animations:^{
+                CGRect frame = label.frame;
+                frame.origin = _labelLocations[i];
+                label.frame = frame;
+            } completion:nil];
         }];
     }
 }

@@ -7,13 +7,30 @@
 //
 
 #import "SalaryProjectViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface SalaryProjectViewController()
+{
+    CGPoint _arrowLocations[4];
+    CGPoint _labelLocations[4];
+    BOOL _isPlusClicked;
+}
 @property (unsafe_unretained, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *arrows;
+@property (unsafe_unretained, nonatomic) IBOutlet UIImageView *swings;
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *arrows2;
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *labels;
+@property (unsafe_unretained, nonatomic) IBOutlet UIButton *plus;
+- (IBAction)onPlusClick;
 @end
 
 @implementation SalaryProjectViewController
 @synthesize scrollView;
+@synthesize arrows;
+@synthesize swings;
+@synthesize arrows2;
+@synthesize labels;
+@synthesize plus;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,11 +56,56 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.scrollView.contentSize = CGSizeMake(1024, 2113);
+    
+    // Анимация стрелок
+    for (UIImageView *arrow in self.arrows) {
+        [UIView animateWithDuration:0.5f delay:0 options:UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse | UIViewAnimationCurveEaseInOut animations:^{
+            CGRect frame = arrow.frame;
+            frame.origin.y -= 20;
+            arrow.frame = frame;
+        } completion:nil];
+    }
+    
+    // Анимация весов
+    const double degree = 2.0;
+    self.swings.transform = CGAffineTransformMakeRotation(degree * M_PI / 180.0);
+    
+    [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse animations:^{
+        self.swings.transform = CGAffineTransformRotate(self.swings.transform, - 2 * degree * M_PI / 180.0);
+    } completion:nil];
+    
+    // Анимация увеличивающегося и уменьшающегося сердца
+    [UIView animateWithDuration:0.5f delay:0 options:UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse | UIViewAnimationOptionAllowUserInteraction animations:^{
+        self.plus.transform = CGAffineTransformMakeScale(0.5f, 0.5f);
+    } completion:nil];
+    
+    // Сохранение позиций стрелок и перемещение их за пределы экрана
+    for (int i = 0; i < self.arrows2.count; i++) {
+        UIImageView *arrow = [self.arrows2 objectAtIndex:i];
+        _arrowLocations[i] = arrow.frame.origin;
+        CGRect frame = arrow.frame;
+        frame.origin.x = - arrow.frame.size.width;
+        arrow.frame = frame;
+    }
+    
+    // Сохранение позиций текста и перемещение текста за пределы экрана
+    for (int i = 0; i < self.labels.count; i++) {
+        UILabel *label = [self.labels objectAtIndex:i];
+        _labelLocations[i] = label.frame.origin;
+        CGRect frame = label.frame;
+        frame.origin.x = 1024;
+        label.frame = frame;
+    }   
 }
 
 - (void)viewDidUnload
 {
     [self setScrollView:nil];
+    [self setArrows:nil];
+    [self setSwings:nil];
+    [self setArrows2:nil];
+    [self setLabels:nil];
+    [self setPlus:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -53,6 +115,31 @@
 {
     // Return YES for supported orientations
 	return UIInterfaceOrientationIsLandscape(interfaceOrientation);
+}
+
+- (IBAction)onPlusClick {  
+    if (_isPlusClicked) return;
+    _isPlusClicked = YES;
+    [self.plus.layer removeAllAnimations];
+    self.plus.transform = CGAffineTransformMakeScale(1, 1);
+    
+    // Анимация выплывающих стрелок и текста
+    for (int i = 0; i < self.arrows2.count; i++) {
+        UIImageView *arrow = [self.arrows2 objectAtIndex:i];
+        UILabel *label = [self.labels objectAtIndex:i];
+        
+        [UIView animateWithDuration:1 delay:i options:0 animations:^{
+            CGRect frame = arrow.frame;
+            frame.origin = _arrowLocations[i];
+            arrow.frame = frame;
+        } completion:^(BOOL finished) {
+            [UIView animateWithDuration:0.5f delay:0 options:0 animations:^{
+                CGRect frame = label.frame;
+                frame.origin = _labelLocations[i];
+                label.frame = frame;
+            } completion:nil];
+        }];
+    }
 }
 
 @end

@@ -9,5 +9,19 @@
 #import <UIKit/UIKit.h>
 
 @interface DistantServiceViewController : UIViewController
+@property (unsafe_unretained, nonatomic) IBOutlet UIImageView *speedImage;
+@property (unsafe_unretained, nonatomic) IBOutlet UIImageView *usabilityImage;
+@property (unsafe_unretained, nonatomic) IBOutlet UIImageView *accessImage;
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *speedText;
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *txtUsability_1;
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *txtUsability_2;
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *txtUsability_3;
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *txtAccess_1;
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *txtAccess_3;
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *txtAccess_2;
+@property (unsafe_unretained, nonatomic) IBOutlet UIButton *btnPlus;
+
+-(void)animatePlus;
+- (IBAction)animateLabels:(id)sender;
 
 @end

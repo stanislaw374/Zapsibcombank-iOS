@@ -2323,6 +2323,7 @@
 		86D1939715296AC10071E8F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Stanislav Yazhenskikh (Q8995BS68E)";
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Code/Supporting files/Zapsibcombank-Prefix.pch";
@@ -2334,6 +2335,7 @@
 				);
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = Zapsibcombank;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2EF9DE1C-6F39-4625-862C-1D00DBCEA6F5";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2341,6 +2343,7 @@
 		86D1939815296AC10071E8F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Stanislav Yazhenskikh (Q8995BS68E)";
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Code/Supporting files/Zapsibcombank-Prefix.pch";
@@ -2352,6 +2355,7 @@
 				);
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = Zapsibcombank;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E568F9B7-B3E4-48A6-8D8D-0AF444A878D8";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

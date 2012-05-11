@@ -70,12 +70,12 @@
     const double degree = 2.0;
     self.swings.transform = CGAffineTransformMakeRotation(degree * M_PI / 180.0);
     
-    [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse animations:^{
+    [UIView animateWithDuration:1 delay:0 options:UIViewAnimationCurveEaseInOut | UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse animations:^{
         self.swings.transform = CGAffineTransformRotate(self.swings.transform, - 2 * degree * M_PI / 180.0);
     } completion:nil];
     
-    // Анимация увеличивающегося и уменьшающегося сердца
-    [UIView animateWithDuration:0.5f delay:0 options:UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse | UIViewAnimationOptionAllowUserInteraction animations:^{
+    // Анимация увеличивающегося и уменьшающегося плюса!
+    [UIView animateWithDuration:0.5f delay:0 options:UIViewAnimationCurveEaseInOut |UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse | UIViewAnimationOptionAllowUserInteraction animations:^{
         self.plus.transform = CGAffineTransformMakeScale(0.5f, 0.5f);
     } completion:nil];
     
@@ -128,12 +128,12 @@
         UIImageView *arrow = [self.arrows2 objectAtIndex:i];
         UILabel *label = [self.labels objectAtIndex:i];
         
-        [UIView animateWithDuration:1 delay:i options:0 animations:^{
+        [UIView animateWithDuration:1 delay:i options:UIViewAnimationCurveEaseInOut animations:^{
             CGRect frame = arrow.frame;
             frame.origin = _arrowLocations[i];
             arrow.frame = frame;
         } completion:^(BOOL finished) {
-            [UIView animateWithDuration:0.5f delay:0 options:0 animations:^{
+            [UIView animateWithDuration:0.5f delay:0 options:UIViewAnimationCurveEaseInOut animations:^{
                 CGRect frame = label.frame;
                 frame.origin = _labelLocations[i];
                 label.frame = frame;

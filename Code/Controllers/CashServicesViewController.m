@@ -60,7 +60,7 @@
     // Анимация человечков
     for (int i = 0; i < self.persons.count; i++) {
         UIImageView *person = [self.persons objectAtIndex:i];
-        [UIView animateWithDuration:0.5f delay:0.25f * i options:UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse animations:^{
+        [UIView animateWithDuration:0.5f delay:0.25f * i options:UIViewAnimationCurveEaseInOut | UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse animations:^{
             CGRect frame = person.frame;
             frame.origin.y -= 20;
             person.frame = frame;
@@ -68,7 +68,7 @@
     }
     
     // Анимация увеличивающегося и уменьшающегося сердца
-    [UIView animateWithDuration:0.5f delay:0 options:UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse | UIViewAnimationOptionAllowUserInteraction animations:^{
+    [UIView animateWithDuration:0.5f delay:0 options:UIViewAnimationCurveEaseInOut |UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse | UIViewAnimationOptionAllowUserInteraction animations:^{
         self.plus.transform = CGAffineTransformMakeScale(0.5f, 0.5f);
     } completion:nil];
     
@@ -121,12 +121,12 @@
         UIImageView *arrow = [self.arrows objectAtIndex:i];
         UILabel *label = [self.labels objectAtIndex:i];
         
-        [UIView animateWithDuration:1 delay:i options:0 animations:^{
+        [UIView animateWithDuration:1 delay:i options:UIViewAnimationCurveEaseInOut animations:^{
             CGRect frame = arrow.frame;
             frame.origin = _arrowLocations[i];
             arrow.frame = frame;
         } completion:^(BOOL finished) {
-            [UIView animateWithDuration:0.5f delay:0 options:0 animations:^{
+            [UIView animateWithDuration:0.5f delay:0 options:UIViewAnimationCurveEaseInOut animations:^{
                 CGRect frame = label.frame;
                 frame.origin = _labelLocations[i];
                 label.frame = frame;

@@ -8,6 +8,7 @@
 
 #import "Service.h"
 #import "ServicesViewController.h"
+#import "AllServicesViewController.h"
 
 #import "CashServicesViewController.h"
 #import "CorporateCardsViewController.h"
@@ -18,8 +19,7 @@
 
 #import "DepositsViewController.h"
 #import "BillsViewController.h"
-
-#import "AllServicesViewController.h"
+#import "BrokerServiceViewController.h"
 
 @interface ServicesViewController() <AllServicesViewControllerDelegate>
 @property (unsafe_unretained, nonatomic) IBOutlet UIView *contentView;
@@ -147,6 +147,7 @@
         dx += btn.frame.size.width + sx;
         [btn addTarget:self action:@selector(showSection:) forControlEvents:UIControlEventTouchUpInside];
         [btn setTitleColor:[UIColor colorWithRed:1 green:192/255.0 blue:0 alpha:1] forState:UIControlStateSelected];
+        btn.showsTouchWhenHighlighted = YES;
         [self.menuScrollView addSubview:btn];
     }
     self.menuScrollView.contentSize = CGSizeMake(dx, self.menuScrollView.frame.size.height);
@@ -209,6 +210,8 @@
                 case 1:
                     self.currentSectionViewController = [[BillsViewController alloc] init];
                     break;
+                case 2:
+                    self.currentSectionViewController = [[BrokerServiceViewController alloc] init];
             }
             break;
     }

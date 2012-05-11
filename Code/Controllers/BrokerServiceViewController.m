@@ -1,36 +1,32 @@
 //
-//  CashServicesViewController.m
+//  BrokerServiceViewController.m
 //  Zapsibcombank
 //
-//  Created by Yazhenskikh Stanislaw on 10.05.12.
+//  Created by Yazhenskikh Stanislaw on 11.05.12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "CashServicesViewController.h"
+#import "BrokerServiceViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface CashServicesViewController() 
+@interface BrokerServiceViewController ()
 {
     CGPoint _arrowLocations[3];
-    CGPoint _labelLocations[3];
+    CGPoint _textLocations[3];
     BOOL _isPlusClicked;
 }
 @property (unsafe_unretained, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *persons;
-
 @property (unsafe_unretained, nonatomic) IBOutlet UIButton *plus;
-
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *arrows;
-@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *labels;
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *texts;
 - (IBAction)onPlusClick;
 @end
 
-@implementation CashServicesViewController
+@implementation BrokerServiceViewController
 @synthesize scrollView;
-@synthesize persons;
 @synthesize plus;
 @synthesize arrows;
-@synthesize labels;
+@synthesize texts;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,31 +37,16 @@
     return self;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
-}
-
-#pragma mark - View lifecycle
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.scrollView.contentSize = CGSizeMake(1024, 1717);
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     
-    // Анимация человечков
-    for (int i = 0; i < self.persons.count; i++) {
-        UIImageView *person = [self.persons objectAtIndex:i];
-        [UIView animateWithDuration:0.5f delay:0.25f * i options:UIViewAnimationCurveEaseInOut | UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse animations:^{
-            CGRect frame = person.frame;
-            frame.origin.y -= 20;
-            person.frame = frame;
-        } completion:nil];
-    }
+    self.scrollView.contentSize = CGSizeMake(1024, 1986);
     
     // Анимация увеличивающегося и уменьшающегося плюса
     [UIView animateWithDuration:0.5f delay:0 options:UIViewAnimationCurveEaseInOut |UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse | UIViewAnimationOptionAllowUserInteraction animations:^{
@@ -82,23 +63,21 @@
     }
     
     // Сохранение позиций текста и перемещение текста за пределы экрана
-    for (int i = 0; i < self.labels.count; i++) {
-        UILabel *label = [self.labels objectAtIndex:i];
-        _labelLocations[i] = label.frame.origin;
-        CGRect frame = label.frame;
+    for (int i = 0; i < self.texts.count; i++) {
+        UIImageView *text = [self.texts objectAtIndex:i];
+        _textLocations[i] = text.frame.origin;
+        CGRect frame = text.frame;
         frame.origin.x = 1024;
-        label.frame = frame;
-    }    
+        text.frame = frame;
+    }
 }
 
 - (void)viewDidUnload
 {
-    [self setScrollView:nil];
-    [self setPersons:nil];
     [self setPlus:nil];
     [self setArrows:nil];
-    [self setLabels:nil];
-    [self setPlus:nil];
+    [self setTexts:nil];
+    [self setScrollView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -106,20 +85,20 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
 	return UIInterfaceOrientationIsLandscape(interfaceOrientation);
 }
 
 - (IBAction)onPlusClick {  
     if (_isPlusClicked) return;
     _isPlusClicked = YES;
+    
     [self.plus.layer removeAllAnimations];
     self.plus.transform = CGAffineTransformMakeScale(1, 1);
     
     // Анимация выплывающих стрелок и текста
     for (int i = 0; i < self.arrows.count; i++) {
         UIImageView *arrow = [self.arrows objectAtIndex:i];
-        UILabel *label = [self.labels objectAtIndex:i];
+        UIImageView *text = [self.texts objectAtIndex:i];
         
         [UIView animateWithDuration:1 delay:i options:UIViewAnimationCurveEaseInOut animations:^{
             CGRect frame = arrow.frame;
@@ -127,12 +106,11 @@
             arrow.frame = frame;
         } completion:^(BOOL finished) {
             [UIView animateWithDuration:0.5f delay:0 options:UIViewAnimationCurveEaseInOut animations:^{
-                CGRect frame = label.frame;
-                frame.origin = _labelLocations[i];
-                label.frame = frame;
+                CGRect frame = text.frame;
+                frame.origin = _textLocations[i];
+                text.frame = frame;
             } completion:nil];
         }];
     }
 }
-
 @end

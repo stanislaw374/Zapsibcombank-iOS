@@ -76,6 +76,12 @@
 					<key>name</key>
 					<string>Векселя</string>
 				</dict>
+				<dict>
+					<key>id</key>
+					<integer>2</integer>
+					<key>name</key>
+					<string>Брокерское обслуживание — интернет-трейдинг</string>
+				</dict>
 			</array>
 		</dict>
 		<dict>

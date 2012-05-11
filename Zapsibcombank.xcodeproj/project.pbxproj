@@ -143,6 +143,21 @@
 		86549CCD155B371900B69385 /* button_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 86549CC3155B371900B69385 /* button_9.png */; };
 		866D427E155B78CB00C03BA7 /* 01_01_person1.png in Resources */ = {isa = PBXBuildFile; fileRef = 866D427C155B78CB00C03BA7 /* 01_01_person1.png */; };
 		866D427F155B78CB00C03BA7 /* 01_01_person2.png in Resources */ = {isa = PBXBuildFile; fileRef = 866D427D155B78CB00C03BA7 /* 01_01_person2.png */; };
+		86908B20155CD4160094778E /* BrokerServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86908B1E155CD4160094778E /* BrokerServiceViewController.m */; };
+		86908B21155CD4160094778E /* BrokerServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86908B1F155CD4160094778E /* BrokerServiceViewController.xib */; };
+		86908B31155CD5C50094778E /* 02_03_arrow1.png in Resources */ = {isa = PBXBuildFile; fileRef = 86908B24155CD5C50094778E /* 02_03_arrow1.png */; };
+		86908B32155CD5C50094778E /* 02_03_arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 86908B25155CD5C50094778E /* 02_03_arrow2.png */; };
+		86908B33155CD5C50094778E /* 02_03_arrow3.png in Resources */ = {isa = PBXBuildFile; fileRef = 86908B26155CD5C50094778E /* 02_03_arrow3.png */; };
+		86908B34155CD5C50094778E /* 02_03_frame1.png in Resources */ = {isa = PBXBuildFile; fileRef = 86908B27155CD5C50094778E /* 02_03_frame1.png */; };
+		86908B35155CD5C50094778E /* 02_03_frame2.png in Resources */ = {isa = PBXBuildFile; fileRef = 86908B28155CD5C50094778E /* 02_03_frame2.png */; };
+		86908B36155CD5C50094778E /* 02_03_frame3.png in Resources */ = {isa = PBXBuildFile; fileRef = 86908B29155CD5C50094778E /* 02_03_frame3.png */; };
+		86908B37155CD5C50094778E /* 02_03_frame4.png in Resources */ = {isa = PBXBuildFile; fileRef = 86908B2A155CD5C50094778E /* 02_03_frame4.png */; };
+		86908B38155CD5C50094778E /* 02_03_frame5.png in Resources */ = {isa = PBXBuildFile; fileRef = 86908B2B155CD5C50094778E /* 02_03_frame5.png */; };
+		86908B39155CD5C50094778E /* 02_03_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 86908B2C155CD5C50094778E /* 02_03_photo.png */; };
+		86908B3A155CD5C50094778E /* 02_03_plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 86908B2D155CD5C50094778E /* 02_03_plus.png */; };
+		86908B3B155CD5C50094778E /* 02_03_tab1.png in Resources */ = {isa = PBXBuildFile; fileRef = 86908B2E155CD5C50094778E /* 02_03_tab1.png */; };
+		86908B3C155CD5C50094778E /* 02_03_tab2.png in Resources */ = {isa = PBXBuildFile; fileRef = 86908B2F155CD5C50094778E /* 02_03_tab2.png */; };
+		86908B3D155CD5C50094778E /* 02_03_top_bar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 86908B30155CD5C50094778E /* 02_03_top_bar_bg.png */; };
 		8690D1F4155ABEEB0055E7D5 /* BillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8690D1F2155ABEEA0055E7D5 /* BillsViewController.m */; };
 		8690D1F5155ABEEB0055E7D5 /* BillsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8690D1F3155ABEEB0055E7D5 /* BillsViewController.xib */; };
 		8690D1FF155AC14F0055E7D5 /* 02_02_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8690D1F7155AC14E0055E7D5 /* 02_02_1.png */; };
@@ -558,6 +573,22 @@
 		86549CC3155B371900B69385 /* button_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_9.png; sourceTree = "<group>"; };
 		866D427C155B78CB00C03BA7 /* 01_01_person1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01_01_person1.png; sourceTree = "<group>"; };
 		866D427D155B78CB00C03BA7 /* 01_01_person2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01_01_person2.png; sourceTree = "<group>"; };
+		86908B1D155CD4160094778E /* BrokerServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrokerServiceViewController.h; sourceTree = "<group>"; };
+		86908B1E155CD4160094778E /* BrokerServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrokerServiceViewController.m; sourceTree = "<group>"; };
+		86908B1F155CD4160094778E /* BrokerServiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrokerServiceViewController.xib; sourceTree = "<group>"; };
+		86908B24155CD5C50094778E /* 02_03_arrow1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02_03_arrow1.png; sourceTree = "<group>"; };
+		86908B25155CD5C50094778E /* 02_03_arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02_03_arrow2.png; sourceTree = "<group>"; };
+		86908B26155CD5C50094778E /* 02_03_arrow3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02_03_arrow3.png; sourceTree = "<group>"; };
+		86908B27155CD5C50094778E /* 02_03_frame1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02_03_frame1.png; sourceTree = "<group>"; };
+		86908B28155CD5C50094778E /* 02_03_frame2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02_03_frame2.png; sourceTree = "<group>"; };
+		86908B29155CD5C50094778E /* 02_03_frame3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02_03_frame3.png; sourceTree = "<group>"; };
+		86908B2A155CD5C50094778E /* 02_03_frame4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02_03_frame4.png; sourceTree = "<group>"; };
+		86908B2B155CD5C50094778E /* 02_03_frame5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02_03_frame5.png; sourceTree = "<group>"; };
+		86908B2C155CD5C50094778E /* 02_03_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02_03_photo.png; sourceTree = "<group>"; };
+		86908B2D155CD5C50094778E /* 02_03_plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02_03_plus.png; sourceTree = "<group>"; };
+		86908B2E155CD5C50094778E /* 02_03_tab1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02_03_tab1.png; sourceTree = "<group>"; };
+		86908B2F155CD5C50094778E /* 02_03_tab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02_03_tab2.png; sourceTree = "<group>"; };
+		86908B30155CD5C50094778E /* 02_03_top_bar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02_03_top_bar_bg.png; sourceTree = "<group>"; };
 		8690D1F1155ABEEA0055E7D5 /* BillsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillsViewController.h; sourceTree = "<group>"; };
 		8690D1F2155ABEEA0055E7D5 /* BillsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillsViewController.m; sourceTree = "<group>"; };
 		8690D1F3155ABEEB0055E7D5 /* BillsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BillsViewController.xib; sourceTree = "<group>"; };
@@ -1049,6 +1080,7 @@
 		86419FA315599E5500DC9253 /* 2. Cash Management */ = {
 			isa = PBXGroup;
 			children = (
+				86908B23155CD5C50094778E /* 3. Broker service */,
 				861EA97F1559AA800065197A /* 1. Deposits */,
 				8690D1F6155AC14E0055E7D5 /* 2. Bills */,
 			);
@@ -1102,6 +1134,27 @@
 			);
 			path = "Main screen";
 			sourceTree = "<group>";
+		};
+		86908B23155CD5C50094778E /* 3. Broker service */ = {
+			isa = PBXGroup;
+			children = (
+				86908B24155CD5C50094778E /* 02_03_arrow1.png */,
+				86908B25155CD5C50094778E /* 02_03_arrow2.png */,
+				86908B26155CD5C50094778E /* 02_03_arrow3.png */,
+				86908B27155CD5C50094778E /* 02_03_frame1.png */,
+				86908B28155CD5C50094778E /* 02_03_frame2.png */,
+				86908B29155CD5C50094778E /* 02_03_frame3.png */,
+				86908B2A155CD5C50094778E /* 02_03_frame4.png */,
+				86908B2B155CD5C50094778E /* 02_03_frame5.png */,
+				86908B2C155CD5C50094778E /* 02_03_photo.png */,
+				86908B2D155CD5C50094778E /* 02_03_plus.png */,
+				86908B2E155CD5C50094778E /* 02_03_tab1.png */,
+				86908B2F155CD5C50094778E /* 02_03_tab2.png */,
+				86908B30155CD5C50094778E /* 02_03_top_bar_bg.png */,
+			);
+			name = "3. Broker service";
+			path = "Resources/Images/Services/2. Cash management/3. Broker service";
+			sourceTree = SOURCE_ROOT;
 		};
 		8690D1F6155AC14E0055E7D5 /* 2. Bills */ = {
 			isa = PBXGroup;
@@ -1444,6 +1497,9 @@
 				86EB29E9155B51DF0013E8B6 /* AllServicesViewController.h */,
 				86EB29EA155B51DF0013E8B6 /* AllServicesViewController.m */,
 				86EB29EB155B51DF0013E8B6 /* AllServicesViewController.xib */,
+				86908B1D155CD4160094778E /* BrokerServiceViewController.h */,
+				86908B1E155CD4160094778E /* BrokerServiceViewController.m */,
+				86908B1F155CD4160094778E /* BrokerServiceViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -2165,6 +2221,20 @@
 				86EB29ED155B51E00013E8B6 /* AllServicesViewController.xib in Resources */,
 				866D427E155B78CB00C03BA7 /* 01_01_person1.png in Resources */,
 				866D427F155B78CB00C03BA7 /* 01_01_person2.png in Resources */,
+				86908B21155CD4160094778E /* BrokerServiceViewController.xib in Resources */,
+				86908B31155CD5C50094778E /* 02_03_arrow1.png in Resources */,
+				86908B32155CD5C50094778E /* 02_03_arrow2.png in Resources */,
+				86908B33155CD5C50094778E /* 02_03_arrow3.png in Resources */,
+				86908B34155CD5C50094778E /* 02_03_frame1.png in Resources */,
+				86908B35155CD5C50094778E /* 02_03_frame2.png in Resources */,
+				86908B36155CD5C50094778E /* 02_03_frame3.png in Resources */,
+				86908B37155CD5C50094778E /* 02_03_frame4.png in Resources */,
+				86908B38155CD5C50094778E /* 02_03_frame5.png in Resources */,
+				86908B39155CD5C50094778E /* 02_03_photo.png in Resources */,
+				86908B3A155CD5C50094778E /* 02_03_plus.png in Resources */,
+				86908B3B155CD5C50094778E /* 02_03_tab1.png in Resources */,
+				86908B3C155CD5C50094778E /* 02_03_tab2.png in Resources */,
+				86908B3D155CD5C50094778E /* 02_03_top_bar_bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2248,6 +2318,7 @@
 				8617E553155B1EFA00E5E08B /* PackageOfServicesViewController.m in Sources */,
 				8617E585155B264400E5E08B /* SalaryProjectViewController.m in Sources */,
 				86EB29EC155B51E00013E8B6 /* AllServicesViewController.m in Sources */,
+				86908B20155CD4160094778E /* BrokerServiceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ServiceViewController.h"
 
-@interface BrokerServiceViewController : UIViewController
+@interface BrokerServiceViewController : ServiceViewController
 
 @end

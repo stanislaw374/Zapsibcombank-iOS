@@ -21,7 +21,14 @@
 #import "BillsViewController.h"
 #import "BrokerServiceViewController.h"
 
-@interface ServicesViewController() <AllServicesViewControllerDelegate>
+#import "AcquiringViewController.h"
+#import "ReceivingPaymentsViewController.h"
+
+#import "CurrencyControlViewController.h"
+#import "ConversionOperationsViewController.h"
+#import "InternationalTransactionsViewController.h"
+
+@interface ServicesViewController() <AllServicesViewControllerDelegate, UIScrollViewDelegate>
 @property (unsafe_unretained, nonatomic) IBOutlet UIView *contentView;
 @property (unsafe_unretained, nonatomic) IBOutlet UIScrollView *menuScrollView;
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *serviceLabel;
@@ -36,7 +43,7 @@
 - (IBAction)showAllServices;
 - (void)showSectionWithID:(int)ID;
 - (IBAction)showSection:(UIButton *)sender;
-- (void)initUIForCurrentService;
+- (void)showCurrentService;
 @end
 
 @implementation ServicesViewController
@@ -50,6 +57,7 @@
 @synthesize allServicesViewController = _allServicesViewController;
 @synthesize menuView = _menuView;
 @synthesize allServicesButton = _allServicesButton;
+@synthesize section = _section;
 
 - (AllServicesViewController *) allServicesViewController {
     if (!_allServicesViewController) {
@@ -82,16 +90,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.menuScrollView.delegate = self;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    [self initUIForCurrentService];
-    
-    if (self.menuScrollView.subviews.count) {
-        [self showSection:[self.menuScrollView.subviews objectAtIndex:0]];
-    }
+    [self showCurrentService];
+    [self showSectionWithID:self.section.ID];
 }
 
 - (void)viewDidUnload
@@ -117,15 +123,13 @@
 #pragma mark - Helpers
 - (void)setService:(Service *)service {
     _service = service;
-    
-    [self initUIForCurrentService];
-    
-    if (self.menuScrollView.subviews.count) {
-        [self showSection:[self.menuScrollView.subviews objectAtIndex:0]];
+    [self showCurrentService];
+    if (self.service.sections.count) {
+        self.section = [self.service.sections objectAtIndex:0];
     }
 }
 
-- (void)initUIForCurrentService {
+- (void)showCurrentService {
     self.serviceLabel.text = self.service.name;
     [self.currentSectionViewController.view removeFromSuperview];
     
@@ -153,6 +157,11 @@
     self.menuScrollView.contentSize = CGSizeMake(dx, self.menuScrollView.frame.size.height);
 }
 
+- (void)setSection:(Section *)section {
+    _section = section;
+    [self showSectionWithID:self.section.ID];
+}
+
 - (IBAction)close {
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -174,8 +183,6 @@
 }
 
 - (void)showSectionWithID:(int)ID {  
-    if (ID >= self.service.sections.count) return;
-    
     [self.currentSectionViewController.view removeFromSuperview];
     
     switch (self.service.ID) {
@@ -214,20 +221,61 @@
                     self.currentSectionViewController = [[BrokerServiceViewController alloc] init];
             }
             break;
+            
+        case 3:
+            switch (ID) {
+                case 0:
+                    self.currentSectionViewController = [[AcquiringViewController alloc] init];
+                    break;
+                case 1:
+                    self.currentSectionViewController = [[ReceivingPaymentsViewController alloc] init];
+                    break;
+            }
+            break;
+            
+        case 4:
+            switch (ID) {
+                case 0:
+                    self.currentSectionViewController = [[CurrencyControlViewController alloc] init];
+                    break;
+                case 1:
+                    self.currentSectionViewController = [[ConversionOperationsViewController alloc] init];
+                    break;
+                case 2:
+                    self.currentSectionViewController = [[InternationalTransactionsViewController alloc] init];
+                    break;
+            }
+            break;
     }
     
     self.currentSectionViewController.view.frame = CGRectMake(0, 0, self.contentView.frame.size.width, self.contentView.frame.size.height);    
     [self.contentView addSubview:self.currentSectionViewController.view];
-}
-     
-- (IBAction)showSection:(UIButton *)sender { 
+    
     for (UIButton *btn in self.menuScrollView.subviews) {
         btn.selected = NO;
+        if (btn.tag == ID) {
+            btn.selected = YES;
+            [self.menuScrollView scrollRectToVisible:btn.frame animated:NO];
+            [UIView animateWithDuration:0.25f animations:^{
+                self.currentSectionArrow.center = CGPointMake(btn.center.x - self.menuScrollView.contentOffset.x, self.currentSectionArrow.center.y);
+            }];
+        }
     }
-    sender.selected = YES;
-    self.currentSectionArrow.center = CGPointMake(sender.center.x - self.menuScrollView.contentOffset.x, self.currentSectionArrow.center.y); 
-    
-    [self showSectionWithID:sender.tag];
+}
+     
+- (IBAction)showSection:(UIButton *)sender {     
+    //[self showSectionWithID:sender.tag];
+    int sectionIndex = [self.service.sections indexOfObjectPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
+        Section *s = (Section *)obj;
+        if (s.ID == sender.tag) {
+            *stop = YES;
+            return YES;
+        }
+        else {
+            return NO;
+        }
+    }];
+    self.section = [self.service.sections objectAtIndex:sectionIndex];
 }
 
 #pragma mark - AllServicesViewControllerDelegate
@@ -244,7 +292,23 @@
 }
 
 - (void)allServicesViewControllerDidChooseService:(Service *)service {
-    self.service = service;
+    if (service.ID == 1) {
+        self.service = [[Service services] objectAtIndex:0];
+        self.section = [self.service.sections objectAtIndex:5];
+    }
+    else {
+        self.service = service;
+    }
+}
+
+#pragma mark - UIScrollViewDelegate
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    for (UIButton *btn in self.menuScrollView.subviews) {
+        if (btn.selected) {
+            self.currentSectionArrow.center = CGPointMake(btn.center.x - self.menuScrollView.contentOffset.x, self.currentSectionArrow.center.y);
+            break;
+        }
+    }
 }
 
 @end

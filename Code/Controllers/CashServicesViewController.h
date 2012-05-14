@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ServiceViewController.h"
 
-@interface CashServicesViewController : UIViewController
+@interface CashServicesViewController : ServiceViewController
 - (IBAction)btnTarifs:(id)sender;
 - (IBAction)btnAccount:(id)sender;
-
 
 @end

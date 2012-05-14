@@ -90,7 +90,20 @@
 			<key>name</key>
 			<string>Инструменты для организации приема платежей</string>
 			<key>sections</key>
-			<array/>
+			<array>
+				<dict>
+					<key>id</key>
+					<integer>0</integer>
+					<key>name</key>
+					<string>Эквайринг</string>
+				</dict>
+				<dict>
+					<key>id</key>
+					<integer>1</integer>
+					<key>name</key>
+					<string>Прием платежей</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>id</key>
@@ -98,7 +111,26 @@
 			<key>name</key>
 			<string>Валютные операции</string>
 			<key>sections</key>
-			<array/>
+			<array>
+				<dict>
+					<key>id</key>
+					<integer>0</integer>
+					<key>name</key>
+					<string>Валютный контроль</string>
+				</dict>
+				<dict>
+					<key>id</key>
+					<integer>1</integer>
+					<key>name</key>
+					<string>Конверсионные операции</string>
+				</dict>
+				<dict>
+					<key>id</key>
+					<integer>2</integer>
+					<key>name</key>
+					<string>Международные переводы</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>id</key>

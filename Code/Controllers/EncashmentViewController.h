@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ServiceViewController.h"
 
-@interface EncashmentViewController : UIViewController
+@interface EncashmentViewController : ServiceViewController
 
 @end

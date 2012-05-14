@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 @class Service;
+@class Section;
 
 @interface ServicesViewController : UIViewController
 @property (nonatomic, strong) Service *service;
+@property (nonatomic, strong) Section *section;
 @end

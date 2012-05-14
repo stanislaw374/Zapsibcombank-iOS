@@ -15,6 +15,9 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        // Добавление стартовых страниц
+        [self.startImages addObject:[UIImage imageNamed:@"01_06_page2.png"]];
+        [self.startImages addObject:[UIImage imageNamed:@"01_06_page1.png"]];
     }
     return self;
 }

@@ -157,6 +157,10 @@
     Service *serviceToShow = [[Service services] objectAtIndex:indexOfService];
     ServicesViewController *view = [[ServicesViewController alloc] init];
     view.service = serviceToShow;
+    if (sender.tag == 1) {
+        view.service = [[Service services] objectAtIndex:0];
+        view.section = [view.service.sections objectAtIndex:5];
+    }
     [self.navigationController pushViewController:view animated:YES];
     return;
     

@@ -37,6 +37,9 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        // Добавление стартовых страниц
+        [self.startImages addObject:[UIImage imageNamed:@"01_01_page2.png"]];
+        [self.startImages addObject:[UIImage imageNamed:@"01_01_page1.png"]];
     }
     return self;
 }
@@ -54,9 +57,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
     self.scrollView.contentSize = CGSizeMake(1024, 1780);
-    
+
     // Анимация человечков
     for (int i = 0; i < self.persons.count; i++) {
         UIImageView *person = [self.persons objectAtIndex:i];
@@ -89,6 +91,8 @@
         frame.origin.x = 1024;
         label.frame = frame;
     }    
+    
+    
 }
 
 - (void)viewDidUnload

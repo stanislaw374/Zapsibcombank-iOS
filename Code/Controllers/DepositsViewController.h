@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ServiceViewController.h"
 
-@interface DepositsViewController : UIViewController
+@interface DepositsViewController : ServiceViewController
 @property (unsafe_unretained, nonatomic) IBOutlet UIImageView *imgRed;
 @property (unsafe_unretained, nonatomic) IBOutlet UIImageView *imgViolet;
 @property (unsafe_unretained, nonatomic) IBOutlet UIImageView *imgGreen;

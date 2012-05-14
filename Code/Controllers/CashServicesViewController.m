@@ -55,7 +55,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.scrollView.contentSize = CGSizeMake(1024, 1717);
+    self.scrollView.contentSize = CGSizeMake(1024, 1780);
     
     // Анимация человечков
     for (int i = 0; i < self.persons.count; i++) {
@@ -135,4 +135,11 @@
     }
 }
 
+- (IBAction)btnTarifs:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.zapsibkombank.ru/corporate/rko/account"]];
+}
+
+- (IBAction)btnAccount:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.zapsibkombank.ru/corporate/tarifs"]];
+}
 @end

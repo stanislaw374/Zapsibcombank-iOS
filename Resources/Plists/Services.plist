@@ -21,13 +21,13 @@
 					<key>id</key>
 					<integer>1</integer>
 					<key>name</key>
-					<string>Корпоративные карты</string>
+					<string>Пакеты услуг</string>
 				</dict>
 				<dict>
 					<key>id</key>
 					<integer>2</integer>
 					<key>name</key>
-					<string>Пакеты услуг</string>
+					<string>Корпоративные карты</string>
 				</dict>
 				<dict>
 					<key>id</key>

@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface CashServicesViewController : UIViewController
+- (IBAction)btnTarifs:(id)sender;
+- (IBAction)btnAccount:(id)sender;
+
 
 @end

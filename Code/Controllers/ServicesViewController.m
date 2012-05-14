@@ -185,10 +185,10 @@
                     self.currentSectionViewController = [[CashServicesViewController alloc] init];
                     break;
                 case 1:
-                    self.currentSectionViewController = [[CorporateCardsViewController alloc] init];
+                    self.currentSectionViewController = [[PackageOfServicesViewController alloc] init];
                     break;
                 case 2:
-                    self.currentSectionViewController = [[PackageOfServicesViewController alloc] init];
+                    self.currentSectionViewController = [[CorporateCardsViewController alloc] init];
                     break;
                 case 3:
                     self.currentSectionViewController = [[SalaryProjectViewController alloc] init];

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ServiceViewController.h"
 
-@interface DistantServiceViewController : UIViewController
+@interface DistantServiceViewController : ServiceViewController
 @property (unsafe_unretained, nonatomic) IBOutlet UIImageView *speedImage;
 @property (unsafe_unretained, nonatomic) IBOutlet UIImageView *usabilityImage;
 @property (unsafe_unretained, nonatomic) IBOutlet UIImageView *accessImage;

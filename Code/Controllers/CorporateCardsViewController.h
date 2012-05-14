@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ServiceViewController.h"
 
-@interface CorporateCardsViewController : UIViewController
+@interface CorporateCardsViewController : ServiceViewController
 
 @end

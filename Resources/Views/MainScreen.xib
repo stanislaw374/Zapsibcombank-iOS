@@ -180,39 +180,10 @@
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
-					<object class="IBUIButton" id="613866994">
-						<reference key="NSNextResponder" ref="766721923"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{40, 690}, {135, 58}}</string>
-						<reference key="NSSuperview" ref="766721923"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="289595031"/>
-						<string key="NSReuseIdentifierKey">_NS:241</string>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<reference key="IBUIHighlightedTitleColor" ref="672153277"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
-						<reference key="IBUINormalTitleShadowColor" ref="916564211"/>
-						<object class="NSCustomResource" key="IBUISelectedBackgroundImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">button_about_bank_selected_03.png</string>
-						</object>
-						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">button_about_bank.png</string>
-						</object>
-						<reference key="IBUIFontDescription" ref="469691721"/>
-						<reference key="IBUIFont" ref="404672026"/>
-					</object>
 					<object class="IBUIButton" id="289595031">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{194, 690}, {253, 58}}</string>
+						<string key="NSFrame">{{265, 690}, {253, 58}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="648047528"/>
@@ -241,7 +212,7 @@
 					<object class="IBUIButton" id="648047528">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{466, 690}, {415, 58}}</string>
+						<string key="NSFrame">{{535, 690}, {220, 57}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="977301376"/>
@@ -658,6 +629,35 @@
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 					</object>
+					<object class="IBUIButton" id="613866994">
+						<reference key="NSNextResponder" ref="766721923"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{40, 690}, {209, 57}}</string>
+						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="289595031"/>
+						<string key="NSReuseIdentifierKey">_NS:241</string>
+						<bool key="IBUIOpaque">NO</bool>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<int key="IBUIContentHorizontalAlignment">0</int>
+						<int key="IBUIContentVerticalAlignment">0</int>
+						<reference key="IBUIHighlightedTitleColor" ref="672153277"/>
+						<object class="NSColor" key="IBUINormalTitleColor">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
+						</object>
+						<reference key="IBUINormalTitleShadowColor" ref="916564211"/>
+						<object class="NSCustomResource" key="IBUISelectedBackgroundImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">button_about_bank_selected_03.png</string>
+						</object>
+						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">button_about_bank.png</string>
+						</object>
+						<reference key="IBUIFontDescription" ref="469691721"/>
+						<reference key="IBUIFont" ref="404672026"/>
+					</object>
 				</array>
 				<string key="NSFrameSize">{1004, 768}</string>
 				<reference key="NSSuperview"/>
@@ -734,14 +734,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">btnAboutBank</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="613866994"/>
-					</object>
-					<int key="connectionID">85</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">btnPresidentsStatement</string>
 						<reference key="source" ref="841351856"/>
 						<reference key="destination" ref="289595031"/>
@@ -779,6 +771,14 @@
 						<reference key="destination" ref="327045798"/>
 					</object>
 					<int key="connectionID">105</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">btnAboutBank</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="613866994"/>
+					</object>
+					<int key="connectionID">85</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -928,14 +928,14 @@
 							<reference ref="509991670"/>
 							<reference ref="92579737"/>
 							<reference ref="235111874"/>
-							<reference ref="613866994"/>
 							<reference ref="289595031"/>
-							<reference ref="648047528"/>
 							<reference ref="977301376"/>
 							<reference ref="957273081"/>
 							<reference ref="929570674"/>
 							<reference ref="963242731"/>
 							<reference ref="960705550"/>
+							<reference ref="613866994"/>
+							<reference ref="648047528"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -971,12 +971,6 @@
 						<reference key="parent" ref="766721923"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">20</int>
-						<reference key="object" ref="613866994"/>
-						<reference key="parent" ref="766721923"/>
-						<string key="objectName">О банке</string>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">21</int>
 						<reference key="object" ref="289595031"/>
 						<reference key="parent" ref="766721923"/>
@@ -986,7 +980,7 @@
 						<int key="objectID">22</int>
 						<reference key="object" ref="648047528"/>
 						<reference key="parent" ref="766721923"/>
-						<string key="objectName">О рейтингах</string>
+						<string key="objectName">О Запсибкомбанке</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">23</int>
@@ -1122,6 +1116,12 @@
 						<reference key="object" ref="327045798"/>
 						<reference key="parent" ref="0"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">20</int>
+						<reference key="object" ref="613866994"/>
+						<reference key="parent" ref="766721923"/>
+						<string key="objectName">Реквизиты банка</string>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -1133,9 +1133,9 @@
 				<string key="101.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="20.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<real value="2" key="20.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
+				<real value="0.0" key="20.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="21.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<real value="2" key="21.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
+				<real value="0.0" key="21.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="22.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<real value="2" key="22.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="23.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -1334,14 +1334,14 @@
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="about_bank_photo.png">{156, 196}</string>
 			<string key="addresses_icon.png">{16, 14}</string>
-			<string key="button_about_bank.png">{135, 58}</string>
-			<string key="button_about_bank_selected_03.png">{135, 63}</string>
+			<string key="button_about_bank.png">{209, 57}</string>
+			<string key="button_about_bank_selected_03.png">{209, 62}</string>
 			<string key="button_home.png">{140, 42}</string>
 			<string key="button_internet_bank.png">{295, 69}</string>
 			<string key="button_president_message.png">{253, 58}</string>
 			<string key="button_president_selected_03.png">{253, 63}</string>
-			<string key="button_ratings.png">{415, 58}</string>
-			<string key="button_ratings_selected.png">{415, 62}</string>
+			<string key="button_ratings.png">{220, 57}</string>
+			<string key="button_ratings_selected.png">{220, 62}</string>
 			<string key="currency_block.png">{297, 211}</string>
 			<string key="info_icon.png">{15, 16}</string>
 			<string key="main_background.png">{1024, 768}</string>

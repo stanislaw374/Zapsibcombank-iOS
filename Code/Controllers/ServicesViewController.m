@@ -246,6 +246,21 @@
                     break;
             }
             break;
+        case 6:
+            switch (ID) {
+                case 0:
+                    self.currentSectionViewController = [[CurrencyControlViewController alloc] init];
+                    break;
+                case 1:
+                    self.currentSectionViewController = [[ConversionOperationsViewController alloc] init];
+                    break;
+                case 2:
+                    self.currentSectionViewController = [[InternationalTransactionsViewController alloc] init];
+                    break;
+
+                    
+            }   
+            break;
     }
     
     self.currentSectionViewController.view.frame = CGRectMake(0, 0, self.contentView.frame.size.width, self.contentView.frame.size.height);    

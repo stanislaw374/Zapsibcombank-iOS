@@ -34,14 +34,30 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    for (UIImage *startImage in self.startImages) {
-        UIImageView *iv = [[UIImageView alloc] initWithImage:startImage];
-        [iv setUserInteractionEnabled:YES];
-        UIPanGestureRecognizer *gesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(viewDragged:)];
-        [iv addGestureRecognizer:gesture];
-        [self.view addSubview:iv];
+    
+    for (NSObject *startView in self.startImages) {
+        if ( [startView isKindOfClass:[UIImage alloc]]){
+            UIImage *startImage = (UIImage *)startView;
+            UIImageView *iv = [[UIImageView alloc] initWithImage:startImage];
+            [iv setUserInteractionEnabled:YES];
+            UIPanGestureRecognizer *gesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(viewDragged:)];
+            [iv addGestureRecognizer:gesture];
+            [self.view addSubview:iv];
+        } else {
+            [(UIView *)startView setUserInteractionEnabled:YES];
+            UIPanGestureRecognizer *gesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(viewDragged:)];
+            [(UIView *)startView addGestureRecognizer:gesture];
+            [self.view addSubview:(UIView *)startView];
+        }
     }
+//	// Do any additional setup after loading the view.
+//    for (UIImage *startImage in self.startImages) {
+//        UIImageView *iv = [[UIImageView alloc] initWithImage:startImage];
+//        [iv setUserInteractionEnabled:YES];
+//        UIPanGestureRecognizer *gesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(viewDragged:)];
+//        [iv addGestureRecognizer:gesture];
+//        [self.view addSubview:iv];
+//    }
 }
 
 - (void)viewDidUnload

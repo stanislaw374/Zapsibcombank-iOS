@@ -36,7 +36,7 @@
     [super viewDidLoad];
     
     for (NSObject *startView in self.startImages) {
-        if ( [startView isKindOfClass:[UIImage alloc]]){
+        if ( [startView isKindOfClass:[UIImage class]]){
             UIImage *startImage = (UIImage *)startView;
             UIImageView *iv = [[UIImageView alloc] initWithImage:startImage];
             [iv setUserInteractionEnabled:YES];
@@ -74,7 +74,7 @@
 #pragma mark - Helpers
 - (void)viewDragged:(UIPanGestureRecognizer *)gesture {
     CGPoint translation = [gesture translationInView:gesture.view];
-    //NSLog(@"%@: %@", NSStringFromSelector(_cmd), NSStringFromCGPoint(translation));
+    NSLog(@"%@: %@", NSStringFromSelector(_cmd), NSStringFromCGPoint(translation));
     switch (gesture.state) {
         case UIGestureRecognizerStateChanged:
             if (translation.x < 0) {

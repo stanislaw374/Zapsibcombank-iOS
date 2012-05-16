@@ -28,6 +28,9 @@
 #import "ConversionOperationsViewController.h"
 #import "InternationalTransactionsViewController.h"
 
+#import "CreditViewController.h"
+#import "CreditExpressViewController.h"
+
 @interface ServicesViewController() <AllServicesViewControllerDelegate, UIScrollViewDelegate>
 @property (unsafe_unretained, nonatomic) IBOutlet UIView *contentView;
 @property (unsafe_unretained, nonatomic) IBOutlet UIScrollView *menuScrollView;
@@ -249,10 +252,10 @@
         case 6:
             switch (ID) {
                 case 0:
-                    self.currentSectionViewController = [[CurrencyControlViewController alloc] init];
+                    self.currentSectionViewController = [[CreditViewController alloc] init];
                     break;
                 case 1:
-                    self.currentSectionViewController = [[ConversionOperationsViewController alloc] init];
+                    self.currentSectionViewController = [[CreditExpressViewController alloc] init];
                     break;
                 case 2:
                     self.currentSectionViewController = [[InternationalTransactionsViewController alloc] init];

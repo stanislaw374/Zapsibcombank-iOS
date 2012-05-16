@@ -19,7 +19,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        [self.startImages addObject:[self.view viewWithTag:1]];
+        [self.startImages addObject:[UIImage imageNamed:@"00_start_8_photo.png"]];
         [self.startImages addObject:[self.view viewWithTag:2]];
         
     }

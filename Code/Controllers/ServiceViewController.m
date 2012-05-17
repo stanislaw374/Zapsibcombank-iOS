@@ -36,7 +36,7 @@
     [super viewDidLoad];
     
     for (NSObject *startView in self.startImages) {
-        if ( [startView isKindOfClass:[UIImage class]]){
+        if ([startView isKindOfClass:[UIImage class]]){
             UIImage *startImage = (UIImage *)startView;
             UIImageView *iv = [[UIImageView alloc] initWithImage:startImage];
             [iv setUserInteractionEnabled:YES];
@@ -47,7 +47,7 @@
             [(UIView *)startView setUserInteractionEnabled:YES];
             UIPanGestureRecognizer *gesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(viewDragged:)];
             [(UIView *)startView addGestureRecognizer:gesture];
-            [self.view addSubview:(UIView *)startView];
+            [self.view bringSubviewToFront:(UIView *)startView];
         }
     }
 //	// Do any additional setup after loading the view.

@@ -19,15 +19,14 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        [self.startImages addObject:[UIImage imageNamed:@"00_start_8_photo.png"]];
-        [self.startImages addObject:[self.view viewWithTag:2]];
-        
     }
     return self;
 }
 
 - (void)viewDidLoad
 {
+    [self.startImages addObject:[self.view viewWithTag:2]];
+    [self.startImages addObject:[UIImage imageNamed:@"00_start_8_photo.png"]];
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }

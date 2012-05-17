@@ -396,6 +396,10 @@
 		86EB29E8155B4F7B0013E8B6 /* 00_top_bar44.png in Resources */ = {isa = PBXBuildFile; fileRef = 86EB29DE155B4F7B0013E8B6 /* 00_top_bar44.png */; };
 		86EB29EC155B51E00013E8B6 /* AllServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EB29EA155B51DF0013E8B6 /* AllServicesViewController.m */; };
 		86EB29ED155B51E00013E8B6 /* AllServicesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86EB29EB155B51DF0013E8B6 /* AllServicesViewController.xib */; };
+		CC0DC4B01563C55B00B6AD3E /* 06_01_top_bar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CC0DC4AC1563C55B00B6AD3E /* 06_01_top_bar_bg.png */; };
+		CC0DC4B11563C55B00B6AD3E /* 06_02_01_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = CC0DC4AD1563C55B00B6AD3E /* 06_02_01_tab.png */; };
+		CC0DC4B21563C55B00B6AD3E /* 06_02_02_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = CC0DC4AE1563C55B00B6AD3E /* 06_02_02_tab.png */; };
+		CC0DC4B31563C55B00B6AD3E /* 06_02_03_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = CC0DC4AF1563C55B00B6AD3E /* 06_02_03_tab.png */; };
 		CC51CF501563AC3F001B6596 /* 06_00_top_bar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CC51CF4D1563AC3F001B6596 /* 06_00_top_bar_bg.png */; };
 		CC51CF511563AC3F001B6596 /* 06_01_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = CC51CF4E1563AC3F001B6596 /* 06_01_photo.png */; };
 		CC51CF521563AC3F001B6596 /* 06_02_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = CC51CF4F1563AC3F001B6596 /* 06_02_tab.png */; };
@@ -907,6 +911,10 @@
 		86EB29E9155B51DF0013E8B6 /* AllServicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllServicesViewController.h; sourceTree = "<group>"; };
 		86EB29EA155B51DF0013E8B6 /* AllServicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllServicesViewController.m; sourceTree = "<group>"; };
 		86EB29EB155B51DF0013E8B6 /* AllServicesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AllServicesViewController.xib; sourceTree = "<group>"; };
+		CC0DC4AC1563C55B00B6AD3E /* 06_01_top_bar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 06_01_top_bar_bg.png; sourceTree = "<group>"; };
+		CC0DC4AD1563C55B00B6AD3E /* 06_02_01_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 06_02_01_tab.png; sourceTree = "<group>"; };
+		CC0DC4AE1563C55B00B6AD3E /* 06_02_02_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 06_02_02_tab.png; sourceTree = "<group>"; };
+		CC0DC4AF1563C55B00B6AD3E /* 06_02_03_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 06_02_03_tab.png; sourceTree = "<group>"; };
 		CC4BC5BD1554DE9A0057E65B /* 01_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01_photo.png; sourceTree = "<group>"; };
 		CC4BC5BE1554DE9A0057E65B /* 02_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02_0.png; sourceTree = "<group>"; };
 		CC4BC5BF1554DE9A0057E65B /* 02_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02_1.png; sourceTree = "<group>"; };
@@ -1821,6 +1829,17 @@
 			path = "Services screen";
 			sourceTree = "<group>";
 		};
+		CC0DC4AB1563C55B00B6AD3E /* 06_02_b */ = {
+			isa = PBXGroup;
+			children = (
+				CC0DC4AC1563C55B00B6AD3E /* 06_01_top_bar_bg.png */,
+				CC0DC4AD1563C55B00B6AD3E /* 06_02_01_tab.png */,
+				CC0DC4AE1563C55B00B6AD3E /* 06_02_02_tab.png */,
+				CC0DC4AF1563C55B00B6AD3E /* 06_02_03_tab.png */,
+			);
+			path = 06_02_b;
+			sourceTree = "<group>";
+		};
 		CC4BC5BA1554DE9A0057E65B /* pages */ = {
 			isa = PBXGroup;
 			children = (
@@ -1952,6 +1971,7 @@
 		CCF2B4511563747200F41A64 /* 6. Credits */ = {
 			isa = PBXGroup;
 			children = (
+				CC0DC4AB1563C55B00B6AD3E /* 06_02_b */,
 				CC51CF4C1563AC3F001B6596 /* 06_01_a */,
 				CCF2B4521563747200F41A64 /* 00_start_8-3_0.png */,
 				CCF2B4531563747200F41A64 /* 00_start_8-3_1.png */,
@@ -2392,6 +2412,10 @@
 				CC51CF511563AC3F001B6596 /* 06_01_photo.png in Resources */,
 				CC51CF521563AC3F001B6596 /* 06_02_tab.png in Resources */,
 				CC51CF581563B097001B6596 /* CreditExpressViewController.xib in Resources */,
+				CC0DC4B01563C55B00B6AD3E /* 06_01_top_bar_bg.png in Resources */,
+				CC0DC4B11563C55B00B6AD3E /* 06_02_01_tab.png in Resources */,
+				CC0DC4B21563C55B00B6AD3E /* 06_02_02_tab.png in Resources */,
+				CC0DC4B31563C55B00B6AD3E /* 06_02_03_tab.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

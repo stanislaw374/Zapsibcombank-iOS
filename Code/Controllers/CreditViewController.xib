@@ -619,6 +619,7 @@
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
 						<int key="IBUITag">2</int>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<bool key="IBUICanCancelContentTouches">NO</bool>
 					</object>
 					<object class="IBUIScrollView" id="331142730">
 						<reference key="NSNextResponder" ref="766721923"/>
@@ -741,7 +742,6 @@
 								<string key="NSFrame">{{20, 324}, {985, 719}}</string>
 								<reference key="NSSuperview" ref="331142730"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>

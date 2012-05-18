@@ -1,18 +1,18 @@
 //
-//  CreditExpressViewController.m
+//  LongBusinessCreditViewController.m
 //  Zapsibcombank
 //
-//  Created by Кирилл Кунст on 16.05.12.
+//  Created by Кирилл Кунст on 17.05.12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "CreditExpressViewController.h"
+#import "LongBusinessCreditViewController.h"
 
-@interface CreditExpressViewController ()
+@interface LongBusinessCreditViewController ()
 
 @end
 
-@implementation CreditExpressViewController
+@implementation LongBusinessCreditViewController
 @synthesize scrollView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -27,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.scrollView.contentSize = CGSizeMake(1024, 900);
+    self.scrollView.contentSize = CGSizeMake(1024,6500);
     // Do any additional setup after loading the view from its nib.
 }
 

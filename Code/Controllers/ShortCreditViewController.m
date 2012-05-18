@@ -1,19 +1,18 @@
 //
-//  CreditExpressViewController.m
+//  ShortCreditViewController.m
 //  Zapsibcombank
 //
-//  Created by Кирилл Кунст on 16.05.12.
+//  Created by Кирилл Кунст on 17.05.12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "CreditExpressViewController.h"
+#import "ShortCreditViewController.h"
 
-@interface CreditExpressViewController ()
+@interface ShortCreditViewController ()
 
 @end
 
-@implementation CreditExpressViewController
-@synthesize scrollView;
+@implementation ShortCreditViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,13 +26,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.scrollView.contentSize = CGSizeMake(1024, 900);
     // Do any additional setup after loading the view from its nib.
 }
 
 - (void)viewDidUnload
 {
-    [self setScrollView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

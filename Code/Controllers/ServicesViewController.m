@@ -28,8 +28,15 @@
 #import "ConversionOperationsViewController.h"
 #import "InternationalTransactionsViewController.h"
 
+// кредитование 
 #import "CreditViewController.h"
 #import "CreditExpressViewController.h"
+#import "MicroCreditViewController.h"
+#import "ShortCreditViewController.h"
+#import "SevenDaysCreditViewController.h"
+#import "LongBusinessCreditViewController.h"
+#import "CompetitionsCreditViewController.h"
+
 
 @interface ServicesViewController() <AllServicesViewControllerDelegate, UIScrollViewDelegate>
 @property (unsafe_unretained, nonatomic) IBOutlet UIView *contentView;
@@ -249,6 +256,7 @@
                     break;
             }
             break;
+        // кредитование
         case 6:
             switch (ID) {
                 case 0:
@@ -258,8 +266,21 @@
                     self.currentSectionViewController = [[CreditExpressViewController alloc] init];
                     break;
                 case 2:
-                    self.currentSectionViewController = [[InternationalTransactionsViewController alloc] init];
+                    self.currentSectionViewController = [[MicroCreditViewController alloc] init];
                     break;
+                case 3:
+                    self.currentSectionViewController = [[ShortCreditViewController alloc] init];
+                    break;
+                case 4:
+                    self.currentSectionViewController = [[LongBusinessCreditViewController alloc] init];
+                    break;
+                case 5:
+                    self.currentSectionViewController = [[SevenDaysCreditViewController alloc] init];
+                    break;
+                case 6:
+                    self.currentSectionViewController = [[CompetitionsCreditViewController alloc] init];
+                    break;
+                    
 
                     
             }   

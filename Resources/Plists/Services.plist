@@ -177,6 +177,18 @@
 					<key>name</key>
 					<string>Программа долгосрочного кредитования</string>
 				</dict>
+				<dict>
+					<key>id</key>
+					<string>5</string>
+					<key>name</key>
+					<string>Долгосрочные кредиты сроком до 7 лет</string>
+				</dict>
+				<dict>
+					<key>id</key>
+					<string>6</string>
+					<key>name</key>
+					<string>Кредиты на участие в конкурсах и исполнение выигранных контрактов</string>
+				</dict>
 			</array>
 		</dict>
 		<dict>

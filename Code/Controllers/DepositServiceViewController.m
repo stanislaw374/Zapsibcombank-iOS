@@ -1,19 +1,19 @@
 //
-//  CreditViewController.m
+//  DepositServiceViewController.m
 //  Zapsibcombank
 //
-//  Created by Кирилл Кунст on 16.05.12.
+//  Created by Кирилл Кунст on 22.05.12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "CreditViewController.h"
+#import "DepositServiceViewController.h"
 
-@interface CreditViewController ()
+@interface DepositServiceViewController ()
 
 @end
 
-@implementation CreditViewController
-@synthesize scrollVIew;
+@implementation DepositServiceViewController
+@synthesize scrollView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,16 +26,17 @@
 
 - (void)viewDidLoad
 {
-    [self.startImages addObject:[self.view viewWithTag:2]];
-    [self.startImages addObject:[UIImage imageNamed:@"00_start_8_photo.png"]];
-    self.scrollVIew.contentSize = CGSizeMake(1024, 1080);
+    
+    [self.startImages addObject:[UIImage imageNamed:@"00_start_10-2.png"]];
+    [self.startImages addObject:[UIImage imageNamed:@"00_start_10-1.png"]];
+    [self scrollView].contentSize = CGSizeMake(1024, 1400);
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
 
 - (void)viewDidUnload
 {
-    [self setScrollVIew:nil];
+    [self setScrollView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

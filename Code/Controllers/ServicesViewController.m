@@ -37,6 +37,13 @@
 #import "LongBusinessCreditViewController.h"
 #import "CompetitionsCreditViewController.h"
 
+// гарантийные операции 
+#import "DocumentAccreditiveViewController.h"
+#import "BankWarrantyViewController.h"
+
+// ценные бумаги
+#import "DepositServiceViewController.h"
+
 
 @interface ServicesViewController() <AllServicesViewControllerDelegate, UIScrollViewDelegate>
 @property (unsafe_unretained, nonatomic) IBOutlet UIView *contentView;
@@ -285,6 +292,28 @@
                     
             }   
             break;
+        case 7:
+            switch (ID) {
+                case 0:
+                    self.currentSectionViewController = [[DocumentAccreditiveViewController alloc] init];
+                    break;
+                case 1:
+                    self.currentSectionViewController = [[BankWarrantyViewController alloc] init];
+                    break;
+                    
+                    
+            }
+            break;
+        case 8: 
+            switch (ID) {
+                case 0:
+                    self.currentSectionViewController = [[DepositServiceViewController alloc] init];
+                    break;
+                    
+                    
+            }
+            break;
+            
     }
     
     self.currentSectionViewController.view.frame = CGRectMake(0, 0, self.contentView.frame.size.width, self.contentView.frame.size.height);    

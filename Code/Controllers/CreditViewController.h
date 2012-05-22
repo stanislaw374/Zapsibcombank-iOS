@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "ServiceViewController.h"
 @interface CreditViewController : ServiceViewController
+@property (unsafe_unretained, nonatomic) IBOutlet UIScrollView *scrollVIew;
 
 @end

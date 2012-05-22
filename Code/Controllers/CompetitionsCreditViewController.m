@@ -13,6 +13,8 @@
 @end
 
 @implementation CompetitionsCreditViewController
+@synthesize scrollView;
+@synthesize bigArrows;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,13 +29,35 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self scrollView].contentSize = CGSizeMake(1024, 3300);
+    self.scrollView.contentOffset = CGPointMake(0,0);
+    // Анимация стрелок
+    for (int i = 0; i < self.bigArrows.count; i++) {
+        UIImageView *person = [self.bigArrows objectAtIndex:i];
+        [UIView animateWithDuration:0.5f delay:0 options:UIViewAnimationCurveEaseInOut | UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse animations:^{
+            CGRect frame = person.frame;
+            frame.origin.x += 30;
+            person.frame = frame;
+        } completion:nil];
+    }
+    
 }
 
 - (void)viewDidUnload
 {
+    [self setScrollView:nil];
+    [self setBigArrows:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+
+-(void) scrollTo:(float)height {
+    [UIView beginAnimations: @"anim" context: nil];
+    [UIView setAnimationBeginsFromCurrentState: YES];
+    [UIView setAnimationDuration: 1.0f];
+    self.scrollView.contentOffset = CGPointMake(0, height);
+    [UIView commitAnimations];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -41,4 +65,16 @@
 	return YES;
 }
 
+- (IBAction)btnStep1:(id)sender {
+    [self scrollTo:550];
+     
+}
+
+- (IBAction)btnStep2:(id)sender {
+    [self scrollTo:1500];
+}
+
+- (IBAction)btnStep3:(id)sender {
+    [self scrollTo:2400];
+}
 @end

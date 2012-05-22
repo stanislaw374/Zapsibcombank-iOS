@@ -197,7 +197,20 @@
 			<key>name</key>
 			<string>Гарантийные операции</string>
 			<key>sections</key>
-			<array/>
+			<array>
+				<dict>
+					<key>id</key>
+					<string>0</string>
+					<key>name</key>
+					<string>Документарный аккредитив</string>
+				</dict>
+				<dict>
+					<key>id</key>
+					<string>1</string>
+					<key>name</key>
+					<string>Банковская гарантия</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>id</key>
@@ -205,7 +218,14 @@
 			<key>name</key>
 			<string>Ценные бумаги</string>
 			<key>sections</key>
-			<array/>
+			<array>
+				<dict>
+					<key>id</key>
+					<string>0</string>
+					<key>name</key>
+					<string>Депозитарные услуги</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>id</key>

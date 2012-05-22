@@ -1,19 +1,19 @@
 //
-//  CreditViewController.m
+//  BankWarrantyViewController.m
 //  Zapsibcombank
 //
-//  Created by Кирилл Кунст on 16.05.12.
+//  Created by Кирилл Кунст on 21.05.12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "CreditViewController.h"
+#import "BankWarrantyViewController.h"
 
-@interface CreditViewController ()
+@interface BankWarrantyViewController ()
 
 @end
 
-@implementation CreditViewController
-@synthesize scrollVIew;
+@implementation BankWarrantyViewController
+@synthesize scrollView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,16 +26,14 @@
 
 - (void)viewDidLoad
 {
-    [self.startImages addObject:[self.view viewWithTag:2]];
-    [self.startImages addObject:[UIImage imageNamed:@"00_start_8_photo.png"]];
-    self.scrollVIew.contentSize = CGSizeMake(1024, 1080);
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self scrollView].contentSize = CGSizeMake(1024, 1800);
 }
 
 - (void)viewDidUnload
 {
-    [self setScrollVIew:nil];
+    [self setScrollView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

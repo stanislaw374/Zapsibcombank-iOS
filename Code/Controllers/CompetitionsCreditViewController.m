@@ -53,11 +53,13 @@
 }
 
 -(void) scrollTo:(float)height {
+    
     [UIView beginAnimations: @"anim" context: nil];
     [UIView setAnimationBeginsFromCurrentState: YES];
     [UIView setAnimationDuration: 1.0f];
     self.scrollView.contentOffset = CGPointMake(0, height);
     [UIView commitAnimations];
+    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

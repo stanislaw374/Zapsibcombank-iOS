@@ -44,6 +44,9 @@
 // ценные бумаги
 #import "DepositServiceViewController.h"
 
+//управление личными финансами 
+#import "VipDepositViewController.h"
+#import "VipCreditViewController.h"
 
 @interface ServicesViewController() <AllServicesViewControllerDelegate, UIScrollViewDelegate>
 @property (unsafe_unretained, nonatomic) IBOutlet UIView *contentView;
@@ -313,6 +316,17 @@
                     
             }
             break;
+        case 9:
+            switch (ID) {
+                case 0:
+                    self.currentSectionViewController = [[VipDepositViewController alloc] init];
+                    break;
+                case 1:
+                    self.currentSectionViewController = [[VipCreditViewController alloc] init];
+                    break;
+            }
+            break;
+            
             
     }
     

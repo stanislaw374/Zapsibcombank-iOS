@@ -19,7 +19,7 @@
 @end
 
 @implementation CreditViewController
-
+@synthesize scrollVIew;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

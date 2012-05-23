@@ -822,7 +822,6 @@ AAAAAAAAdGV4dAAAAABDb3B5cmlnaHQgQXBwbGUsIEluYy4sIDIwMDgAA</bytes>
 								<string key="NSFrame">{{20, 324}, {985, 719}}</string>
 								<reference key="NSSuperview" ref="331142730"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -832,7 +831,7 @@ AAAAAAAAdGV4dAAAAABDb3B5cmlnaHQgQXBwbGUsIEluYy4sIDIwMDgAA</bytes>
 								</object>
 							</object>
 						</array>
-						<string key="NSFrameSize">{1024, 748}</string>
+						<string key="NSFrame">{{0, 2000}, {1024, 748}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="464424394"/>
@@ -879,6 +878,132 @@ AAAAAAAAdGV4dAAAAABDb3B5cmlnaHQgQXBwbGUsIEluYy4sIDIwMDgAA</bytes>
 						<reference key="destination" ref="331142730"/>
 					</object>
 					<int key="connectionID">39</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">draftClick:</string>
+						<reference key="source" ref="477398343"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">45</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">expressDraftClick:</string>
+						<reference key="source" ref="835398740"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">48</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">microCreditClick:</string>
+						<reference key="source" ref="126466534"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">49</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">shortCreditClick:</string>
+						<reference key="source" ref="708190424"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">50</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">longCreditClick:</string>
+						<reference key="source" ref="688938672"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">52</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">concursClick:</string>
+						<reference key="source" ref="421824600"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">65</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">gosClick:</string>
+						<reference key="source" ref="402520418"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">66</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">gos2Click:</string>
+						<reference key="source" ref="626878916"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">67</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">businessAutoClick:</string>
+						<reference key="source" ref="502225120"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">54</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">deviceClick:</string>
+						<reference key="source" ref="361721632"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">55</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">longClick:</string>
+						<reference key="source" ref="235525270"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">57</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">buildClick:</string>
+						<reference key="source" ref="78030684"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">61</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">recClick:</string>
+						<reference key="source" ref="890590502"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">62</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">sevenclick:</string>
+						<reference key="source" ref="419969180"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">64</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -977,9 +1102,9 @@ AAAAAAAAdGV4dAAAAABDb3B5cmlnaHQgQXBwbGUsIEluYy4sIDIwMDgAA</bytes>
 							<reference ref="235525270"/>
 							<reference ref="78030684"/>
 							<reference ref="890590502"/>
-							<reference ref="419969180"/>
 							<reference ref="11607199"/>
 							<reference ref="143635493"/>
+							<reference ref="419969180"/>
 						</array>
 						<reference key="parent" ref="766721923"/>
 					</object>
@@ -1148,13 +1273,87 @@ AAAAAAAAdGV4dAAAAABDb3B5cmlnaHQgQXBwbGUsIEluYy4sIDIwMDgAA</bytes>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">42</int>
+			<int key="maxID">67</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
 					<string key="className">CreditViewController</string>
 					<string key="superclassName">ServiceViewController</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="buildClick:">id</string>
+						<string key="businessAutoClick:">id</string>
+						<string key="concursClick:">id</string>
+						<string key="deviceClick:">id</string>
+						<string key="draftClick:">id</string>
+						<string key="expressDraftClick:">id</string>
+						<string key="gos2Click:">id</string>
+						<string key="gosClick:">id</string>
+						<string key="longClick:">id</string>
+						<string key="longCreditClick:">id</string>
+						<string key="microCreditClick:">id</string>
+						<string key="recClick:">id</string>
+						<string key="sevenclick:">id</string>
+						<string key="shortCreditClick:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="buildClick:">
+							<string key="name">buildClick:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="businessAutoClick:">
+							<string key="name">businessAutoClick:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="concursClick:">
+							<string key="name">concursClick:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="deviceClick:">
+							<string key="name">deviceClick:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="draftClick:">
+							<string key="name">draftClick:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="expressDraftClick:">
+							<string key="name">expressDraftClick:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="gos2Click:">
+							<string key="name">gos2Click:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="gosClick:">
+							<string key="name">gosClick:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="longClick:">
+							<string key="name">longClick:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="longCreditClick:">
+							<string key="name">longCreditClick:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="microCreditClick:">
+							<string key="name">microCreditClick:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="recClick:">
+							<string key="name">recClick:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="sevenclick:">
+							<string key="name">sevenclick:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="shortCreditClick:">
+							<string key="name">shortCreditClick:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
 					<object class="NSMutableDictionary" key="outlets">
 						<string key="NS.key.0">scrollVIew</string>
 						<string key="NS.object.0">UIScrollView</string>

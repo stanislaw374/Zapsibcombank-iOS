@@ -7,13 +7,19 @@
 //
 
 #import "CreditViewController.h"
+#import "CreditExpressViewController.h"
+#import "ShortCreditViewController.h"
+#import "MicroCreditViewController.h"
+#import "SevenDaysCreditViewController.h"
+#import "LongBusinessCreditViewController.h"
+#import "CompetitionsCreditViewController.h"
 
 @interface CreditViewController ()
 
 @end
 
 @implementation CreditViewController
-@synthesize scrollVIew;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,4 +52,47 @@
 	return YES;
 }
 
+- (IBAction)draftClick:(id)sender {
+    
+    
+}
+
+- (IBAction)expressDraftClick:(id)sender {
+}
+
+- (IBAction)microCreditClick:(id)sender {
+}
+
+- (IBAction)shortCreditClick:(id)sender {
+}
+
+- (IBAction)longCreditClick:(id)sender {
+}
+
+- (IBAction)businessAutoClick:(id)sender {
+}
+
+- (IBAction)deviceClick:(id)sender {
+}
+
+- (IBAction)longClick:(id)sender {
+}
+
+- (IBAction)buildClick:(id)sender {
+}
+
+- (IBAction)recClick:(id)sender {
+}
+
+- (IBAction)sevenclick:(id)sender {
+}
+
+- (IBAction)concursClick:(id)sender {
+}
+
+- (IBAction)gosClick:(id)sender {
+}
+
+- (IBAction)gos2Click:(id)sender {
+}
 @end

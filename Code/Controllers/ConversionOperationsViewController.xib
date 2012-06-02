@@ -2,10 +2,10 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1296</int>
-		<string key="IBDocument.SystemVersion">11E53</string>
+		<string key="IBDocument.SystemVersion">11D50b</string>
 		<string key="IBDocument.InterfaceBuilderVersion">2182</string>
-		<string key="IBDocument.AppKitVersion">1138.47</string>
-		<string key="IBDocument.HIToolboxVersion">569.00</string>
+		<string key="IBDocument.AppKitVersion">1138.32</string>
+		<string key="IBDocument.HIToolboxVersion">568.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			<string key="NS.object.0">1181</string>
@@ -93,7 +93,7 @@
 							<object class="IBUILabel" id="695045566">
 								<reference key="NSNextResponder" ref="209911406"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{20, 95}, {984, 50}}</string>
+								<string key="NSFrame">{{20, 86}, {984, 50}}</string>
 								<reference key="NSSuperview" ref="209911406"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="13382941"/>
@@ -113,13 +113,13 @@
 								<float key="IBUIMinimumFontSize">10</float>
 								<int key="IBUINumberOfLines">0</int>
 								<int key="IBUILineBreakMode">0</int>
-								<object class="IBUIFontDescription" key="IBUIFontDescription" id="349315861">
+								<object class="IBUIFontDescription" key="IBUIFontDescription">
 									<int key="type">1</int>
-									<double key="pointSize">20</double>
+									<double key="pointSize">21</double>
 								</object>
-								<object class="NSFont" key="IBUIFont" id="556834135">
+								<object class="NSFont" key="IBUIFont">
 									<string key="NSName">Helvetica</string>
-									<double key="NSSize">20</double>
+									<double key="NSSize">21</double>
 									<int key="NSfFlags">16</int>
 								</object>
 								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
@@ -142,7 +142,7 @@
 							<object class="IBUILabel" id="115623570">
 								<reference key="NSNextResponder" ref="209911406"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{190, 153}, {814, 145}}</string>
+								<string key="NSFrame">{{190, 132}, {814, 145}}</string>
 								<reference key="NSSuperview" ref="209911406"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="94208144"/>
@@ -162,8 +162,15 @@
 								<float key="IBUIMinimumFontSize">10</float>
 								<int key="IBUINumberOfLines">0</int>
 								<int key="IBUILineBreakMode">0</int>
-								<reference key="IBUIFontDescription" ref="349315861"/>
-								<reference key="IBUIFont" ref="556834135"/>
+								<object class="IBUIFontDescription" key="IBUIFontDescription">
+									<int key="type">1</int>
+									<double key="pointSize">18</double>
+								</object>
+								<object class="NSFont" key="IBUIFont">
+									<string key="NSName">Helvetica</string>
+									<double key="NSSize">18</double>
+									<int key="NSfFlags">16</int>
+								</object>
 								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
 							</object>
 							<object class="IBUIImageView" id="94208144">
@@ -250,7 +257,7 @@
 							<object class="IBUILabel" id="639259501">
 								<reference key="NSNextResponder" ref="209911406"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{253, 349}, {140, 30}}</string>
+								<string key="NSFrame">{{253, 353}, {140, 30}}</string>
 								<reference key="NSSuperview" ref="209911406"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="148292500"/>
@@ -281,7 +288,7 @@
 							<object class="IBUILabel" id="148292500">
 								<reference key="NSNextResponder" ref="209911406"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{253, 379}, {741, 120}}</string>
+								<string key="NSFrame">{{253, 366}, {741, 120}}</string>
 								<reference key="NSSuperview" ref="209911406"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="932997623"/>
@@ -291,11 +298,7 @@
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<string type="base64-UTF8" key="IBUIText">0JTQu9GPINC/0YDQtdC00L/RgNC40Y/RgtC40Lkg0LvRjtCx0YvRhSDRhNC+0YDQvCDRgdC+0LHRgdGC
-0LLQtdC90L3QvtGB0YLQuCwN0YfRjNGPINC00LXRj9GC0LXQu9GM0L3QvtGB0YLRjCDRgdCy0Y/Qt9Cw
-0L3QsCDRgcKg0LLQt9Cw0LjQvNC+0YDQsNGB0YfQtdGC0LDQvNC4INC80LXQttC00YMg0YDQtdC30LjQ
-tNC10L3RgtCw0LzQuCDQuCDQvdC10YDQtdC30LjQtNC10L3RgtCw0LzQuCDQv9C+INCy0L3QtdGI0L3Q
-tdGC0L7RgNCz0L7QstGL0Lwg0LTQvtCz0L7QstC+0YDQsNC8Lg</string>
+								<string key="IBUIText">Для предприятий любых форм собственности, чья деятельность связана с взаиморасчетами между резидентами и нерезидентами по внешнеторговым договорам.</string>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MC4yNTQ5MDE5NjA4IDAuMjU0OTAxOTYwOCAwLjI1NDkwMTk2MDgAA</bytes>
@@ -305,8 +308,15 @@ tdGC0L7RgNCz0L7QstGL0Lwg0LTQvtCz0L7QstC+0YDQsNC8Lg</string>
 								<float key="IBUIMinimumFontSize">10</float>
 								<int key="IBUINumberOfLines">0</int>
 								<int key="IBUILineBreakMode">0</int>
-								<reference key="IBUIFontDescription" ref="852779756"/>
-								<reference key="IBUIFont" ref="265062123"/>
+								<object class="IBUIFontDescription" key="IBUIFontDescription">
+									<int key="type">1</int>
+									<double key="pointSize">20</double>
+								</object>
+								<object class="NSFont" key="IBUIFont">
+									<string key="NSName">Helvetica</string>
+									<double key="NSSize">20</double>
+									<int key="NSfFlags">16</int>
+								</object>
 								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
 							</object>
 							<object class="IBUILabel" id="932997623">
@@ -507,6 +517,7 @@ tdGC0L7RgNCz0L7QstGL0Lwg0LTQvtCz0L7QstC+0YDQsNC8Lg</string>
 								<string key="NSFrame">{{367, 1475}, {520, 50}}</string>
 								<reference key="NSSuperview" ref="209911406"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -890,7 +901,7 @@ tdGC0L7RgNCz0L7QstGL0Lwg0LTQvtCz0L7QstC+0YDQsNC8Lg</string>
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
 					<string key="className">ConversionOperationsViewController</string>
-					<string key="superclassName">UIViewController</string>
+					<string key="superclassName">ServiceViewController</string>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="arrow1">UIImageView</string>
 						<string key="arrow2">UIImageView</string>
@@ -931,6 +942,14 @@ tdGC0L7RgNCz0L7QstGL0Lwg0LTQvtCz0L7QstC+0YDQsNC8Lg</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/ConversionOperationsViewController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">ServiceViewController</string>
+					<string key="superclassName">UIViewController</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/ServiceViewController.h</string>
 					</object>
 				</object>
 			</array>

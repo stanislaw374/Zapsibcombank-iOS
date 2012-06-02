@@ -135,7 +135,7 @@
 							<object class="IBUILabel" id="191034546">
 								<reference key="NSNextResponder" ref="1008361439"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{127, 87}, {877, 53}}</string>
+								<string key="NSFrame">{{127, 87}, {877, 59}}</string>
 								<reference key="NSSuperview" ref="1008361439"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="535123064"/>
@@ -158,13 +158,13 @@ gNCw0LrRgtGDINC40YHQv9C+0LvRjNC30YPQtdGC0YHRjyDQstGL0L/Rg9GB0Log0LHQsNC90LrQvtCy
 								<int key="IBUIBaselineAdjustment">0</int>
 								<float key="IBUIMinimumFontSize">10</float>
 								<int key="IBUINumberOfLines">2</int>
-								<object class="IBUIFontDescription" key="IBUIFontDescription" id="689025990">
+								<object class="IBUIFontDescription" key="IBUIFontDescription">
 									<int key="type">1</int>
-									<double key="pointSize">17</double>
+									<double key="pointSize">18</double>
 								</object>
-								<object class="NSFont" key="IBUIFont" id="363304149">
+								<object class="NSFont" key="IBUIFont">
 									<string key="NSName">Helvetica</string>
-									<double key="NSSize">17</double>
+									<double key="NSSize">18</double>
 									<int key="NSfFlags">16</int>
 								</object>
 							</object>
@@ -241,13 +241,20 @@ gNCw0L3RgtC40LksINC90LDQv9GA0LjQvNC10YA6A</string>
 								<float key="IBUIMinimumFontSize">10</float>
 								<int key="IBUINumberOfLines">2</int>
 								<int key="IBUITextAlignment">1</int>
-								<reference key="IBUIFontDescription" ref="689025990"/>
-								<reference key="IBUIFont" ref="363304149"/>
+								<object class="IBUIFontDescription" key="IBUIFontDescription" id="689025990">
+									<int key="type">1</int>
+									<double key="pointSize">17</double>
+								</object>
+								<object class="NSFont" key="IBUIFont" id="66240677">
+									<string key="NSName">Helvetica</string>
+									<double key="NSSize">17</double>
+									<int key="NSfFlags">16</int>
+								</object>
 							</object>
 							<object class="IBUILabel" id="205074214">
 								<reference key="NSNextResponder" ref="1008361439"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{33, 359}, {630, 129}}</string>
+								<string key="NSFrame">{{33, 327}, {630, 129}}</string>
 								<reference key="NSSuperview" ref="1008361439"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="330080292"/>
@@ -271,12 +278,12 @@ INC60L7QvdGC0YDQsNC60YLQsCAoUGVyZm9ybWFuY2UgQm9uZCkNA</string>
 								<float key="IBUIMinimumFontSize">10</float>
 								<int key="IBUINumberOfLines">6</int>
 								<reference key="IBUIFontDescription" ref="689025990"/>
-								<reference key="IBUIFont" ref="363304149"/>
+								<reference key="IBUIFont" ref="66240677"/>
 							</object>
 							<object class="IBUIImageView" id="232822662">
 								<reference key="NSNextResponder" ref="1008361439"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{20, 390}, {8, 8}}</string>
+								<string key="NSFrame">{{20, 358}, {8, 8}}</string>
 								<reference key="NSSuperview" ref="1008361439"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="445823860"/>
@@ -288,7 +295,7 @@ INC60L7QvdGC0YDQsNC60YLQsCAoUGVyZm9ybWFuY2UgQm9uZCkNA</string>
 							<object class="IBUIImageView" id="445823860">
 								<reference key="NSNextResponder" ref="1008361439"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{20, 412}, {8, 8}}</string>
+								<string key="NSFrame">{{20, 380}, {8, 8}}</string>
 								<reference key="NSSuperview" ref="1008361439"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="378688170"/>
@@ -300,7 +307,7 @@ INC60L7QvdGC0YDQsNC60YLQsCAoUGVyZm9ybWFuY2UgQm9uZCkNA</string>
 							<object class="IBUIImageView" id="378688170">
 								<reference key="NSNextResponder" ref="1008361439"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{20, 430}, {8, 8}}</string>
+								<string key="NSFrame">{{20, 398}, {8, 8}}</string>
 								<reference key="NSSuperview" ref="1008361439"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="426441916"/>
@@ -312,7 +319,7 @@ INC60L7QvdGC0YDQsNC60YLQsCAoUGVyZm9ybWFuY2UgQm9uZCkNA</string>
 							<object class="IBUIImageView" id="426441916">
 								<reference key="NSNextResponder" ref="1008361439"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{20, 450}, {8, 8}}</string>
+								<string key="NSFrame">{{20, 418}, {8, 8}}</string>
 								<reference key="NSSuperview" ref="1008361439"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="205074214"/>
@@ -324,7 +331,7 @@ INC60L7QvdGC0YDQsNC60YLQsCAoUGVyZm9ybWFuY2UgQm9uZCkNA</string>
 							<object class="IBUIImageView" id="574007987">
 								<reference key="NSNextResponder" ref="1008361439"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{20, 780}, {8, 8}}</string>
+								<string key="NSFrame">{{20, 745}, {8, 8}}</string>
 								<reference key="NSSuperview" ref="1008361439"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="444633812"/>
@@ -336,7 +343,7 @@ INC60L7QvdGC0YDQsNC60YLQsCAoUGVyZm9ybWFuY2UgQm9uZCkNA</string>
 							<object class="IBUIImageView" id="444633812">
 								<reference key="NSNextResponder" ref="1008361439"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{20, 800}, {8, 8}}</string>
+								<string key="NSFrame">{{20, 765}, {8, 8}}</string>
 								<reference key="NSSuperview" ref="1008361439"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="79954265"/>
@@ -348,7 +355,7 @@ INC60L7QvdGC0YDQsNC60YLQsCAoUGVyZm9ybWFuY2UgQm9uZCkNA</string>
 							<object class="IBUIImageView" id="79954265">
 								<reference key="NSNextResponder" ref="1008361439"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{20, 821}, {8, 8}}</string>
+								<string key="NSFrame">{{20, 786}, {8, 8}}</string>
 								<reference key="NSSuperview" ref="1008361439"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="976794717"/>
@@ -360,7 +367,7 @@ INC60L7QvdGC0YDQsNC60YLQsCAoUGVyZm9ybWFuY2UgQm9uZCkNA</string>
 							<object class="IBUIImageView" id="976794717">
 								<reference key="NSNextResponder" ref="1008361439"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{20, 842}, {8, 8}}</string>
+								<string key="NSFrame">{{20, 807}, {8, 8}}</string>
 								<reference key="NSSuperview" ref="1008361439"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="512414143"/>
@@ -372,7 +379,7 @@ INC60L7QvdGC0YDQsNC60YLQsCAoUGVyZm9ybWFuY2UgQm9uZCkNA</string>
 							<object class="IBUIImageView" id="512414143">
 								<reference key="NSNextResponder" ref="1008361439"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{20, 864}, {8, 8}}</string>
+								<string key="NSFrame">{{20, 829}, {8, 8}}</string>
 								<reference key="NSSuperview" ref="1008361439"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="45159591"/>
@@ -384,7 +391,7 @@ INC60L7QvdGC0YDQsNC60YLQsCAoUGVyZm9ybWFuY2UgQm9uZCkNA</string>
 							<object class="IBUILabel" id="330080292">
 								<reference key="NSNextResponder" ref="1008361439"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{15, 492}, {994, 180}}</string>
+								<string key="NSFrame">{{15, 459}, {994, 180}}</string>
 								<reference key="NSSuperview" ref="1008361439"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="94440205"/>
@@ -418,12 +425,12 @@ vtGB0YLQsNCy0LjQu9C4INC/0YDQsNCy0L4g0LLRi9GB0YLRg9C/0LDRgtGMINCz0LDRgNCw0L3RgtC+
 								<float key="IBUIMinimumFontSize">10</float>
 								<int key="IBUINumberOfLines">14</int>
 								<reference key="IBUIFontDescription" ref="689025990"/>
-								<reference key="IBUIFont" ref="363304149"/>
+								<reference key="IBUIFont" ref="66240677"/>
 							</object>
 							<object class="IBUILabel" id="94440205">
 								<reference key="NSNextResponder" ref="1008361439"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{202, 680}, {621, 65}}</string>
+								<string key="NSFrame">{{202, 647}, {621, 65}}</string>
 								<reference key="NSSuperview" ref="1008361439"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="574007987"/>
@@ -447,12 +454,12 @@ vdC60L7QvCAN0LLRi9C/0YPRgdC60LDRjtGC0YHRjyDRgdC70LXQtNGD0Y7RidC40LUg0LLQuNC00Ysg
 								<int key="IBUINumberOfLines">3</int>
 								<int key="IBUITextAlignment">1</int>
 								<reference key="IBUIFontDescription" ref="689025990"/>
-								<reference key="IBUIFont" ref="363304149"/>
+								<reference key="IBUIFont" ref="66240677"/>
 							</object>
 							<object class="IBUILabel" id="45159591">
 								<reference key="NSNextResponder" ref="1008361439"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{33, 770}, {686, 106}}</string>
+								<string key="NSFrame">{{33, 735}, {686, 106}}</string>
 								<reference key="NSSuperview" ref="1008361439"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="892328307"/>
@@ -477,7 +484,7 @@ vdC90L7QuSDQvtGH0LjRgdGC0LrQuCANA</string>
 								<float key="IBUIMinimumFontSize">10</float>
 								<int key="IBUINumberOfLines">5</int>
 								<reference key="IBUIFontDescription" ref="689025990"/>
-								<reference key="IBUIFont" ref="363304149"/>
+								<reference key="IBUIFont" ref="66240677"/>
 							</object>
 							<object class="IBUIImageView" id="892328307">
 								<reference key="NSNextResponder" ref="1008361439"/>
@@ -511,13 +518,13 @@ vdC90L7QuSDQvtGH0LjRgdGC0LrQuCANA</string>
 0LXQu9GM0YHRgtCy0LAg0LrRgNGD0L/QvdC10LnRiNC40YUg0YHQvtCx0YHRgtCy0LXQvdC90LjQutC+
 0LIgKNGD0YfQsNGB0YLQvdC40LrQvtCyL9Cw0LrRhtC40L7QvdC10YDQvtCyKSDRgSDQvtCx0YnQtdC5
 ICjRgdC+0LLQvtC60YPQv9C90L7QuSkg0LTQvtC70LXQuSDQvdC1INC80LXQvdC10LUgNTElLiDQkiDR
-gdC70YPRh9Cw0LUsINC10YHQu9C4INC+0YHQvdC+0LLQvdGL0LwgDdGB0L7QsdGB0YLQstC10L3QvdC4
-0LrQvtC8INCX0LDQtdC80YnQuNC60LAg0Y/QstC70Y/QtdGC0YHRjyDQvNGD0L3QuNGG0LjQv9Cw0LvR
-jNC90L7QtSDQvtCx0YDQsNC30L7QstCw0L3QuNC1INC40LvQuCDRgdGD0LHRitC10LrRgiDQpNC10LTQ
-tdGA0LDRhtC40LgsINC00L7Qv9GD0YHQutCw0LXRgtGB0Y8g0LfQsNC80LXQvdCwINC/0L7RgNGD0YfQ
-uNGC0LXQu9GM0YHRgtCy0LAg0YHQvtCx0YHRgtCy0LXQvdC90LjQutC+0LIg0L3QsCDQv9C+0YDRg9GH
-0LjRgtC10LvRjNGB0YLQstC+IA3RgNGD0LrQvtCy0L7QtNC40YLQtdC70Y8g0L7RgNCz0LDQvdC40LfQ
-sNGG0LjQuC4</string>
+gdC70YPRh9Cw0LUsINC10YHQu9C4INC+0YHQvdC+0LLQvdGL0Lwg0YHQvtCx0YHRgtCy0LXQvdC90LjQ
+utC+0Lwg0JfQsNC10LzRidC40LrQsCDRj9Cy0LvRj9C10YLRgdGPINC80YPQvdC40YbQuNC/0LDQu9GM
+0L3QvtC1INC+0LHRgNCw0LfQvtCy0LDQvdC40LUg0LjQu9C4INGB0YPQsdGK0LXQutGCINCk0LXQtNC1
+0YDQsNGG0LjQuCwg0LTQvtC/0YPRgdC60LDQtdGC0YHRjyDQt9Cw0LzQtdC90LAg0L/QvtGA0YPRh9C4
+0YLQtdC70YzRgdGC0LLQsCDRgdC+0LHRgdGC0LLQtdC90L3QuNC60L7QsiDQvdCwINC/0L7RgNGD0YfQ
+uNGC0LXQu9GM0YHRgtCy0L4gDdGA0YPQutC+0LLQvtC00LjRgtC10LvRjyDQvtGA0LPQsNC90LjQt9Cw
+0YbQuNC4Lg</string>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MC4yNTQ5MDE5NjA4IDAuMjU0OTAxOTYwOCAwLjI1NDkwMTk2MDgAA</bytes>
@@ -537,7 +544,7 @@ sNGG0LjQuC4</string>
 								</object>
 							</object>
 						</array>
-						<string key="NSFrameSize">{1024, 768}</string>
+						<string key="NSFrameSize">{1024, 2500}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="653386000"/>
@@ -547,7 +554,7 @@ sNGG0LjQuC4</string>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 					</object>
 				</array>
-				<string key="NSFrameSize">{1024, 768}</string>
+				<string key="NSFrameSize">{1024, 2500}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="1008361439"/>

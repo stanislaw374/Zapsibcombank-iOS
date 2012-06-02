@@ -173,13 +173,13 @@
 									<int key="IBUIAutocapitalizationType">2</int>
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								</object>
-								<object class="IBUIFontDescription" key="IBUIFontDescription" id="872173910">
+								<object class="IBUIFontDescription" key="IBUIFontDescription">
 									<int key="type">1</int>
-									<double key="pointSize">18</double>
+									<double key="pointSize">17</double>
 								</object>
-								<object class="NSFont" key="IBUIFont" id="850362203">
+								<object class="NSFont" key="IBUIFont">
 									<string key="NSName">Helvetica</string>
-									<double key="NSSize">18</double>
+									<double key="NSSize">17</double>
 									<int key="NSfFlags">16</int>
 								</object>
 							</object>
@@ -207,8 +207,15 @@
 									<int key="IBUIAutocapitalizationType">2</int>
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								</object>
-								<reference key="IBUIFontDescription" ref="872173910"/>
-								<reference key="IBUIFont" ref="850362203"/>
+								<object class="IBUIFontDescription" key="IBUIFontDescription" id="872173910">
+									<int key="type">1</int>
+									<double key="pointSize">18</double>
+								</object>
+								<object class="NSFont" key="IBUIFont" id="580533048">
+									<string key="NSName">Helvetica</string>
+									<double key="NSSize">18</double>
+									<int key="NSfFlags">16</int>
+								</object>
 							</object>
 							<object class="IBUIImageView" id="848394411">
 								<reference key="NSNextResponder" ref="887938633"/>
@@ -657,7 +664,7 @@
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<string key="IBUIText">стоимость обслуживание Клиентов с использованием систем ДБО уже входит в стоимость выбранного Вами стандартного тарифа расчетно-кассового обслуживания или Пакета услуг</string>
+								<string key="IBUIText">стоимость обслуживания Клиентов с использованием систем ДБО уже входит в стоимость выбранного Вами стандартного тарифа расчетно-кассового обслуживания или Пакета услуг</string>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MC4yNTQ5MDE5NjA4IDAuMjU0OTAxOTYwOCAwLjI1NDkwMTk2MDgAA</bytes>
@@ -841,7 +848,7 @@ gNC4INC/0L7QvNC+0YnQuCDQstGA0LXQtNC+0L3QvtGB0L3QvtCz0L4g0L/RgNC+0LPRgNCw0LzQvNC9
 										<int key="IBUINumberOfLines">0</int>
 										<int key="IBUILineBreakMode">0</int>
 										<reference key="IBUIFontDescription" ref="872173910"/>
-										<reference key="IBUIFont" ref="850362203"/>
+										<reference key="IBUIFont" ref="580533048"/>
 									</object>
 									<object class="IBUIView" id="1044113444">
 										<reference key="NSNextResponder" ref="171914379"/>
@@ -1002,7 +1009,6 @@ jyDQvtC00L3QvtCy0YDQtdC80LXQvdC90L4g0YXRgNCw0L3QuNGC0Ywg0LfQsNC60YDRi9GC0YvQtSAo
 										<int key="NSvFlags">292</int>
 										<string key="NSFrame">{{445, 323}, {569, 177}}</string>
 										<reference key="NSSuperview" ref="171914379"/>
-										<reference key="NSNextKeyView"/>
 										<string key="NSReuseIdentifierKey">_NS:345</string>
 										<reference key="IBUIBackgroundColor" ref="452102922"/>
 										<bool key="IBUIOpaque">NO</bool>
@@ -1011,27 +1017,27 @@ jyDQvtC00L3QvtCy0YDQtdC80LXQvdC90L4g0YXRgNCw0L3QuNGC0Ywg0LfQsNC60YDRi9GC0YvQtSAo
 										<bool key="IBUIUserInteractionEnabled">NO</bool>
 										<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 										<object class="NSMutableString" key="IBUIText">
-											<bytes key="NS.bytes">UnV0b2tlbiDQrdCm0J8g0LPQsNGA0LDQvdGC0LjRgNGD0LXRgiDQmtC70LjQtdC90YLQsNC8INCR0LDQ
-vdC60LAg0YHQvtGF0YDQsNC90L3QvtGB0YLRjCDQt9Cw0LrRgNGL0YLRi9GFICjRgdC10LrRgNC10YLQ
-vdGL0YVdDdC60LvRjtGH0LXQuSDQrdCm0J8g0L7RgiDQutC+0L/QuNGA0L7QstCw0L3QuNGPLCDRgtCw
-0Log0LrQsNC6INC/0YDQuCDQv9C+0LTQv9C40YHQsNC90LjQuCDRjdC70LXQutGC0YDQvtC90L3QvtCz
-0L4g0LTQvtC60YPQvNC10L3RgtCwDdC30LDQutGA0YvRgtGL0Lwg0LrQu9GO0YfQvtC8INCt0KbQnywg
-0L3QsNGF0L7QtNGP0YnQuNC80YHRjyDQvdCwINCa0LjRgdC+0LrQtdC/INCt0KbQnywg0YLQsNC60L7Q
-uSDQutC70Y7Rhw3QvdC1INC40LfQstC70LXQutCw0LXRgtGB0Y8g0LjQtyDQv9Cw0LzRj9GC0Lgg0YPR
-gdGC0YDQvtC50YHRgtCy0LAsINC4INCy0LXRgdGMINC/0YDQvtGG0LXRgdGBINCy0LjQt9C40YDQvtCy
-0LDQvdC40Y8g0Y3Qu9C10LrRgtGA0L7QvdC90L7Qs9C+DdC00L7QutGD0LzQtdC90YLQsCDQv9GA0L7Q
-uNGB0YXQvtC00LjRgiDQstC90YPRgtGA0LggUnV0b2tlbiDQrdCm0J8uINCi0LDQutC40Lwg0L7QsdGA
-0LDQt9C+0LwsINC30LDQutGA0YvRgtGL0LkNKNGB0LXQutGA0LXRgtC90YvQuSkg0LrQu9GO0Ycg0K3Q
-ptCfINCz0LXQvdC10YDQuNGA0YPQtdGC0YHRjyDQstC90YPRgtGA0LggUnV0b2tlbiDQrdCm0J8s0YXR
-gNCw0L3QuNGC0YHRjw3QsiDQt9Cw0YnQuNGJ0LXQvdC90L7QuSDQv9Cw0LzRj9GC0LggUnV0b2tlbiDQ
-rdCm0J8g0Lgg0L3QtSDQvNC+0LbQtdGCINCx0YvRgtGMINGB0YfQuNGC0LDQvS4g0JAg0L3QtdC40LfQ
-stC70LXQutCw0LXQvNC+0YHRgtGMDdC30LDQutGA0YvRgtC+0LPQviAo0YHQtdC60YDQtdGC0L3QvtCz
-0L4pINC60LvRjtGH0LAg0K3QptCfINC40Lcg0L/QsNC80Y/RgtC4INC60LvRjtGH0LXQstC+0LPQviDQ
-vdC+0YHQuNGC0LXQu9GPLQ3Qt9Cw0LvQvtCzINC90LDQtNC10LbQvdC+0LPQviDQvtCx0LXRgdC/0LXR
-h9C10L3QuNGPINGB0LXQutGA0LXRgtC90L7RgdGC0Lgg0LfQsNC60YDRi9GC0L7Qs9C+INC60LvRjtGH
-0LAg0K3QptCfINC4LA3RgdC+0L7RgtCy0LXRgtGB0YLQstC10L3QvdC+LCDRgdC+0YXRgNCw0L3QvdC+
-0YHRgtC4INC00LXQvdC10LbQvdGL0YUg0YHRgNC10LTRgdGC0LIg0L3QsCDQktCw0YjQtdC8INGA0LDR
-gdGH0LXRgtC90L7QvCDRgdGH0LXRgtC1Lg</bytes>
+											<bytes key="NS.bytes">UnV0b2tlbiDQrdCm0J8g0L7QsdC10YHQv9C10YfQuNCy0LDQtdGCINCy0YvRgdC+0LrRg9GOINGB0YLQ
+tdC/0LXQvdGMINGB0L7RhdGA0LDQvdC90L7RgdGC0Lgg0LfQsNC60YDRi9GC0YvRhSAo0YHQtdC60YDQ
+tdGC0L3Ri9GFKSDQutC70Y7Rh9C10Lkg0K3QptCfINC+0YIg0LrQvtC/0LjRgNC+0LLQsNC90LjRjywg
+0YLQsNC6INC60LDQuiDQv9GA0Lgg0L/QvtC00L/QuNGB0LDQvdC40Lgg0Y3Qu9C10LrRgtGA0L7QvdC9
+0L7Qs9C+INC00L7QutGD0LzQtdC90YLQsA3Qt9Cw0LrRgNGL0YLRi9C8INC60LvRjtGH0L7QvCDQrdCm
+0J8sINC90LDRhdC+0LTRj9GJ0LjQvNGB0Y8g0L3QsCBSdXRva2VuINCt0KbQnywg0YLQsNC60L7QuSDQ
+utC70Y7Rhw3QvdC1INC40LfQstC70LXQutCw0LXRgtGB0Y8g0LjQtyDQv9Cw0LzRj9GC0Lgg0YPRgdGC
+0YDQvtC50YHRgtCy0LAsINC4INCy0LXRgdGMINC/0YDQvtGG0LXRgdGBINCy0LjQt9C40YDQvtCy0LDQ
+vdC40Y8g0Y3Qu9C10LrRgtGA0L7QvdC90L7Qs9C+DdC00L7QutGD0LzQtdC90YLQsCDQv9GA0L7QuNGB
+0YXQvtC00LjRgiDQstC90YPRgtGA0LggUnV0b2tlbiDQrdCm0J8uINCi0LDQutC40Lwg0L7QsdGA0LDQ
+t9C+0LwsINC30LDQutGA0YvRgtGL0LkNKNGB0LXQutGA0LXRgtC90YvQuSkg0LrQu9GO0Ycg0K3QptCf
+INCz0LXQvdC10YDQuNGA0YPQtdGC0YHRjyDQstC90YPRgtGA0LggUnV0b2tlbiDQrdCm0J8sINGF0YDQ
+sNC90LjRgtGB0Y8N0LIg0LfQsNGJ0LjRidC10L3QvdC+0Lkg0L/QsNC80Y/RgtC4IFJ1dG9rZW4g0K3Q
+ptCfINC4INC90LUg0LzQvtC20LXRgiDQsdGL0YLRjCDRgdGH0LjRgtCw0L0uINCQINC90LXQuNC30LLQ
+u9C10LrQsNC10LzQvtGB0YLRjA3Qt9Cw0LrRgNGL0YLQvtCz0L4gKNGB0LXQutGA0LXRgtC90L7Qs9C+
+KSDQutC70Y7Rh9CwINCt0KbQnyDQuNC3INC/0LDQvNGP0YLQuCDQutC70Y7Rh9C10LLQvtCz0L4g0L3Q
+vtGB0LjRgtC10LvRjyDigJMg0LfQsNC70L7QsyDQvdCw0LTQtdC20L3QvtCz0L4g0L7QsdC10YHQv9C1
+0YfQtdC90LjRjyDRgdC10LrRgNC10YLQvdC+0YHRgtC4INC30LDQutGA0YvRgtC+0LPQviDQutC70Y7R
+h9CwINCt0KbQnyDQuCwN0YHQvtC+0YLQstC10YLRgdGC0LLQtdC90L3Qviwg0YHQvtGF0YDQsNC90L3Q
+vtGB0YLQuCDQtNC10L3QtdC20L3Ri9GFINGB0YDQtdC00YHRgtCyINC90LAg0JLQsNGI0LXQvCDRgNCw
+0YHRh9C10YLQvdC+0Lwg0YHRh9C10YLQtS4</bytes>
 										</object>
 										<object class="NSColor" key="IBUITextColor">
 											<int key="NSColorSpace">1</int>
@@ -1060,7 +1066,7 @@ gdGH0LXRgtC90L7QvCDRgdGH0LXRgtC1Lg</bytes>
 										</object>
 									</object>
 								</array>
-								<string key="NSFrame">{{0, 1611}, {1024, 0}}</string>
+								<string key="NSFrame">{{0, 1611}, {1024, 1000}}</string>
 								<reference key="NSSuperview" ref="887938633"/>
 								<reference key="NSNextKeyView" ref="163302569"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -1710,7 +1716,7 @@ gdGH0LXRgtC90L7QvCDRgdGH0LXRgtC1Lg</bytes>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">86</int>
+			<int key="maxID">87</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>

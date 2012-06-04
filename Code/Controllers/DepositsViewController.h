@@ -22,7 +22,10 @@
 @property (unsafe_unretained, nonatomic) IBOutlet UIImageView *blueGear1;
 @property (unsafe_unretained, nonatomic) IBOutlet UIImageView *blueGear2;
 @property (unsafe_unretained, nonatomic) IBOutlet UIImageView *blueGear3;
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *arrows5;
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *gears5;
 
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *labels5;
 - (IBAction)bluePlusClick:(id)sender;
 
 -(void)animateFirstArrows;

@@ -10,5 +10,6 @@
 #import "ServiceViewController.h"
 
 @interface ConversionOperationsViewController : ServiceViewController
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *persons1;
 
 @end

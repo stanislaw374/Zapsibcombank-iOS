@@ -50,14 +50,10 @@
             [self.view bringSubviewToFront:(UIView *)startView];
         }
     }
-//	// Do any additional setup after loading the view.
-//    for (UIImage *startImage in self.startImages) {
-//        UIImageView *iv = [[UIImageView alloc] initWithImage:startImage];
-//        [iv setUserInteractionEnabled:YES];
-//        UIPanGestureRecognizer *gesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(viewDragged:)];
-//        [iv addGestureRecognizer:gesture];
-//        [self.view addSubview:iv];
-//    }
+    
+//    [[self view] setUserInteractionEnabled:YES];
+//    UIPanGestureRecognizer *gesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(viewDragged:)];
+//    [self.view addGestureRecognizer:gesture];
 }
 
 - (void)viewDidUnload
@@ -81,7 +77,7 @@
                 CGRect frame = gesture.view.frame;
                 frame.origin.x += translation.x;
                 gesture.view.frame = frame;
-            }
+            } 
             break;
             
         case UIGestureRecognizerStateEnded:
@@ -111,5 +107,7 @@
     
     [gesture setTranslation:CGPointZero inView:gesture.view];
 }
+
+
 
 @end

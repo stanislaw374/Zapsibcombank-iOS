@@ -14,6 +14,7 @@
 @end
 
 @implementation ReceivingPaymentsViewController
+@synthesize persons;
 @synthesize scrollView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -30,11 +31,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.scrollView.contentSize = CGSizeMake(1024, 1223);
+    int i = 0;
+    for (UIImageView *person in self.persons) {
+        [UIView animateWithDuration:0.5f delay:0.25f * i++ options:UIViewAnimationOptionAutoreverse | UIViewAnimationOptionRepeat animations:^{
+            CGRect frame = person.frame;
+            frame.origin.y -= 15;
+            person.frame = frame;
+        } completion:nil];
+    }
 }
 
 - (void)viewDidUnload
 {
     [self setScrollView:nil];
+    [self setPersons:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

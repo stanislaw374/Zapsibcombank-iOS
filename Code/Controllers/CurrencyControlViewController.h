@@ -10,5 +10,6 @@
 #import "ServiceViewController.h"
 
 @interface CurrencyControlViewController : ServiceViewController
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *persons;
 
 @end

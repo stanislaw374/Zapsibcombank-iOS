@@ -18,6 +18,7 @@
 @end
 
 @implementation ConversionOperationsViewController
+@synthesize persons1;
 @synthesize scrollView;
 @synthesize persons;
 @synthesize arrow1;
@@ -78,6 +79,7 @@
     [self setArrow2:nil];
     [self setArrow3:nil];
     [self setArrow4:nil];
+    [self setPersons1:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

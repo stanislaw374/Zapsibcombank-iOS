@@ -11,4 +11,6 @@
 
 @interface ReceivingPaymentsViewController : ServiceViewController
 
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *persons;
+
 @end

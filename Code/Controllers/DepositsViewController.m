@@ -55,6 +55,9 @@
 @synthesize blueGear1;
 @synthesize blueGear2;
 @synthesize blueGear3;
+@synthesize arrows5;
+@synthesize gears5;
+@synthesize labels5;
 @synthesize scrollView;
 @synthesize lblOvernightDeposit;
 @synthesize lblStandardDeposit;
@@ -130,6 +133,16 @@
         arrow.frame = frame;
     }   
     
+    for (int i = 0; i < self.arrows5.count; i++) {
+        UIImageView *arrow = [self.arrows5 objectAtIndex:i];
+        _arrowLocations[4][i] = arrow.frame.origin;
+        CGRect frame = arrow.frame;
+        frame.origin.x = - arrow.frame.size.width;
+        arrow.frame = frame;
+    }   
+    
+    
+    
     // Сохранение позиций текста и перемещение текста за пределы экрана
     for (int i = 0; i < self.labels1.count; i++) {
         UILabel *label = [self.labels1 objectAtIndex:i];
@@ -155,6 +168,14 @@
     for (int i = 0; i < self.labels4.count; i++) {
         UILabel *label = [self.labels4 objectAtIndex:i];
         _labelLocations[3][i] = label.frame.origin;
+        CGRect frame = label.frame;
+        frame.origin.x = 1024;
+        label.frame = frame;
+    }
+    
+    for (int i = 0; i < self.labels5.count; i++) {
+        UILabel *label = [self.labels5 objectAtIndex:i];
+        _labelLocations[4][i] = label.frame.origin;
         CGRect frame = label.frame;
         frame.origin.x = 1024;
         label.frame = frame;
@@ -189,6 +210,17 @@
         fullRotation.repeatCount = 1e100f;
         [gear.layer addAnimation:fullRotation forKey:@"360"];
     }
+    
+    for (UIImageView *gear in self.gears5) {           
+        CABasicAnimation *fullRotation;
+        fullRotation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+        fullRotation.fromValue = [NSNumber numberWithFloat:0];
+        fullRotation.toValue = [NSNumber numberWithFloat:360.0 * M_PI / 180.0];
+        fullRotation.duration = duration;
+        fullRotation.repeatCount = 1e100f;
+        [gear.layer addAnimation:fullRotation forKey:@"360"];
+    }
+    
 }
 -(void) viewDidAppear:(BOOL)animated{
     [self animateFirstArrows];
@@ -232,6 +264,9 @@
     [self setBlueGear3:nil];
     [self setBluePlus:nil];
 
+    [self setArrows5:nil];
+    [self setLabels5:nil];
+    [self setGears5:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -274,6 +309,7 @@
         case 1: arrows = self.arrows2; labels = self.labels2; break;
         case 2: arrows = self.arrows3; labels = self.labels3; break;
         case 3: arrows = self.arrows4; labels = self.labels4; break;
+        case 4: arrows = self.arrows5; labels = self.labels5; break;
     }
     
     // Анимация выплывающих стрелок и текста

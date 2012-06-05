@@ -8,7 +8,7 @@
 
 #import "ServiceViewController.h"
 
-@interface VipDepositViewController : ServiceViewController
+@interface VipDepositViewController : ServiceViewController<UIScrollViewDelegate>
 @property (unsafe_unretained, nonatomic) IBOutlet UIScrollView *scrollView;
 - (IBAction)orangeBtnClick:(id)sender;
 - (IBAction)blueBtnClick:(id)sender;
@@ -40,6 +40,8 @@
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *labels4;
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *mech4;
 
+@property (unsafe_unretained, nonatomic) IBOutlet UIButton *toTopButton;
+- (IBAction)backToTop:(id)sender;
 
 -(void) hideArrowsAndLabels;
 -(void) scrollTo: (float) height;

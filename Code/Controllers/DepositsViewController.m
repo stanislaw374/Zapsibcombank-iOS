@@ -13,9 +13,9 @@
 #import <QuartzCore/QuartzCore.h> 
 @interface DepositsViewController ()
 {
-    CGPoint _arrowLocations[4][4];
-    CGPoint _labelLocations[4][4];
-    BOOL _isPlusClicked[4];
+    CGPoint _arrowLocations[5][4];
+    CGPoint _labelLocations[5][4];
+    BOOL _isPlusClicked[5];
 }
 @property (unsafe_unretained, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *lblOvernightDeposit;
@@ -57,6 +57,7 @@
 @synthesize blueGear3;
 @synthesize arrows5;
 @synthesize gears5;
+@synthesize toTopButton;
 @synthesize labels5;
 @synthesize scrollView;
 @synthesize lblOvernightDeposit;
@@ -93,8 +94,9 @@
 {
     [super viewDidLoad];
     [self animateFirstArrows];
+    self.scrollView.delegate = self;
     // Do any additional setup after loading the view from its nib.    
-    self.scrollView.contentSize = CGSizeMake(1024, 4854);
+    self.scrollView.contentSize = CGSizeMake(1024, 6000);
     
     // Анимация увеличивающегося и уменьшающегося плюса
     for (UIImageView *plus in self.pluses) {
@@ -222,6 +224,29 @@
     }
     
 }
+-(void) scrollTo:(float)height {
+    [UIView beginAnimations: @"anim" context: nil];
+    [UIView setAnimationBeginsFromCurrentState: YES];
+    [UIView setAnimationDuration: 1.0f];
+    self.scrollView.contentOffset = CGPointMake(0, height);
+    [UIView commitAnimations];
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if (self.scrollView.contentOffset.y >= 60)
+    {
+        toTopButton.hidden = NO;
+    } else {
+        toTopButton.hidden = YES;
+    }
+}
+- (IBAction)backToTop:(id)sender {
+    [self scrollTo:0];
+}
+
+
+
+
 -(void) viewDidAppear:(BOOL)animated{
     [self animateFirstArrows];
 }
@@ -267,6 +292,7 @@
     [self setArrows5:nil];
     [self setLabels5:nil];
     [self setGears5:nil];
+    [self setToTopButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

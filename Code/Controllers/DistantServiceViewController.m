@@ -58,11 +58,12 @@
     //[self animatePlus];
     // Do any additional setup after loading the view from its nib.
     self.scrollView.contentSize = CGSizeMake(1024, 1606);
+    [self animatePlus];
+    [self animateFrameButton];
 }
 
 -(void) viewDidAppear:(BOOL)animated{
-    [self animatePlus];
-    [self animateFrameButton];
+    
 }
 
 -(void)animatePlus{

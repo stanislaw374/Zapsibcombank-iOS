@@ -43,6 +43,7 @@
 @synthesize arrows4;
 @synthesize labels4;
 @synthesize mech4;
+@synthesize toTopButton;
 @synthesize violetPlus;
 @synthesize greenPlus;
 @synthesize bluePlus;
@@ -109,7 +110,7 @@
     }
 
 }
-// скрытие всех стрелок и лейблов у стрелок при загрузке страницы
+
 -(void)hideArrowsAndLabels{
     // Сохранение позиций стрелок и перемещение их за пределы экрана
     for (int i = 0; i < self.arrows1.count; i++) {
@@ -199,7 +200,7 @@
         self.greenPlus.transform = CGAffineTransformMakeScale(0.5f, 0.5f);
         self.violetPlus.transform = CGAffineTransformMakeScale(0.5f, 0.5f);
     } completion:nil];
-    
+    self.scrollView.delegate = self;
     [self animateMechs];
     
 }
@@ -225,6 +226,7 @@
     [self setArrows4:nil];
     [self setLabels4:nil];
     [self setMech4:nil];
+    [self setToTopButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -234,6 +236,20 @@
 {
 	return YES;
 }
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if (self.scrollView.contentOffset.y >= 60)
+    {
+        toTopButton.hidden = NO;
+    } else {
+        toTopButton.hidden = YES;
+    }
+}
+- (IBAction)backToTop:(id)sender {
+    [self scrollTo:0];
+}
+
+
 
 - (IBAction)orangeBtnClick:(id)sender {
     [self scrollTo:400];

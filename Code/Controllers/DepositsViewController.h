@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ServiceViewController.h"
 
-@interface DepositsViewController : ServiceViewController
+@interface DepositsViewController : ServiceViewController<UIScrollViewDelegate>
 @property (unsafe_unretained, nonatomic) IBOutlet UIImageView *imgRed;
 @property (unsafe_unretained, nonatomic) IBOutlet UIImageView *imgViolet;
 @property (unsafe_unretained, nonatomic) IBOutlet UIImageView *imgGreen;
@@ -24,6 +24,8 @@
 @property (unsafe_unretained, nonatomic) IBOutlet UIImageView *blueGear3;
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *arrows5;
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *gears5;
+@property (unsafe_unretained, nonatomic) IBOutlet UIButton *toTopButton;
+- (IBAction)backToTop:(id)sender;
 
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *labels5;
 - (IBAction)bluePlusClick:(id)sender;
@@ -37,4 +39,5 @@
 -(void)animateSecondGears;
 -(void)animateThirdGears;
 -(void)animateFoursGears;
+-(void)scrollTo:(float)height;
 @end

@@ -13,6 +13,7 @@
 @end
 
 @implementation LongBusinessCreditViewController
+@synthesize toTopButton;
 @synthesize scrollView;
 @synthesize angleArrow;
 @synthesize persons;
@@ -29,6 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    scrollView.delegate = self;
     self.scrollView.contentSize = CGSizeMake(1024,6500);
     
     // Анимация человечков
@@ -49,6 +51,7 @@
     [self setScrollView:nil];
     [self setAngleArrow:nil];
     [self setPersons:nil];
+    [self setToTopButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -63,23 +66,34 @@
 }
 
 - (IBAction)btnAutoClick:(id)sender {
-    [self scrollTo:1900];
+    [self scrollTo:1750];
 }
 
 - (IBAction)btnDeviceClick:(id)sender {
-    [self scrollTo:2800];
+    [self scrollTo:2650];
 }
 
 - (IBAction)btnBusinessClick:(id)sender {
-    [self scrollTo:3790];
+    [self scrollTo:3640];
 }
 
 - (IBAction)btnBuildClick:(id)sender {
-    [self scrollTo:4700];
+    [self scrollTo:4550];
 }
 
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if (self.scrollView.contentOffset.y >= 60)
+    {
+        toTopButton.hidden = NO;
+    } else {
+        toTopButton.hidden = YES;
+    }
+}
 - (IBAction)btnReconstructionClick:(id)sender {
-    [self scrollTo:5600];
+    [self scrollTo:5450];
+}
+- (IBAction)backToTop:(id)sender {
+    [self scrollTo:0];
 }
 
 -(void) animateAngleArrow {

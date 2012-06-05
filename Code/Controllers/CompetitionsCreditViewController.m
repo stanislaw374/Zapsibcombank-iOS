@@ -29,7 +29,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self scrollView].contentSize = CGSizeMake(1024, 3300);
+    [self scrollView].contentSize = CGSizeMake(1024, 3395);
     self.scrollView.contentOffset = CGPointMake(0,0);
     // Анимация стрелок
     for (int i = 0; i < self.bigArrows.count; i++) {

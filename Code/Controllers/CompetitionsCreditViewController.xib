@@ -644,7 +644,7 @@ htC40LDQu9GM0L3QvtCz0L4g0LfQsNC10LzRidC40LrQsC4NA</string>
 								<reference key="IBUIFont" ref="851838305"/>
 							</object>
 						</array>
-						<string key="NSFrameSize">{1024, 768}</string>
+						<string key="NSFrame">{{0, 95}, {1024, 768}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="843229270"/>

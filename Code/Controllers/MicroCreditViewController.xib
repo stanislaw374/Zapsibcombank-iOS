@@ -44,7 +44,7 @@
 							<object class="IBUIImageView" id="640215743">
 								<reference key="NSNextResponder" ref="218077855"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrameSize">{1024, 850}</string>
+								<string key="NSFrameSize">{1024, 977}</string>
 								<reference key="NSSuperview" ref="218077855"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="302390995"/>
@@ -62,7 +62,7 @@
 								<string key="NSFrameSize">{1024, 67}</string>
 								<reference key="NSSuperview" ref="218077855"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="218077855"/>
+								<reference key="NSNextKeyView" ref="831265993"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -77,7 +77,7 @@
 								<string key="NSFrame">{{20, 20}, {622, 30}}</string>
 								<reference key="NSSuperview" ref="218077855"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="640215743"/>
+								<reference key="NSNextKeyView" ref="606580878"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -108,7 +108,7 @@
 								<string key="NSFrame">{{20, 91}, {645, 21}}</string>
 								<reference key="NSSuperview" ref="218077855"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="831265993"/>
+								<reference key="NSNextKeyView" ref="97504446"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -154,7 +154,7 @@
 								<string key="NSFrame">{{40, 750}, {984, 96}}</string>
 								<reference key="NSSuperview" ref="218077855"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="606580878"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -191,20 +191,20 @@ stC+0LPQviDQv9C+0LvQvtC20LXQvdC40Y8g0Lgg0L/Qu9Cw0YLQtdC20LXRgdC/0L7RgdC+0LHQvdC+
 								</object>
 							</object>
 						</array>
-						<string key="NSFrameSize">{1024, 768}</string>
+						<string key="NSFrame">{{0, 77}, {1024, 768}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
+						<reference key="NSNextKeyView" ref="640215743"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 					</object>
 				</array>
-				<string key="NSFrameSize">{1024, 768}</string>
+				<string key="NSFrameSize">{1024, 748}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView"/>
+				<reference key="NSNextKeyView" ref="218077855"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MQA</bytes>

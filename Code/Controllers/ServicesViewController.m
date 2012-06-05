@@ -220,16 +220,16 @@
                 case 3:
                     self.currentSectionViewController = [[SalaryProjectViewController alloc] init];
                     break;
-                case 4:
-                    self.currentSectionViewController = [[DistantServiceViewController alloc] init];
-                    break;
-                case 5:
-                    self.currentSectionViewController = [[EncashmentViewController alloc] init];
-                    break;
             }
             break;
         
-            
+        case 1:
+            switch(ID){
+                case 0:
+                    self.currentSectionViewController = [[DistantServiceViewController alloc] init];
+                    break;
+            }
+            break;
         case 2:
             switch (ID) {
                 case 0:
@@ -246,10 +246,7 @@
         case 3:
             switch (ID) {
                 case 0:
-                    self.currentSectionViewController = [[AcquiringViewController alloc] init];
-                    break;
-                case 1:
-                    self.currentSectionViewController = [[ReceivingPaymentsViewController alloc] init];
+                    self.currentSectionViewController = [[EncashmentViewController alloc] init];
                     break;
             }
             break;
@@ -267,6 +264,16 @@
                     break;
             }
             break;
+        case 5:
+            switch (ID) {
+                        case 0:
+                            self.currentSectionViewController = [[AcquiringViewController alloc] init];
+                            break;
+                        case 1:
+                            self.currentSectionViewController = [[ReceivingPaymentsViewController alloc] init];
+                            break;
+            }
+            break;    
         // кредитование
         case 6:
             switch (ID) {
@@ -373,13 +380,9 @@
 }
 
 - (void)allServicesViewControllerDidChooseService:(Service *)service {
-    if (service.ID == 1) {
-        self.service = [[Service services] objectAtIndex:0];
-        self.section = [self.service.sections objectAtIndex:5];
-    }
-    else {
+    
         self.service = service;
-    }
+    
 }
 
 #pragma mark - UIScrollViewDelegate

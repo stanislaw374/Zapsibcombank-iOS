@@ -35,6 +35,8 @@
 @synthesize btnPresidentsStatement = _btnPresidentsStatement;
 @synthesize btnRatingsAndLicenses = _btnRatingsAndLicenses;
 @synthesize imgPhoto = _imgPhoto;
+@synthesize aboutWSCB = _aboutWSCB;
+@synthesize aboutWSCBscrollView = _aboutWSCBscrollView;
 
 - (News *)news {
     if (!_news) {
@@ -95,6 +97,8 @@
     [self setBtnRatingsAndLicenses:nil];
     [self setImgPhoto:nil];
     [self setCurrencies:nil];
+    [self setAboutWSCB:nil];
+    [self setAboutWSCBscrollView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -157,10 +161,6 @@
     Service *serviceToShow = [[Service services] objectAtIndex:indexOfService];
     ServicesViewController *view = [[ServicesViewController alloc] init];
     view.service = serviceToShow;
-    if (sender.tag == 1) {
-        view.service = [[Service services] objectAtIndex:0];
-        view.section = [view.service.sections objectAtIndex:5];
-    }
     [self.navigationController pushViewController:view animated:YES];
     return;
     
@@ -203,6 +203,7 @@
     self.btnPresidentsStatement.selected = NO;
     self.btnRatingsAndLicenses.selected = NO;
     UIButton *btn = (UIButton *)sender;
+     self.aboutWSCB.hidden = YES;
     btn.selected = !btn.selected;
     self.imgPhoto.image = [UIImage imageNamed:@"about_bank_photo.png"];
     [self.aboutBankContentView loadHTMLString:[Information aboutBank] baseURL:nil];
@@ -213,6 +214,7 @@
     self.btnAboutBank.selected = NO;
     self.btnRatingsAndLicenses.selected = NO;
     UIButton *btn = (UIButton *)sender;
+    self.aboutWSCB.hidden = YES;
     btn.selected = !btn.selected;
     self.imgPhoto.image = [UIImage imageNamed:@"president_photo.png"];
     [self.aboutBankContentView loadHTMLString:[Information presidentsStatement] baseURL:nil];
@@ -224,12 +226,13 @@
     self.btnPresidentsStatement.selected = NO;
     UIButton *btn = (UIButton *)sender;
     btn.selected = !btn.selected;
-    self.imgPhoto.image = [UIImage imageNamed:@"about_bank_photo.png"];
-    [self.aboutBankContentView loadHTMLString:[Information ratingsAndLicenses] baseURL:nil];
-    self.aboutBankView.hidden = !btn.selected;
+    self.aboutBankView.hidden = YES;
+    self.aboutWSCB.hidden = !btn.selected;
+    self.aboutWSCBscrollView.contentSize = CGSizeMake(944, 2600);
 }
 
 - (IBAction)goMain {
+    self.aboutWSCB.hidden = YES;
     self.aboutBankView.hidden = YES;
     self.btnAboutBank.selected = NO;
     self.btnPresidentsStatement.selected = NO;

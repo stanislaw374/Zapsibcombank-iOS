@@ -23,6 +23,8 @@
 @property (unsafe_unretained, nonatomic) IBOutlet UIButton *btnPresidentsStatement;
 @property (unsafe_unretained, nonatomic) IBOutlet UIButton *btnRatingsAndLicenses;
 @property (unsafe_unretained, nonatomic) IBOutlet UIImageView *imgPhoto;
+@property (unsafe_unretained, nonatomic) IBOutlet UIView *aboutWSCB;
+@property (unsafe_unretained, nonatomic) IBOutlet UIScrollView *aboutWSCBscrollView;
 
 - (IBAction)showAddresses;
 - (IBAction)showInetbank;

@@ -35,27 +35,22 @@
 					<key>name</key>
 					<string>Зарплатный проект</string>
 				</dict>
-				<dict>
-					<key>id</key>
-					<string>4</string>
-					<key>name</key>
-					<string>Дистанционное банковское обслуживание</string>
-				</dict>
-				<dict>
-					<key>id</key>
-					<integer>5</integer>
-					<key>name</key>
-					<string>Инкассация</string>
-				</dict>
 			</array>
 		</dict>
 		<dict>
 			<key>id</key>
 			<integer>1</integer>
 			<key>name</key>
-			<string>Инкассация</string>
+			<string>Дистанционное банковское обслуживание</string>
 			<key>sections</key>
-			<array/>
+			<array>
+				<dict>
+					<key>id</key>
+					<integer>0</integer>
+					<key>name</key>
+					<string>Дистанционное банковское обслуживание</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>id</key>
@@ -88,20 +83,14 @@
 			<key>id</key>
 			<integer>3</integer>
 			<key>name</key>
-			<string>Инструменты для организации приема платежей</string>
+			<string>Инкассация</string>
 			<key>sections</key>
 			<array>
 				<dict>
 					<key>id</key>
 					<integer>0</integer>
 					<key>name</key>
-					<string>Эквайринг</string>
-				</dict>
-				<dict>
-					<key>id</key>
-					<integer>1</integer>
-					<key>name</key>
-					<string>Прием платежей</string>
+					<string>Инкассация</string>
 				</dict>
 			</array>
 		</dict>
@@ -136,9 +125,22 @@
 			<key>id</key>
 			<integer>5</integer>
 			<key>name</key>
-			<string>Банковские карты для бизнеса</string>
+			<string>Инструменты для организации приема платежей</string>
 			<key>sections</key>
-			<array/>
+			<array>
+				<dict>
+					<key>id</key>
+					<string>0</string>
+					<key>name</key>
+					<string>Эквайринг</string>
+				</dict>
+				<dict>
+					<key>id</key>
+					<string>1</string>
+					<key>name</key>
+					<string>Прием платежей</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>id</key>

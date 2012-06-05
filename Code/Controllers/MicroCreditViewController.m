@@ -29,7 +29,7 @@
     [super viewDidLoad];
     
     // Do any additional setup after loading the view from its nib.
-    self.scrollView.contentSize = CGSizeMake(1024,900);
+    self.scrollView.contentSize = CGSizeMake(1024,977);
 }
 
 - (void)viewDidUnload

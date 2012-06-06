@@ -23,6 +23,7 @@
 @end
 
 @implementation BrokerServiceViewController
+@synthesize morePluses;
 @synthesize scrollView;
 @synthesize plus;
 @synthesize arrows;
@@ -78,6 +79,7 @@
     [self setArrows:nil];
     [self setTexts:nil];
     [self setScrollView:nil];
+    [self setMorePluses:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -95,6 +97,12 @@
     [self.plus.layer removeAllAnimations];
     self.plus.transform = CGAffineTransformMakeScale(1, 1);
     
+    // Узнать больше плюсов улетает
+    [UIView animateWithDuration:1.0f delay:0 options:UIViewAnimationOptionAllowUserInteraction  animations:^{
+        CGRect frame = morePluses.frame;
+        frame.origin.x -= 2000;
+        morePluses.frame = frame;
+    }completion:nil];
     // Анимация выплывающих стрелок и текста
     for (int i = 0; i < self.arrows.count; i++) {
         UIImageView *arrow = [self.arrows objectAtIndex:i];

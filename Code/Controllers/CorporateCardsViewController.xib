@@ -41,6 +41,20 @@
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">274</int>
 						<array class="NSMutableArray" key="NSSubviews">
+							<object class="IBUIImageView" id="443839988">
+								<reference key="NSNextResponder" ref="378697873"/>
+								<int key="NSvFlags">292</int>
+								<string key="NSFrameSize">{1024, 2000}</string>
+								<reference key="NSSuperview" ref="378697873"/>
+								<reference key="NSNextKeyView" ref="416022583"/>
+								<string key="NSReuseIdentifierKey">_NS:9</string>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								<object class="NSCustomResource" key="IBUIImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">00_background.png</string>
+								</object>
+							</object>
 							<object class="IBUIImageView" id="416022583">
 								<reference key="NSNextResponder" ref="378697873"/>
 								<int key="NSvFlags">288</int>
@@ -351,6 +365,7 @@ utC4INC00LXRgNC20LDRgtC10LvQtdC5INC60LDRgNGCINCR0LDQvdC60LAg0L/QviDRgtC10LvQtdGE
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{138, 1083}, {843, 71}}</string>
 								<reference key="NSSuperview" ref="378697873"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -564,7 +579,7 @@ vtGA0LDRgtC40LLQvdGL0YUg0LrQsNGA0YI</string>
 						</array>
 						<string key="NSFrameSize">{1024, 1191}</string>
 						<reference key="NSSuperview" ref="766721923"/>
-						<reference key="NSNextKeyView" ref="416022583"/>
+						<reference key="NSNextKeyView" ref="443839988"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<reference key="IBUIBackgroundColor" ref="568902013"/>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -660,6 +675,7 @@ vtGA0LDRgtC40LLQvdGL0YUg0LrQsNGA0YI</string>
 							<reference ref="327887174"/>
 							<reference ref="925764714"/>
 							<reference ref="99790983"/>
+							<reference ref="443839988"/>
 						</array>
 						<reference key="parent" ref="766721923"/>
 					</object>
@@ -793,6 +809,11 @@ vtGA0LDRgtC40LLQvdGL0YUg0LrQsNGA0YI</string>
 						<reference key="object" ref="99790983"/>
 						<reference key="parent" ref="378697873"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">32</int>
+						<reference key="object" ref="443839988"/>
+						<reference key="parent" ref="378697873"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -822,6 +843,7 @@ vtGA0LDRgtC40LLQvdGL0YUg0LrQsNGA0YI</string>
 				<string key="28.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="29.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="30.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="32.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="4.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="5.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -833,7 +855,7 @@ vtGA0LDRgtC40LLQvdGL0YUg0LrQsNGA0YI</string>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">31</int>
+			<int key="maxID">32</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
@@ -845,6 +867,7 @@ vtGA0LDRgtC40LLQvdGL0YUg0LrQsNGA0YI</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="00_background.png">{1024, 768}</string>
 			<string key="01_02_arrow1.png">{223, 170}</string>
 			<string key="01_02_arrow2.png">{222, 170}</string>
 			<string key="01_02_frame2.png">{984, 105}</string>

@@ -10,27 +10,15 @@
 #import <QuartzCore/QuartzCore.h>
 @interface VipDepositViewController ()
 {
-    CGPoint _arrowLocations1[3];
-    CGPoint _labelLocations1[3];
-    
-    CGPoint _arrowLocations2[3];
-    CGPoint _labelLocations2[3];
-    
-    CGPoint _arrowLocations3[3];
-    CGPoint _labelLocations3[3];
-    
-    CGPoint _arrowLocations4[3];
-    CGPoint _labelLocations4[3];
-    
-    BOOL _isOrangePlusClicked;
-    BOOL _isBluePlusClicked;
-    BOOL _isGreenPlusClicked;
-    BOOL _isVioletPlusClicked;
+    CGPoint _arrowLocations[4][4];
+    CGPoint _labelLocations[4][4];
+    BOOL _isPlusClicked[4];
 }
 
 @end
 
 @implementation VipDepositViewController
+@synthesize pluses;
 @synthesize arrows1;
 @synthesize labels1;
 @synthesize mech1;
@@ -43,11 +31,12 @@
 @synthesize arrows4;
 @synthesize labels4;
 @synthesize mech4;
+@synthesize morePluses1;
+@synthesize morePluses2;
+@synthesize morePluses3;
+@synthesize morePluses4;
 @synthesize toTopButton;
-@synthesize violetPlus;
-@synthesize greenPlus;
-@synthesize bluePlus;
-@synthesize orangeBtn;
+
 @synthesize scrollView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -115,7 +104,7 @@
     // Сохранение позиций стрелок и перемещение их за пределы экрана
     for (int i = 0; i < self.arrows1.count; i++) {
         UIImageView *arrow = [self.arrows1 objectAtIndex:i];
-        _arrowLocations1[i] = arrow.frame.origin;
+        _arrowLocations[0][i] = arrow.frame.origin;
         CGRect frame = arrow.frame;
         frame.origin.x = - arrow.frame.size.width;
         arrow.frame = frame;
@@ -124,7 +113,7 @@
     // Сохранение позиций текста и перемещение текста за пределы экрана
     for (int i = 0; i < self.labels1.count; i++) {
         UILabel *label = [self.labels1 objectAtIndex:i];
-        _labelLocations1[i] = label.frame.origin;
+        _labelLocations[0][i] = label.frame.origin;
         CGRect frame = label.frame;
         frame.origin.x = 1024;
         label.frame = frame;
@@ -133,7 +122,7 @@
     // Сохранение позиций стрелок и перемещение их за пределы экрана
     for (int i = 0; i < self.arrows2.count; i++) {
         UIImageView *arrow = [self.arrows2 objectAtIndex:i];
-        _arrowLocations2[i] = arrow.frame.origin;
+        _arrowLocations[1][i] = arrow.frame.origin;
         CGRect frame = arrow.frame;
         frame.origin.x = - arrow.frame.size.width;
         arrow.frame = frame;
@@ -142,7 +131,7 @@
     // Сохранение позиций текста и перемещение текста за пределы экрана
     for (int i = 0; i < self.labels2.count; i++) {
         UILabel *label = [self.labels2 objectAtIndex:i];
-        _labelLocations2[i] = label.frame.origin;
+        _labelLocations[1][i] = label.frame.origin;
         CGRect frame = label.frame;
         frame.origin.x = 1024;
         label.frame = frame;
@@ -151,7 +140,7 @@
     // Сохранение позиций стрелок и перемещение их за пределы экрана
     for (int i = 0; i < self.arrows3.count; i++) {
         UIImageView *arrow = [self.arrows3 objectAtIndex:i];
-        _arrowLocations3[i] = arrow.frame.origin;
+        _arrowLocations[2][i] = arrow.frame.origin;
         CGRect frame = arrow.frame;
         frame.origin.x = - arrow.frame.size.width;
         arrow.frame = frame;
@@ -160,7 +149,7 @@
     // Сохранение позиций текста и перемещение текста за пределы экрана
     for (int i = 0; i < self.labels3.count; i++) {
         UILabel *label = [self.labels3 objectAtIndex:i];
-        _labelLocations3[i] = label.frame.origin;
+        _labelLocations[2][i] = label.frame.origin;
         CGRect frame = label.frame;
         frame.origin.x = 1024;
         label.frame = frame;
@@ -169,7 +158,7 @@
     // Сохранение позиций стрелок и перемещение их за пределы экрана
     for (int i = 0; i < self.arrows4.count; i++) {
         UIImageView *arrow = [self.arrows4 objectAtIndex:i];
-        _arrowLocations4[i] = arrow.frame.origin;
+        _arrowLocations[3][i] = arrow.frame.origin;
         CGRect frame = arrow.frame;
         frame.origin.x = - arrow.frame.size.width;
         arrow.frame = frame;
@@ -178,7 +167,7 @@
     // Сохранение позиций текста и перемещение текста за пределы экрана
     for (int i = 0; i < self.labels4.count; i++) {
         UILabel *label = [self.labels4 objectAtIndex:i];
-        _labelLocations4[i] = label.frame.origin;
+        _labelLocations[3][i] = label.frame.origin;
         CGRect frame = label.frame;
         frame.origin.x = 1024;
         label.frame = frame;
@@ -194,12 +183,13 @@
     [self hideArrowsAndLabels];
     
     // Анимация увеличивающегося и уменьшающегося плюса
-    [UIView animateWithDuration:0.5f delay:0 options:UIViewAnimationCurveEaseInOut |UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse | UIViewAnimationOptionAllowUserInteraction animations:^{
-        self.orangeBtn.transform = CGAffineTransformMakeScale(0.5f, 0.5f);
-        self.bluePlus.transform = CGAffineTransformMakeScale(0.5f, 0.5f);
-        self.greenPlus.transform = CGAffineTransformMakeScale(0.5f, 0.5f);
-        self.violetPlus.transform = CGAffineTransformMakeScale(0.5f, 0.5f);
-    } completion:nil];
+
+    // Анимация увеличивающегося и уменьшающегося плюса
+    for (UIImageView *plus in self.pluses) {
+        [UIView animateWithDuration:0.5f delay:0 options:UIViewAnimationCurveEaseInOut |UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse | UIViewAnimationOptionAllowUserInteraction animations:^{
+            plus.transform = CGAffineTransformMakeScale(0.5f, 0.5f);
+        } completion:nil];
+    }    
     self.scrollView.delegate = self;
     [self animateMechs];
     
@@ -208,12 +198,6 @@
 - (void)viewDidUnload
 {
     [self setScrollView:nil];
-    [self setBluePlus:nil];
-    [self setGreenPlus:nil];
-    [self setOrangeBtn:nil];
-    [self setBluePlus:nil];
-    [self setGreenPlus:nil];
-    [self setVioletPlus:nil];
     [self setArrows1:nil];
     [self setLabels1:nil];
     [self setMech1:nil];
@@ -227,6 +211,11 @@
     [self setLabels4:nil];
     [self setMech4:nil];
     [self setToTopButton:nil];
+    [self setPluses:nil];
+    [self setMorePluses1:nil];
+    [self setMorePluses2:nil];
+    [self setMorePluses3:nil];
+    [self setMorePluses4:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -266,99 +255,63 @@
 - (IBAction)violetBtnClick:(id)sender {
     [self scrollTo:3200];
 }
-- (IBAction)orangePlusClick:(id)sender {
-    if (_isOrangePlusClicked) return;
-    _isOrangePlusClicked = YES;
-    [self.orangeBtn.layer removeAllAnimations];
-    self.orangeBtn.transform = CGAffineTransformMakeScale(1, 1);
-    
-    // Анимация выплывающих стрелок и текста
-    for (int i = 0; i < self.arrows1.count; i++) {
-        UIImageView *arrow = [self.arrows1 objectAtIndex:i];
-        UILabel *label = [self.labels1 objectAtIndex:i];
-        
-        [UIView animateWithDuration:1 delay:i options:UIViewAnimationCurveEaseInOut animations:^{
-            CGRect frame = arrow.frame;
-            frame.origin = _arrowLocations1[i];
-            arrow.frame = frame;
-        } completion:^(BOOL finished) {
-            [UIView animateWithDuration:0.5f delay:0 options:UIViewAnimationCurveEaseInOut animations:^{
-                CGRect frame = label.frame;
-                frame.origin = _labelLocations1[i];
-                label.frame = frame;
-            } completion:nil];
-        }];
-    }
-}
-- (IBAction)bluePlusClick:(id)sender {
-    if (_isBluePlusClicked) return;
-    _isBluePlusClicked = YES;
-    [self.bluePlus.layer removeAllAnimations];
-    self.bluePlus.transform = CGAffineTransformMakeScale(1, 1);
-    
-    // Анимация выплывающих стрелок и текста
-    for (int i = 0; i < self.arrows2.count; i++) {
-        UIImageView *arrow = [self.arrows2 objectAtIndex:i];
-        UILabel *label = [self.labels2 objectAtIndex:i];
-        
-        [UIView animateWithDuration:1 delay:i options:UIViewAnimationCurveEaseInOut animations:^{
-            CGRect frame = arrow.frame;
-            frame.origin = _arrowLocations2[i];
-            arrow.frame = frame;
-        } completion:^(BOOL finished) {
-            [UIView animateWithDuration:0.5f delay:0 options:UIViewAnimationCurveEaseInOut animations:^{
-                CGRect frame = label.frame;
-                frame.origin = _labelLocations2[i];
-                label.frame = frame;
-            } completion:nil];
-        }];
-    }
-}
-- (IBAction)greenPlusClick:(id)sender {
-    if (_isGreenPlusClicked) return;
-    _isGreenPlusClicked = YES;
-    [self.greenPlus.layer removeAllAnimations];
-    self.greenPlus.transform = CGAffineTransformMakeScale(1, 1);
-    
-    // Анимация выплывающих стрелок и текста
-    for (int i = 0; i < self.arrows3.count; i++) {
-        UIImageView *arrow = [self.arrows3 objectAtIndex:i];
-        UILabel *label = [self.labels3 objectAtIndex:i];
-        
-        [UIView animateWithDuration:1 delay:i options:UIViewAnimationCurveEaseInOut animations:^{
-            CGRect frame = arrow.frame;
-            frame.origin = _arrowLocations3[i];
-            arrow.frame = frame;
-        } completion:^(BOOL finished) {
-            [UIView animateWithDuration:0.5f delay:0 options:UIViewAnimationCurveEaseInOut animations:^{
-                CGRect frame = label.frame;
-                frame.origin = _labelLocations3[i];
-                label.frame = frame;
-            } completion:nil];
-        }];
-    }
 
-}
-- (IBAction)violetPlusClick:(id)sender {
-    if (_isVioletPlusClicked) return;
-    _isVioletPlusClicked = YES;
-    [self.violetPlus.layer removeAllAnimations];
-    self.violetPlus.transform = CGAffineTransformMakeScale(1, 1);
+- (IBAction)onPlusButtonClick:(UIButton *)sender { 
+    int n = sender.tag;
+    
+    if (_isPlusClicked[n]) return;
+    _isPlusClicked[n] = YES;
+    
+    UIImageView *plus = [self.pluses objectAtIndex:n];
+    [plus.layer removeAllAnimations];
+    plus.transform = CGAffineTransformMakeScale(1, 1);
+    
+    NSArray *arrows, *labels;
+    UIImageView *morePlus;
+    switch (n) {
+        case 0:
+            arrows = self.arrows1; 
+            labels = self.labels1;
+            morePlus = morePluses1;
+            break;
+        case 1: 
+            arrows = self.arrows2; 
+            labels = self.labels2; 
+            morePlus = morePluses2;
+            break;
+        case 2: 
+            arrows = self.arrows3; 
+            labels = self.labels3; 
+            morePlus = morePluses3;
+            break;
+        case 3: 
+            arrows = self.arrows4; 
+            labels = self.labels4;
+            morePlus = morePluses4;
+            break;
+    }
+    
+    // Узнать больше плюсов улетает
+    [UIView animateWithDuration:1.0f delay:0 options:UIViewAnimationOptionAllowUserInteraction  animations:^{
+        CGRect frame = morePlus.frame;
+        frame.origin.x -= 2000;
+        morePlus.frame = frame;
+    }completion:nil];
     
     // Анимация выплывающих стрелок и текста
-    for (int i = 0; i < self.arrows4.count; i++) {
-        UIImageView *arrow = [self.arrows4 objectAtIndex:i];
-        UILabel *label = [self.labels4 objectAtIndex:i];
+    for (int i = 0; i < arrows.count; i++) {
+        UIImageView *arrow = [arrows objectAtIndex:i];
+        UILabel *label = [labels objectAtIndex:i];
         
         [UIView animateWithDuration:1 delay:i options:UIViewAnimationCurveEaseInOut animations:^{
             CGRect frame = arrow.frame;
-            frame.origin = _arrowLocations4[i];
+            frame.origin = _arrowLocations[n][i];
             arrow.frame = frame;
         } completion:^(BOOL finished) {
             [UIView animateWithDuration:0.5f delay:0 options:UIViewAnimationCurveEaseInOut animations:^{
                 CGRect frame = label.frame;
-                frame.origin = _labelLocations4[i];
-                label.frame = frame;
+                frame.origin = _labelLocations[n][i];
+                label.frame = frame;               
             } completion:nil];
         }];
     }

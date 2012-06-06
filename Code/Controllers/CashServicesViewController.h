@@ -12,5 +12,6 @@
 @interface CashServicesViewController : ServiceViewController
 - (IBAction)btnTarifs:(id)sender;
 - (IBAction)btnAccount:(id)sender;
+@property (unsafe_unretained, nonatomic) IBOutlet UIImageView *morePluses;
 
 @end

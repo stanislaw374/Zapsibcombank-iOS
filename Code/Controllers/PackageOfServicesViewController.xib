@@ -41,6 +41,20 @@
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">274</int>
 						<array class="NSMutableArray" key="NSSubviews">
+							<object class="IBUIImageView" id="29557728">
+								<reference key="NSNextResponder" ref="834257275"/>
+								<int key="NSvFlags">292</int>
+								<string key="NSFrameSize">{1024, 6000}</string>
+								<reference key="NSSuperview" ref="834257275"/>
+								<reference key="NSNextKeyView" ref="752682698"/>
+								<string key="NSReuseIdentifierKey">_NS:9</string>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								<object class="NSCustomResource" key="IBUIImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">00_background.png</string>
+								</object>
+							</object>
 							<object class="IBUIImageView" id="752682698">
 								<reference key="NSNextResponder" ref="834257275"/>
 								<int key="NSvFlags">288</int>
@@ -738,7 +752,7 @@ vdC+0Lkg0YTQvtGA0LzRiy4</string>
 						</array>
 						<string key="NSFrameSize">{1024, 4670}</string>
 						<reference key="NSSuperview" ref="766721923"/>
-						<reference key="NSNextKeyView" ref="752682698"/>
+						<reference key="NSNextKeyView" ref="29557728"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<reference key="IBUIBackgroundColor" ref="753125805"/>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -851,6 +865,7 @@ vdC+0Lkg0YTQvtGA0LzRiy4</string>
 							<reference ref="901486749"/>
 							<reference ref="92167207"/>
 							<reference ref="525178053"/>
+							<reference ref="29557728"/>
 						</array>
 						<reference key="parent" ref="766721923"/>
 					</object>
@@ -1037,6 +1052,11 @@ vdC+0Lkg0YTQvtGA0LzRiy4</string>
 						<reference key="object" ref="67230473"/>
 						<reference key="parent" ref="92167207"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">43</int>
+						<reference key="object" ref="29557728"/>
+						<reference key="parent" ref="834257275"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -1077,6 +1097,7 @@ vdC+0Lkg0YTQvtGA0LzRiy4</string>
 				<string key="39.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="4.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="40.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="43.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="5.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="7.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -1087,7 +1108,7 @@ vdC+0Lkg0YTQvtGA0LzRiy4</string>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">42</int>
+			<int key="maxID">43</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
@@ -1099,6 +1120,7 @@ vdC+0Lkg0YTQvtGA0LzRiy4</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="00_background.png">{1024, 768}</string>
 			<string key="01_03_04_tab_+.png">{984, 496}</string>
 			<string key="01_03_05_tab+.png">{985, 136}</string>
 			<string key="01_03_06_tab_+.png">{985, 295}</string>

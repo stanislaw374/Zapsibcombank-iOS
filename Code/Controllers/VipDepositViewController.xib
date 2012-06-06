@@ -530,7 +530,7 @@ v9C10YjQvdC+A</string>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{136, 693}, {213, 90}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="632063133"/>
+								<reference key="NSNextKeyView" ref="633313828"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -703,7 +703,7 @@ tdC00LXQu9GOIDI0INGH0LDRgdCwINCyINGB0YPRgtC60LggA</string>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{788, 953}, {136, 146}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="742258361"/>
+								<reference key="NSNextKeyView" ref="904571816"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -731,7 +731,7 @@ tdC00LXQu9GOIDI0INGH0LDRgdCwINCyINGB0YPRgtC60LggA</string>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{678, 1072}, {209, 206}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="904571816"/>
+								<reference key="NSNextKeyView" ref="125249996"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -801,7 +801,7 @@ MCDQtNC+0LvQuy4g0KHQqNCQLw01MDAgMDAwINC10LLRgNC+A</string>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{673, 950}, {84, 78}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="125249996"/>
+								<reference key="NSNextKeyView" ref="742258361"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -899,7 +899,7 @@ tNCwINCy0YvQv9C70LDRh9C10L3QvdGL0LUg0L/RgNC+0YbQtdC90YLRiw3Qv9C10YDQtdGB0YfQuNGC
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{136, 2621}, {213, 90}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="875458432"/>
+								<reference key="NSNextKeyView" ref="240560500"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1054,7 +1054,7 @@ gtCw0YLQutCwINC/0L4g0LLQutC70LDQtNGDKQ</string>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{647, 2846}, {136, 146}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="533668459"/>
+								<reference key="NSNextKeyView" ref="773299668"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1082,7 +1082,7 @@ gtCw0YLQutCwINC/0L4g0LLQutC70LDQtNGDKQ</string>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{506, 2933}, {188, 202}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="526307747"/>
+								<reference key="NSNextKeyView" ref="533668459"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1110,7 +1110,7 @@ gtCw0YLQutCwINC/0L4g0LLQutC70LDQtNGDKQ</string>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{539, 2991}, {122, 86}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="773299668"/>
+								<reference key="NSNextKeyView" ref="526307747"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -1348,7 +1348,7 @@ vtC80LDRgtGLLCDQuNC90YTQvtC60LjQvtGB0LrQuCkuA</bytes>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{137, 1692}, {213, 90}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="84734407"/>
+								<reference key="NSNextKeyView" ref="616868367"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1362,7 +1362,7 @@ vtC80LDRgtGLLCDQuNC90YTQvtC60LjQvtGB0LrQuCkuA</bytes>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{350, 1663}, {513, 21}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="15771183"/>
+								<reference key="NSNextKeyView" ref="967283591"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -1385,7 +1385,7 @@ vtC80LDRgtGLLCDQuNC90YTQvtC60LjQvtGB0LrQuCkuA</bytes>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{376, 1726}, {417, 21}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="967283591"/>
+								<reference key="NSNextKeyView" ref="84734407"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -1431,7 +1431,7 @@ vtC80LDRgtGLLCDQuNC90YTQvtC60LjQvtGB0LrQuCkuA</bytes>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{136, 1932}, {204, 33}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="688477338"/>
+								<reference key="NSNextKeyView" ref="445860833"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -1496,7 +1496,7 @@ vtC80LDRgtGLLCDQuNC90YTQvtC60LjQvtGB0LrQuCkuA</bytes>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{570, 2045}, {105, 76}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="445860833"/>
+								<reference key="NSNextKeyView" ref="819747488"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -1565,7 +1565,7 @@ MCDQtNC+0LvQuy4g0KHQqNCQLw01MDAgMDAwINC10LLRgNC+A</string>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{137, 2136}, {335, 48}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="819747488"/>
+								<reference key="NSNextKeyView" ref="688477338"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1696,7 +1696,7 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{136, 3559}, {213, 90}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="687108182"/>
+								<reference key="NSNextKeyView" ref="1000596654"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1710,7 +1710,7 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{107, 3503}, {213, 90}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="962208405"/>
+								<reference key="NSNextKeyView" ref="514969063"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1724,7 +1724,7 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{357, 3561}, {569, 21}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="514969063"/>
+								<reference key="NSNextKeyView" ref="687108182"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -1770,7 +1770,7 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{125, 3819}, {204, 33}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="603494059"/>
+								<reference key="NSNextKeyView" ref="249726222"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -1793,7 +1793,7 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{647, 3784}, {136, 146}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="249726222"/>
+								<reference key="NSNextKeyView" ref="793587126"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1807,7 +1807,7 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{788, 3819}, {136, 146}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="699260026"/>
+								<reference key="NSNextKeyView" ref="180471001"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1821,7 +1821,7 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{506, 3871}, {188, 202}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="793587126"/>
+								<reference key="NSNextKeyView" ref="391621367"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1835,7 +1835,7 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{678, 3938}, {209, 206}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="851112718"/>
+								<reference key="NSNextKeyView" ref="699260026"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1849,7 +1849,7 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{539, 3929}, {122, 86}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="391621367"/>
+								<reference key="NSNextKeyView" ref="74010769"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -1895,7 +1895,7 @@ MDAwINC00L7Qu9C7LiDQodCo0JAvDTEgMDAwIDAwMCDQtdCy0YDQvg</string>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{673, 3816}, {84, 78}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="180471001"/>
+								<reference key="NSNextKeyView" ref="851112718"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -1955,7 +1955,7 @@ IDczMCDQtNC90LXQuSkNA</string>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{125, 4057}, {398, 105}}</string>
 								<reference key="NSSuperview" ref="1018169268"/>
-								<reference key="NSNextKeyView" ref="74010769"/>
+								<reference key="NSNextKeyView" ref="603494059"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -2088,6 +2088,7 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 								<reference key="NSNextKeyView" ref="340597150"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
+								<int key="IBUITag">1</int>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
@@ -2112,6 +2113,7 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 								<reference key="NSNextKeyView" ref="866632336"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
+								<int key="IBUITag">2</int>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
@@ -2136,6 +2138,7 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 								<reference key="NSNextKeyView" ref="989439288"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
+								<int key="IBUITag">3</int>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
@@ -2183,6 +2186,53 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<reference key="IBUIImage" ref="839948686"/>
 							</object>
+							<object class="IBUIImageView" id="633313828">
+								<reference key="NSNextResponder" ref="1018169268"/>
+								<int key="NSvFlags">292</int>
+								<string key="NSFrame">{{137, 711}, {229, 53}}</string>
+								<reference key="NSSuperview" ref="1018169268"/>
+								<reference key="NSNextKeyView" ref="632063133"/>
+								<string key="NSReuseIdentifierKey">_NS:9</string>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								<object class="NSCustomResource" key="IBUIImage" id="889572925">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">more_pluses.png</string>
+								</object>
+							</object>
+							<object class="IBUIImageView" id="616868367">
+								<reference key="NSNextResponder" ref="1018169268"/>
+								<int key="NSvFlags">292</int>
+								<string key="NSFrame">{{139, 1710}, {229, 53}}</string>
+								<reference key="NSSuperview" ref="1018169268"/>
+								<reference key="NSNextKeyView" ref="15771183"/>
+								<string key="NSReuseIdentifierKey">_NS:9</string>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								<reference key="IBUIImage" ref="889572925"/>
+							</object>
+							<object class="IBUIImageView" id="240560500">
+								<reference key="NSNextResponder" ref="1018169268"/>
+								<int key="NSvFlags">292</int>
+								<string key="NSFrame">{{136, 2639}, {229, 53}}</string>
+								<reference key="NSSuperview" ref="1018169268"/>
+								<reference key="NSNextKeyView" ref="875458432"/>
+								<string key="NSReuseIdentifierKey">_NS:9</string>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								<reference key="IBUIImage" ref="889572925"/>
+							</object>
+							<object class="IBUIImageView" id="1000596654">
+								<reference key="NSNextResponder" ref="1018169268"/>
+								<int key="NSvFlags">292</int>
+								<string key="NSFrame">{{136, 3577}, {229, 53}}</string>
+								<reference key="NSSuperview" ref="1018169268"/>
+								<reference key="NSNextKeyView" ref="962208405"/>
+								<string key="NSReuseIdentifierKey">_NS:9</string>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								<reference key="IBUIImage" ref="889572925"/>
+							</object>
 						</array>
 						<string key="NSFrameSize">{1024, 4200}</string>
 						<reference key="NSSuperview" ref="766721923"/>
@@ -2197,7 +2247,6 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 						<int key="NSvFlags">-2147483356</int>
 						<string key="NSFrame">{{840, 550}, {186, 125}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -2257,16 +2306,6 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
-						<string key="label">arrows4</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="873575085"/>
-						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
-						<bool key="addsContentToExistingCollection">NO</bool>
-					</object>
-					<int key="connectionID">339</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
 						<string key="label">mech3</string>
 						<reference key="source" ref="841351856"/>
 						<reference key="destination" ref="526307747"/>
@@ -2274,58 +2313,6 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 						<bool key="addsContentToExistingCollection">NO</bool>
 					</object>
 					<int key="connectionID">326</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">violetPlus</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="698872454"/>
-					</object>
-					<int key="connectionID">256</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">greenPlus</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="765862715"/>
-					</object>
-					<int key="connectionID">254</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">bluePlus</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="503728329"/>
-					</object>
-					<int key="connectionID">252</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">orangeBtn</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="5020547"/>
-					</object>
-					<int key="connectionID">250</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
-						<string key="label">labels4</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="962208405"/>
-						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
-						<bool key="addsContentToExistingCollection">NO</bool>
-					</object>
-					<int key="connectionID">341</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
-						<string key="label">labels4</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="687108182"/>
-						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
-						<bool key="addsContentToExistingCollection">NO</bool>
-					</object>
-					<int key="connectionID">342</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
@@ -2369,26 +2356,6 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
-						<string key="label">arrows4</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="989439288"/>
-						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
-						<bool key="addsContentToExistingCollection">NO</bool>
-					</object>
-					<int key="connectionID">338</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
-						<string key="label">arrows4</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="514969063"/>
-						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
-						<bool key="addsContentToExistingCollection">NO</bool>
-					</object>
-					<int key="connectionID">340</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
 						<string key="label">mech3</string>
 						<reference key="source" ref="841351856"/>
 						<reference key="destination" ref="715137801"/>
@@ -2416,6 +2383,214 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 						<bool key="addsContentToExistingCollection">NO</bool>
 					</object>
 					<int key="connectionID">327</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">mech2</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="482456430"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">325</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">mech2</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="688477338"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">323</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">mech2</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="412635852"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">324</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">mech1</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="785985058"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">315</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">mech1</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="987541275"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">313</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">mech1</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="125249996"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">316</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">mech1</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="81379078"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">314</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">scrollView</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="1018169268"/>
+					</object>
+					<int key="connectionID">180</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">toTopButton</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="595675961"/>
+					</object>
+					<int key="connectionID">354</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">pluses</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="5020547"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">356</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">pluses</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="503728329"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">357</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">pluses</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="765862715"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">358</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">morePluses1</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="633313828"/>
+					</object>
+					<int key="connectionID">361</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">morePluses2</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="616868367"/>
+					</object>
+					<int key="connectionID">363</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">morePluses3</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="240560500"/>
+					</object>
+					<int key="connectionID">365</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">morePluses4</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="1000596654"/>
+					</object>
+					<int key="connectionID">367</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">pluses</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="698872454"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">359</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">labels4</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="687108182"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">342</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">labels4</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="962208405"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">341</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">arrows4</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="873575085"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">339</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">arrows4</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="514969063"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">340</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">arrows4</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="989439288"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">338</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
@@ -2461,31 +2636,21 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
 						<string key="label">arrows3</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="202667583"/>
-						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
-						<bool key="addsContentToExistingCollection">NO</bool>
-					</object>
-					<int key="connectionID">333</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
-						<string key="label">arrows3</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="866632336"/>
-						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
-						<bool key="addsContentToExistingCollection">NO</bool>
-					</object>
-					<int key="connectionID">330</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
-						<string key="label">arrows3</string>
-						<reference key="source" ref="841351856"/>
 						<reference key="destination" ref="266261102"/>
 						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
 						<bool key="addsContentToExistingCollection">NO</bool>
 					</object>
 					<int key="connectionID">331</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">arrows3</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="202667583"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">333</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
@@ -2499,43 +2664,23 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
-						<string key="label">mech2</string>
+						<string key="label">arrows3</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="482456430"/>
+						<reference key="destination" ref="866632336"/>
 						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
 						<bool key="addsContentToExistingCollection">NO</bool>
 					</object>
-					<int key="connectionID">325</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
-						<string key="label">mech2</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="688477338"/>
-						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
-						<bool key="addsContentToExistingCollection">NO</bool>
-					</object>
-					<int key="connectionID">323</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
-						<string key="label">mech2</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="412635852"/>
-						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
-						<bool key="addsContentToExistingCollection">NO</bool>
-					</object>
-					<int key="connectionID">324</int>
+					<int key="connectionID">330</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
 						<string key="label">labels2</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="84734407"/>
+						<reference key="destination" ref="403102105"/>
 						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
 						<bool key="addsContentToExistingCollection">NO</bool>
 					</object>
-					<int key="connectionID">322</int>
+					<int key="connectionID">320</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
@@ -2551,21 +2696,11 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
 						<string key="label">labels2</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="403102105"/>
+						<reference key="destination" ref="84734407"/>
 						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
 						<bool key="addsContentToExistingCollection">NO</bool>
 					</object>
-					<int key="connectionID">320</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
-						<string key="label">arrows2</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="340597150"/>
-						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
-						<bool key="addsContentToExistingCollection">NO</bool>
-					</object>
-					<int key="connectionID">317</int>
+					<int key="connectionID">322</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
@@ -2581,6 +2716,16 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
 						<string key="label">arrows2</string>
 						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="340597150"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">317</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">arrows2</string>
+						<reference key="source" ref="841351856"/>
 						<reference key="destination" ref="967283591"/>
 						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
 						<bool key="addsContentToExistingCollection">NO</bool>
@@ -2589,53 +2734,13 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
-						<string key="label">mech1</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="785985058"/>
-						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
-						<bool key="addsContentToExistingCollection">NO</bool>
-					</object>
-					<int key="connectionID">315</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
-						<string key="label">mech1</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="987541275"/>
-						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
-						<bool key="addsContentToExistingCollection">NO</bool>
-					</object>
-					<int key="connectionID">313</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
-						<string key="label">mech1</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="125249996"/>
-						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
-						<bool key="addsContentToExistingCollection">NO</bool>
-					</object>
-					<int key="connectionID">316</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
-						<string key="label">mech1</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="81379078"/>
-						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
-						<bool key="addsContentToExistingCollection">NO</bool>
-					</object>
-					<int key="connectionID">314</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
 						<string key="label">labels1</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="1000376062"/>
+						<reference key="destination" ref="574405988"/>
 						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
 						<bool key="addsContentToExistingCollection">NO</bool>
 					</object>
-					<int key="connectionID">311</int>
+					<int key="connectionID">309</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
@@ -2651,49 +2756,21 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
 						<string key="label">labels1</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="574405988"/>
+						<reference key="destination" ref="1000376062"/>
 						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
 						<bool key="addsContentToExistingCollection">NO</bool>
 					</object>
-					<int key="connectionID">309</int>
+					<int key="connectionID">311</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
-						<string key="label">arrows1</string>
+						<string key="label">labels1</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="598414772"/>
+						<reference key="destination" ref="764194305"/>
 						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
 						<bool key="addsContentToExistingCollection">NO</bool>
 					</object>
-					<int key="connectionID">305</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
-						<string key="label">arrows1</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="762467876"/>
-						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
-						<bool key="addsContentToExistingCollection">NO</bool>
-					</object>
-					<int key="connectionID">306</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
-						<string key="label">arrows1</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="971448452"/>
-						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
-						<bool key="addsContentToExistingCollection">NO</bool>
-					</object>
-					<int key="connectionID">307</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">scrollView</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="1018169268"/>
-					</object>
-					<int key="connectionID">180</int>
+					<int key="connectionID">352</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
@@ -2707,21 +2784,33 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
-						<string key="label">labels1</string>
+						<string key="label">arrows1</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="764194305"/>
+						<reference key="destination" ref="598414772"/>
 						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
 						<bool key="addsContentToExistingCollection">NO</bool>
 					</object>
-					<int key="connectionID">352</int>
+					<int key="connectionID">372</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">toTopButton</string>
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">arrows1</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="595675961"/>
+						<reference key="destination" ref="971448452"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
 					</object>
-					<int key="connectionID">354</int>
+					<int key="connectionID">375</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">arrows1</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="762467876"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">376</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -2761,39 +2850,39 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">orangePlusClick:</string>
+						<string key="label">onPlusButtonClick:</string>
 						<reference key="source" ref="5020547"/>
 						<reference key="destination" ref="841351856"/>
 						<int key="IBEventType">7</int>
 					</object>
-					<int key="connectionID">251</int>
+					<int key="connectionID">371</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">bluePlusClick:</string>
+						<string key="label">onPlusButtonClick:</string>
 						<reference key="source" ref="503728329"/>
 						<reference key="destination" ref="841351856"/>
 						<int key="IBEventType">7</int>
 					</object>
-					<int key="connectionID">253</int>
+					<int key="connectionID">370</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">greenPlusClick:</string>
+						<string key="label">onPlusButtonClick:</string>
 						<reference key="source" ref="765862715"/>
 						<reference key="destination" ref="841351856"/>
 						<int key="IBEventType">7</int>
 					</object>
-					<int key="connectionID">255</int>
+					<int key="connectionID">369</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">violetPlusClick:</string>
+						<string key="label">onPlusButtonClick:</string>
 						<reference key="source" ref="698872454"/>
 						<reference key="destination" ref="841351856"/>
 						<int key="IBEventType">7</int>
 					</object>
-					<int key="connectionID">257</int>
+					<int key="connectionID">368</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -2933,13 +3022,17 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 							<reference ref="5020547"/>
 							<reference ref="503728329"/>
 							<reference ref="765862715"/>
-							<reference ref="698872454"/>
 							<reference ref="764194305"/>
 							<reference ref="526307747"/>
 							<reference ref="873575085"/>
 							<reference ref="1031993052"/>
 							<reference ref="253040112"/>
 							<reference ref="607685825"/>
+							<reference ref="698872454"/>
+							<reference ref="633313828"/>
+							<reference ref="616868367"/>
+							<reference ref="240560500"/>
+							<reference ref="1000596654"/>
 						</array>
 						<reference key="parent" ref="766721923"/>
 					</object>
@@ -3463,6 +3556,26 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 						<reference key="object" ref="595675961"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">360</int>
+						<reference key="object" ref="633313828"/>
+						<reference key="parent" ref="1018169268"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">362</int>
+						<reference key="object" ref="616868367"/>
+						<reference key="parent" ref="1018169268"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">364</int>
+						<reference key="object" ref="240560500"/>
+						<reference key="parent" ref="1018169268"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">366</int>
+						<reference key="object" ref="1000596654"/>
+						<reference key="parent" ref="1018169268"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -3539,6 +3652,10 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 				<string key="35.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="353.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="36.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="360.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="362.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="364.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="366.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="37.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="38.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="4.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -3582,7 +3699,7 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">355</int>
+			<int key="maxID">376</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
@@ -3638,6 +3755,7 @@ uNCy0LDQvdC40Y8gKNCx0LDQvdC60L7QvNCw0YLRiywg0LjQvdGE0L7QutC40L7RgdC60LgpINC4INGB
 			<string key="09_01_19_mech3.png">{188, 202}</string>
 			<string key="09_01_19_mech4.png">{209, 206}</string>
 			<string key="09_01_20_1.png">{396, 98}</string>
+			<string key="more_pluses.png">{229, 54}</string>
 			<string key="up_button.png">{186, 125}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">1181</string>

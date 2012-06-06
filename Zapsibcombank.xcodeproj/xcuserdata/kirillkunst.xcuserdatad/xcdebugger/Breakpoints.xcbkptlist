@@ -47,11 +47,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Code/Controllers/VipDepositViewController.h"
-         timestampString = "359456192.517486"
+         timestampString = "360653326.798275"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "36"
-         endingLineNumber = "36"
+         startingLineNumber = "23"
+         endingLineNumber = "23"
          landmarkName = "labels3"
          landmarkType = "19">
       </FileBreakpoint>
@@ -86,11 +86,50 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Code/Controllers/DepositsViewController.m"
-         timestampString = "360588397.895817"
+         timestampString = "360650399.375719"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "323"
-         endingLineNumber = "323"
+         startingLineNumber = "333"
+         endingLineNumber = "333"
+         landmarkName = "-onPlusButtonClick:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Code/Controllers/VipDepositViewController.m"
+         timestampString = "360653526.523527"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "179"
+         endingLineNumber = "179"
+         landmarkName = "-viewDidLoad"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Code/Controllers/VipDepositViewController.m"
+         timestampString = "360653567.983857"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "178"
+         endingLineNumber = "178"
+         landmarkName = "-viewDidLoad"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Code/Controllers/VipDepositViewController.m"
+         timestampString = "360654930.548568"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "260"
+         endingLineNumber = "260"
          landmarkName = "-onPlusButtonClick:"
          landmarkType = "5">
       </FileBreakpoint>

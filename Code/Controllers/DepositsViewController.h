@@ -30,6 +30,11 @@
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *labels5;
 - (IBAction)bluePlusClick:(id)sender;
 
+@property (unsafe_unretained, nonatomic) IBOutlet UIImageView *morePluses1;
+@property (unsafe_unretained, nonatomic) IBOutlet UIImageView *morePluses2;
+@property (unsafe_unretained, nonatomic) IBOutlet UIImageView *morePluses3;
+@property (unsafe_unretained, nonatomic) IBOutlet UIImageView *morePluses4;
+@property (unsafe_unretained, nonatomic) IBOutlet UIImageView *morePluses5;
 -(void)animateFirstArrows;
 -(void)animateSecondArrows;
 -(void)animateThirdArrows;

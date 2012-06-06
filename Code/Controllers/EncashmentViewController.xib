@@ -37,6 +37,20 @@
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">292</int>
 				<array class="NSMutableArray" key="NSSubviews">
+					<object class="IBUIImageView" id="853081078">
+						<reference key="NSNextResponder" ref="766721923"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrameSize">{1024, 1500}</string>
+						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="NSNextKeyView" ref="192297654"/>
+						<string key="NSReuseIdentifierKey">_NS:9</string>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<object class="NSCustomResource" key="IBUIImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">00_background.png</string>
+						</object>
+					</object>
 					<object class="IBUIImageView" id="192297654">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">288</int>
@@ -304,7 +318,7 @@ hSDRgtGA0LXQsdC+0LLQsNC90LjQuSDQmtC70LjQtdC90YLQsA3QmtC+0L3RhNC40LTQtdC90YbQuNCw
 				</array>
 				<string key="NSFrameSize">{1004, 768}</string>
 				<reference key="NSSuperview"/>
-				<reference key="NSNextKeyView" ref="192297654"/>
+				<reference key="NSNextKeyView" ref="853081078"/>
 				<reference key="IBUIBackgroundColor" ref="261999777"/>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 				<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
@@ -363,6 +377,7 @@ hSDRgtGA0LXQsdC+0LLQsNC90LjQuSDQmtC70LjQtdC90YLQsA3QmtC+0L3RhNC40LTQtdC90YbQuNCw
 							<reference ref="950953236"/>
 							<reference ref="765324117"/>
 							<reference ref="90436776"/>
+							<reference ref="853081078"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -441,6 +456,11 @@ hSDRgtGA0LXQsdC+0LLQsNC90LjQuSDQmtC70LjQtdC90YLQsA3QmtC+0L3RhNC40LTQtdC90YbQuNCw
 						<reference key="object" ref="765324117"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">20</int>
+						<reference key="object" ref="853081078"/>
+						<reference key="parent" ref="766721923"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -459,6 +479,7 @@ hSDRgtGA0LXQsdC+0LLQsNC90LjQuSDQmtC70LjQtdC90YLQsA3QmtC+0L3RhNC40LTQtdC90YbQuNCw
 				<string key="18.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="19.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="20.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="4.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="5.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -469,7 +490,7 @@ hSDRgtGA0LXQsdC+0LLQsNC90LjQuSDQmtC70LjQtdC90YLQsA3QmtC+0L3RhNC40LTQtdC90YbQuNCw
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">19</int>
+			<int key="maxID">20</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
@@ -481,6 +502,7 @@ hSDRgtGA0LXQsdC+0LLQsNC90LjQuSDQmtC70LjQtdC90YLQsA3QmtC+0L3RhNC40LTQtdC90YbQuNCw
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="00_background.png">{1024, 768}</string>
 			<string key="01_06_arrow1.png">{229, 175}</string>
 			<string key="01_06_frame1.png">{850, 105}</string>
 			<string key="01_06_photo1.png">{318, 186}</string>

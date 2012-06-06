@@ -45,6 +45,11 @@
 @end
 
 @implementation DepositsViewController
+@synthesize morePluses1;
+@synthesize morePluses2;
+@synthesize morePluses3;
+@synthesize morePluses4;
+@synthesize morePluses5;
 @synthesize imgRed;
 @synthesize imgViolet;
 @synthesize imgGreen;
@@ -293,6 +298,11 @@
     [self setLabels5:nil];
     [self setGears5:nil];
     [self setToTopButton:nil];
+    [self setMorePluses1:nil];
+    [self setMorePluses2:nil];
+    [self setMorePluses3:nil];
+    [self setMorePluses4:nil];
+    [self setMorePluses5:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -330,13 +340,41 @@
     plus.transform = CGAffineTransformMakeScale(1, 1);
     
     NSArray *arrows, *labels;
+    UIImageView *morePlus;
     switch (n) {
-        case 0: arrows = self.arrows1; labels = self.labels1; break;
-        case 1: arrows = self.arrows2; labels = self.labels2; break;
-        case 2: arrows = self.arrows3; labels = self.labels3; break;
-        case 3: arrows = self.arrows4; labels = self.labels4; break;
-        case 4: arrows = self.arrows5; labels = self.labels5; break;
+        case 0:
+            arrows = self.arrows1; 
+            labels = self.labels1;
+            morePlus = morePluses1;
+            break;
+        case 1: 
+            arrows = self.arrows2; 
+            labels = self.labels2; 
+            morePlus = morePluses2;
+            break;
+        case 2: 
+            arrows = self.arrows3; 
+            labels = self.labels3; 
+            morePlus = morePluses3;
+            break;
+        case 3: 
+            arrows = self.arrows4; 
+            labels = self.labels4;
+            morePlus = morePluses4;
+            break;
+        case 4: 
+            arrows = self.arrows5; 
+            labels = self.labels5; 
+            morePlus = morePluses5;
+            break;
     }
+    
+    // Узнать больше плюсов улетает
+    [UIView animateWithDuration:1.0f delay:0 options:UIViewAnimationOptionAllowUserInteraction  animations:^{
+        CGRect frame = morePlus.frame;
+        frame.origin.x -= 2000;
+        morePlus.frame = frame;
+    }completion:nil];
     
     // Анимация выплывающих стрелок и текста
     for (int i = 0; i < arrows.count; i++) {

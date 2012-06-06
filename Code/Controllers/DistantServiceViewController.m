@@ -28,6 +28,7 @@
 @synthesize btnFrame;
 @synthesize txtFrame;
 @synthesize hideView;
+@synthesize morePluses;
 @synthesize scrollView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -68,13 +69,13 @@
 
 -(void)animatePlus{
     [UIView animateWithDuration:0.5f delay:0.25f options:UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse | UIViewAnimationOptionAllowUserInteraction  animations:^{
-        self.btnPlus.transform = CGAffineTransformMakeScale(1.3, 1.3);
+        self.btnPlus.transform = CGAffineTransformMakeScale(0.5f, 0.5f);
     }completion:nil];
 }
 
 -(void) animateFrameButton{
     [UIView animateWithDuration:0.5f delay:0.25f options:UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse | UIViewAnimationOptionAllowUserInteraction  animations:^{
-        self.btnFrame.transform = CGAffineTransformMakeScale(1.3, 1.3);
+        self.btnFrame.transform = CGAffineTransformMakeScale(0.5f, 0.5f);
     }completion:nil];
 }
 - (void)viewDidUnload
@@ -94,6 +95,7 @@
     [self setBtnFrame:nil];
     [self setTxtFrame:nil];
     [self setHideView:nil];
+    [self setMorePluses:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -106,6 +108,14 @@
 }
 
 - (IBAction)animateLabels:(id)sender {
+    // Узнать больше плюсов улетает
+    [UIView animateWithDuration:1.0f delay:0 options:UIViewAnimationOptionAllowUserInteraction  animations:^{
+        CGRect frame = morePluses.frame;
+        frame.origin.x -= 2000;
+        morePluses.frame = frame;
+    }completion:nil];
+
+    
     // [self animatePlus];
     if ([sender tag] == 1){
         [sender setTag:3];

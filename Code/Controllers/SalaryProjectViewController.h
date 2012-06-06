@@ -10,5 +10,6 @@
 #import "ServiceViewController.h"
 
 @interface SalaryProjectViewController : ServiceViewController
+@property (unsafe_unretained, nonatomic) IBOutlet UIImageView *morePluses;
 
 @end

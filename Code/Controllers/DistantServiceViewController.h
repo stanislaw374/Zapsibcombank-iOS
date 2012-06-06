@@ -24,6 +24,7 @@
 @property (unsafe_unretained, nonatomic) IBOutlet UIButton *btnFrame;
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *txtFrame;
 @property (unsafe_unretained, nonatomic) IBOutlet UIView *hideView;
+@property (unsafe_unretained, nonatomic) IBOutlet UIImageView *morePluses;
 
 -(void)animatePlus;
 -(void) animateFrameButton;

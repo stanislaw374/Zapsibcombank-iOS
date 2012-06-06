@@ -26,6 +26,7 @@
 @end
 
 @implementation CashServicesViewController
+@synthesize morePluses;
 @synthesize scrollView;
 @synthesize persons;
 @synthesize plus;
@@ -103,6 +104,7 @@
     [self setArrows:nil];
     [self setLabels:nil];
     [self setPlus:nil];
+    [self setMorePluses:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -119,6 +121,14 @@
     _isPlusClicked = YES;
     [self.plus.layer removeAllAnimations];
     self.plus.transform = CGAffineTransformMakeScale(1, 1);
+    
+    // Узнать больше плюсов улетает
+    [UIView animateWithDuration:1.0f delay:0 options:UIViewAnimationOptionAllowUserInteraction  animations:^{
+        CGRect frame = morePluses.frame;
+        frame.origin.x -= 2000;
+        morePluses.frame = frame;
+    }completion:nil];
+
     
     // Анимация выплывающих стрелок и текста
     for (int i = 0; i < self.arrows.count; i++) {

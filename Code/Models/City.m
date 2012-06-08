@@ -18,7 +18,17 @@ static NSArray *_all;
 @synthesize name = _name;
 @synthesize atms = _atms;
 @synthesize offices = _offices;
+@synthesize objects = _objects;
 @synthesize delegate = _delegate;
+
+
+- (NSMutableArray *)objects {
+    if (! _objects) {
+        _objects = [[NSMutableArray alloc] init];
+    }
+    return _objects;
+}
+
 
 + (void)getWithDelegate:(id<CityDelegate>)delegate {    
     if (!_all) {
@@ -87,8 +97,10 @@ static NSArray *_all;
                     a.hours = [atm objectForKey:@"hours"];
                     
                     [result addObject:a];
+                    [self.objects addObject:a];
                 }
                 self.atms = result;
+                
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [self.delegate cityObjectsDidLoad];
                 });
@@ -125,7 +137,7 @@ static NSArray *_all;
                     o.ID = [[office objectForKey:@"id"] intValue];
                     o.name = [office objectForKey:@"name"];
                     o.address = [office objectForKey:@"adres"];
-                    
+                    [self.objects addObject:o];
                     [result addObject:o];
                 }
                 self.offices = result;

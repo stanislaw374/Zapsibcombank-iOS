@@ -56,7 +56,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.scrollView.contentSize = CGSizeMake(1024, 2113);
+    self.scrollView.contentSize = CGSizeMake(1024, 2200);
     
     // Анимация стрелок
     for (UIImageView *arrow in self.arrows) {

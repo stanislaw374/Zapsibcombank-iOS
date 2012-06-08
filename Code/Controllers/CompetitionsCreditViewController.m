@@ -13,6 +13,7 @@
 @end
 
 @implementation CompetitionsCreditViewController
+@synthesize toTopButton;
 @synthesize scrollView;
 @synthesize bigArrows;
 
@@ -43,10 +44,25 @@
     
 }
 
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if (self.scrollView.contentOffset.y >= 60)
+    {
+        toTopButton.hidden = NO;
+    } else {
+        toTopButton.hidden = YES;
+    }
+}
+- (IBAction)backToTop:(id)sender {
+    [self scrollTo:0];
+}
+
+
+
 - (void)viewDidUnload
 {
     [self setScrollView:nil];
     [self setBigArrows:nil];
+    [self setToTopButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

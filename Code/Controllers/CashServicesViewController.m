@@ -150,10 +150,10 @@
 }
 
 - (IBAction)btnTarifs:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.zapsibkombank.ru/corporate/rko/account"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.zapsibkombank.ru/corporate/tarifs"]];
 }
 
 - (IBAction)btnAccount:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.zapsibkombank.ru/corporate/tarifs"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.zapsibkombank.ru/corporate/rko/account"]];
 }
 @end

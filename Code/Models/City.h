@@ -23,6 +23,7 @@
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSArray *atms;
 @property (nonatomic, strong) NSArray *offices;
+@property (nonatomic, strong) NSMutableArray *objects;
 
 + (void)getWithDelegate:(id <CityDelegate>)delegate;
 - (void)getATMs;

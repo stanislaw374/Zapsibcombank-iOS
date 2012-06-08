@@ -194,7 +194,7 @@ uNC4INC/0YDQvtGE0LXRgdGB0LjQvtC90LDQu9GM0L3Ri9GFINC40LTQtdC5INC4INCyINGA0LXQsNC7
 								<string key="IBUIText">Программа лояльности для Клиентов Банка</string>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">1</int>
-									<bytes key="NSRGB">MC4yNTQ5MDE5NjA4IDAuMjU0OTAxOTYwOCAwLjI1NDkwMTk2MDgAA</bytes>
+									<bytes key="NSRGB">MC4yIDAuMiAwLjIAA</bytes>
 								</object>
 								<nil key="IBUIHighlightedColor"/>
 								<int key="IBUIBaselineAdjustment">0</int>
@@ -222,7 +222,6 @@ uNC4INC/0YDQvtGE0LXRgdGB0LjQvtC90LDQu9GM0L3Ri9GFINC40LTQtdC5INC4INCyINGA0LXQsNC7
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{325, 354}, {657, 228}}</string>
 								<reference key="NSSuperview" ref="958613523"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>

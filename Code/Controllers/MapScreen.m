@@ -143,11 +143,12 @@ typedef enum { CATEGORY_ATMS, CATEGORY_OFFICES, CATEGORY_ALL } ContentCategory;
 #pragma mark - Helpers 
 - (void)loadData {
     switch (self.contentCategory) {
-//        case CATEGORY_ALL:
-//            self.currentCity.delegate = self;
-//            [self.currentCity getATMs];
-//            [self.currentCity getOffices];
-//            break;
+        case CATEGORY_ALL:
+            [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+            self.currentCity.delegate = self;
+            [self.currentCity getATMs];
+            [self.currentCity getOffices];
+            break;
         case CATEGORY_ATMS:
             [MBProgressHUD showHUDAddedTo:self.view animated:YES];
             self.currentCity.delegate = self;
@@ -297,11 +298,19 @@ typedef enum { CATEGORY_ATMS, CATEGORY_OFFICES, CATEGORY_ALL } ContentCategory;
                 return 0;
             }
             else return self.currentCity.atms.count;
+            break;
         case CATEGORY_OFFICES:
             if (!self.currentCity.offices) {
                 return 0;
             }
             else return self.currentCity.offices.count;
+            break;
+        case CATEGORY_ALL:
+            if (!self.currentCity.offices && self.currentCity.atms) {
+                return 0;
+            }
+            else return self.currentCity.offices.count + self.currentCity.atms.count;
+            break;
         default: return 0;
     }
 }
@@ -341,6 +350,22 @@ typedef enum { CATEGORY_ATMS, CATEGORY_OFFICES, CATEGORY_ALL } ContentCategory;
         //usd.hidden = [atm.currency rangeOfString:@"usd" options:NSCaseInsensitiveSearch].location == NSNotFound;
         //rub.hidden = [atm.currency rangeOfString:@"rub" options:NSCaseInsensitiveSearch].location == NSNotFound;
     }
+    if (self.contentCategory == CATEGORY_ALL) {
+        NSObject *object = [self.currentCity.objects objectAtIndex:indexPath.row];
+        if ([object isKindOfClass:[ATM class]]) {
+            ATM *atm = (ATM *)object;
+            lblName.text = atm.name;
+            lblAddress.text = atm.address;
+            lblHours.text = atm.hours;
+            usd.hidden = [atm.currency rangeOfString:@"usd" options:NSCaseInsensitiveSearch].location == NSNotFound;
+            rub.hidden = [atm.currency rangeOfString:@"rub" options:NSCaseInsensitiveSearch].location == NSNotFound;
+            
+        } else if ([object isKindOfClass:[Office class]]) {
+            Office *office = (Office *)object;
+            lblName.text = office.name;
+            lblAddress.text = office.address;
+        }
+     }
     
     return cell;
 }
@@ -380,28 +405,28 @@ typedef enum { CATEGORY_ATMS, CATEGORY_OFFICES, CATEGORY_ALL } ContentCategory;
     
     NSMutableArray *annotations = [NSMutableArray array];
     switch (self.contentCategory) {
-//        case CATEGORY_ALL:
-//            for (ATM *atm in self.currentCity.atms) {
-//                if (CLLocationCoordinate2DIsValid(atm.coordinate)) {
-//                    PointAnnotation *annotation = [PointAnnotation pointAnnotation];
-//                    annotation.title = atm.name;
-//                    annotation.subtitle = atm.address;
-//                    annotation.coordinate = atm.coordinate;
-//                    annotation.mapObject = atm;
-//                    [annotations addObject:annotation];
-//                }
-//            }
-//            for (Office *office in self.currentCity.offices) {
-//                if (CLLocationCoordinate2DIsValid(office.coordinate)) {
-//                    PointAnnotation *annotation = [PointAnnotation pointAnnotation];
-//                    annotation.title = office.name;
-//                    annotation.subtitle = office.address;
-//                    annotation.coordinate = office.coordinate;
-//                    annotation.mapObject = office;
-//                    [annotations addObject:annotation];
-//                }
-//            }
-//            break;
+        case CATEGORY_ALL:
+            for (ATM *atm in self.currentCity.atms) {
+                if (CLLocationCoordinate2DIsValid(atm.coordinate)) {
+                    PointAnnotation *annotation = [PointAnnotation pointAnnotation];
+                    annotation.title = atm.name;
+                    annotation.subtitle = atm.address;
+                    annotation.coordinate = atm.coordinate;
+                    annotation.mapObject = atm;
+                    [annotations addObject:annotation];
+                }
+            }
+            for (Office *office in self.currentCity.offices) {
+                if (CLLocationCoordinate2DIsValid(office.coordinate)) {
+                    PointAnnotation *annotation = [PointAnnotation pointAnnotation];
+                    annotation.title = office.name;
+                    annotation.subtitle = office.address;
+                    annotation.coordinate = office.coordinate;
+                    annotation.mapObject = office;
+                    [annotations addObject:annotation];
+                }
+            }
+            break;
         case CATEGORY_ATMS:
             for (ATM *atm in self.currentCity.atms) {
                 if (CLLocationCoordinate2DIsValid(atm.coordinate)) {

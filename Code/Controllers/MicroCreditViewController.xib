@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="8.00">
 	<data>
-		<int key="IBDocument.SystemTarget">1296</int>
+		<int key="IBDocument.SystemTarget">1280</int>
 		<string key="IBDocument.SystemVersion">11D50b</string>
 		<string key="IBDocument.InterfaceBuilderVersion">2182</string>
 		<string key="IBDocument.AppKitVersion">1138.32</string>
@@ -163,15 +163,16 @@
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<string type="base64-UTF8" key="IBUIText">KiDQmtGA0LXQtNC40YIg0LTQu9GPINC/0YDQtdC00L/RgNC40Y/RgtC40Lkg0LzQsNC70L7Qs9C+INCx
 0LjQt9C90LXRgdCwLiDQotGA0LXQsdC+0LLQsNC90LjRjyDQuiDQt9Cw0LXQvNGJ0LjQutGDINC+0L/Q
-uNGB0LDQvdGLINCyINGA0LDQt9C00LXQu9C1IMKr0K3QutGB0L/RgNC10YHRgS3QvtCy0LXRgNC00YDQ
-sNGE0YLCuy4NKiog0J/QvtC0INGA0YPQutC+0LLQvtC00LjRgtC10LvQtdC8INC/0YDQtdC00L/RgNC4
-0Y/RgtC40Y8g0L/QvtC90LjQvNCw0LXRgtGB0Y8g0LXQtNC40L3QvtC70LjRh9C90YvQuSDQuNGB0L/Q
-vtC70L3QuNGC0LXQu9GM0L3Ri9C5INC+0YDQs9Cw0L0g0L/RgNC10LTQv9GA0LjRj9GC0LjRjyAo0Y7R
-gNC40LTQuNGH0LXRgdC60L7Qs9C+INC70LjRhtCwKS4NwqvQl9Cw0L/RgdC40LHQutC+0LzQsdCw0L3Q
-usK7INCe0JDQniDQstC/0YDQsNCy0LUg0L7RgtC60LDQt9Cw0YLRjCDQsiDQstGL0LTQsNGH0LUg0LrR
-gNC10LTQuNGC0LAg0L3QsCDQvtGB0L3QvtCy0LUg0LDQvdCw0LvQuNC30LAg0YTQuNC90LDQvdGB0L7Q
-stC+0LPQviDQv9C+0LvQvtC20LXQvdC40Y8g0Lgg0L/Qu9Cw0YLQtdC20LXRgdC/0L7RgdC+0LHQvdC+
-0YHRgtC4INC/0L7RgtC10L3RhtC40LDQu9GM0L3QvtCz0L4g0LfQsNC10LzRidC40LrQsC4</string>
+uNGB0LDQvdGLINCyINGA0LDQt9C00LXQu9C1IMKr0J/RgNC+0LPRgNCw0LzQvNCwINC00L7Qu9Cz0L7R
+gdGA0L7Rh9C90L7Qs9C+INC60YDQtdC00LjRgtC+0LLQsNC90LjRjyDQvNCw0LvQvtCz0L4g0LHQuNC3
+0L3QtdGB0LDCuy4NKiog0J/QvtC0INGA0YPQutC+0LLQvtC00LjRgtC10LvQtdC8INC/0YDQtdC00L/R
+gNC40Y/RgtC40Y8g0L/QvtC90LjQvNCw0LXRgtGB0Y8g0LXQtNC40L3QvtC70LjRh9C90YvQuSDQuNGB
+0L/QvtC70L3QuNGC0LXQu9GM0L3Ri9C5INC+0YDQs9Cw0L0g0L/RgNC10LTQv9GA0LjRj9GC0LjRjyAo
+0Y7RgNC40LTQuNGH0LXRgdC60L7Qs9C+INC70LjRhtCwKS4NwqvQl9Cw0L/RgdC40LHQutC+0LzQsdCw
+0L3QusK7INCe0JDQniDQstC/0YDQsNCy0LUg0L7RgtC60LDQt9Cw0YLRjCDQsiDQstGL0LTQsNGH0LUg
+0LrRgNC10LTQuNGC0LAg0L3QsCDQvtGB0L3QvtCy0LUg0LDQvdCw0LvQuNC30LAg0YTQuNC90LDQvdGB
+0L7QstC+0LPQviDQv9C+0LvQvtC20LXQvdC40Y8g0Lgg0L/Qu9Cw0YLQtdC20LXRgdC/0L7RgdC+0LHQ
+vdC+0YHRgtC4INC/0L7RgtC10L3RhtC40LDQu9GM0L3QvtCz0L4g0LfQsNC10LzRidC40LrQsC4</string>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MC4yNTQ5MDE5NjA4IDAuMjU0OTAxOTYwOCAwLjI1NDkwMTk2MDgAA</bytes>
@@ -191,7 +192,7 @@ stC+0LPQviDQv9C+0LvQvtC20LXQvdC40Y8g0Lgg0L/Qu9Cw0YLQtdC20LXRgdC/0L7RgdC+0LHQvdC+
 								</object>
 							</object>
 						</array>
-						<string key="NSFrame">{{0, 77}, {1024, 768}}</string>
+						<string key="NSFrame">{{0, 77}, {1024, 1500}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="640215743"/>
@@ -201,7 +202,7 @@ stC+0LPQviDQv9C+0LvQvtC20LXQvdC40Y8g0Lgg0L/Qu9Cw0YLQtdC20LXRgdC/0L7RgdC+0LHQvdC+
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 					</object>
 				</array>
-				<string key="NSFrameSize">{1024, 748}</string>
+				<string key="NSFrameSize">{1024, 1500}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="218077855"/>
@@ -364,10 +365,6 @@ stC+0LPQviDQv9C+0LvQvtC20LXQvdC40Y8g0Lgg0L/Qu9Cw0YLQtdC20LXRgdC/0L7RgdC+0LHQvdC+
 		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBIPadFramework</string>
-		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
-			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaTouchPlugin.iPhoneOS</string>
-			<real value="1296" key="NS.object.0"/>
-		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">

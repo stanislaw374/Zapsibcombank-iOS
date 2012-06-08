@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="8.00">
 	<data>
-		<int key="IBDocument.SystemTarget">1296</int>
+		<int key="IBDocument.SystemTarget">1280</int>
 		<string key="IBDocument.SystemVersion">11D50b</string>
 		<string key="IBDocument.InterfaceBuilderVersion">2182</string>
 		<string key="IBDocument.AppKitVersion">1138.32</string>
@@ -45,7 +45,7 @@
 							<object class="IBUIImageView" id="413171775">
 								<reference key="NSNextResponder" ref="629785140"/>
 								<int key="NSvFlags">274</int>
-								<string key="NSFrameSize">{1024, 6980}</string>
+								<string key="NSFrameSize">{1024, 12732}</string>
 								<reference key="NSSuperview" ref="629785140"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="838532477"/>
@@ -299,7 +299,7 @@ gNC40Y/RgtC40LksINC+0YHRg9GJ0LXRgdGC0LLQu9GP0Y7RidC40YUg0LjQvdGL0LUg0LLQuNC00Ysg
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<string key="IBUIText">Формула роста вашего бизнеса:</string>
+								<string key="IBUIText">Формула роста Вашего бизнеса:</string>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MC4yNTQ5MDE5NjA4IDAuMjU0OTAxOTYwOCAwLjI1NDkwMTk2MDgAA</bytes>
@@ -485,7 +485,7 @@ gNC40Y/RgtC40LksINC+0YHRg9GJ0LXRgdGC0LLQu9GP0Y7RidC40YUg0LjQvdGL0LUg0LLQuNC00Ysg
 							<object class="IBUILabel" id="494954100">
 								<reference key="NSNextResponder" ref="629785140"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{34, 721}, {186, 21}}</string>
+								<string key="NSFrame">{{28, 716}, {197, 34}}</string>
 								<reference key="NSSuperview" ref="629785140"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="50995417"/>
@@ -504,20 +504,13 @@ gNC40Y/RgtC40LksINC+0YHRg9GJ0LXRgdGC0LLQu9GP0Y7RidC40YUg0LjQvdGL0LUg0LLQuNC00Ysg
 								<int key="IBUIBaselineAdjustment">0</int>
 								<float key="IBUIMinimumFontSize">10</float>
 								<int key="IBUITextAlignment">1</int>
-								<object class="IBUIFontDescription" key="IBUIFontDescription" id="793301946">
-									<int key="type">1</int>
-									<double key="pointSize">16</double>
-								</object>
-								<object class="NSFont" key="IBUIFont" id="58746140">
-									<string key="NSName">Helvetica</string>
-									<double key="NSSize">16</double>
-									<int key="NSfFlags">16</int>
-								</object>
+								<reference key="IBUIFontDescription" ref="1051446017"/>
+								<reference key="IBUIFont" ref="926728619"/>
 							</object>
 							<object class="IBUILabel" id="50995417">
 								<reference key="NSNextResponder" ref="629785140"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{381, 721}, {181, 21}}</string>
+								<string key="NSFrame">{{362, 703}, {219, 60}}</string>
 								<reference key="NSSuperview" ref="629785140"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="450973877"/>
@@ -536,13 +529,13 @@ gNC40Y/RgtC40LksINC+0YHRg9GJ0LXRgdGC0LLQu9GP0Y7RidC40YUg0LjQvdGL0LUg0LLQuNC00Ysg
 								<int key="IBUIBaselineAdjustment">0</int>
 								<float key="IBUIMinimumFontSize">10</float>
 								<int key="IBUITextAlignment">1</int>
-								<reference key="IBUIFontDescription" ref="793301946"/>
-								<reference key="IBUIFont" ref="58746140"/>
+								<reference key="IBUIFontDescription" ref="1051446017"/>
+								<reference key="IBUIFont" ref="926728619"/>
 							</object>
 							<object class="IBUILabel" id="450973877">
 								<reference key="NSNextResponder" ref="629785140"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{709, 717}, {181, 52}}</string>
+								<string key="NSFrame">{{690, 717}, {219, 52}}</string>
 								<reference key="NSSuperview" ref="629785140"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="1049359779"/>
@@ -562,8 +555,8 @@ gNC40Y/RgtC40LksINC+0YHRg9GJ0LXRgdGC0LLQu9GP0Y7RidC40YUg0LjQvdGL0LUg0LLQuNC00Ysg
 								<float key="IBUIMinimumFontSize">10</float>
 								<int key="IBUINumberOfLines">2</int>
 								<int key="IBUITextAlignment">1</int>
-								<reference key="IBUIFontDescription" ref="793301946"/>
-								<reference key="IBUIFont" ref="58746140"/>
+								<reference key="IBUIFontDescription" ref="1051446017"/>
+								<reference key="IBUIFont" ref="926728619"/>
 							</object>
 							<object class="IBUILabel" id="1049359779">
 								<reference key="NSNextResponder" ref="629785140"/>
@@ -593,8 +586,15 @@ Lg</string>
 								<float key="IBUIMinimumFontSize">10</float>
 								<int key="IBUINumberOfLines">2</int>
 								<int key="IBUITextAlignment">1</int>
-								<reference key="IBUIFontDescription" ref="793301946"/>
-								<reference key="IBUIFont" ref="58746140"/>
+								<object class="IBUIFontDescription" key="IBUIFontDescription">
+									<int key="type">1</int>
+									<double key="pointSize">16</double>
+								</object>
+								<object class="NSFont" key="IBUIFont">
+									<string key="NSName">Helvetica</string>
+									<double key="NSSize">16</double>
+									<int key="NSfFlags">16</int>
+								</object>
 							</object>
 							<object class="IBUILabel" id="563929530">
 								<reference key="NSNextResponder" ref="629785140"/>
@@ -1195,13 +1195,13 @@ gNGD0L/QvdC10LnRiNC40YUg0YHQvtCx0YHRgtCy0LXQvdC90LjQutC+0LIgKNGD0YfQsNGB0YLQvdC4
 vNGJ0LjQutCwINGP0LLQu9GP0LXRgtGB0Y8g0LzRg9C90LjRhtC40L/QsNC70YzQvdC+0LUg0L7QsdGA
 0LDQt9C+0LLQsNC90LjQtSDQuNC70Lgg0YHRg9Cx0YrQtdC60YIg0KTQtdC00LXRgNCw0YbQuNC4LCDQ
 tNC+0L/Rg9GB0LrQsNC10YLRgdGPINC30LDQvNC10L3QsCDQv9C+0YDRg9GH0LjRgtC10LvRjNGB0YLQ
-stCwINGB0L7QsdGB0YLQstC10L3QvdC40LrQvtCyDSAgICDQvdCwINC/0L7RgNGD0YfQuNGC0LXQu9GM
-0YHRgtCy0L4g0YDRg9C60L7QstC+0LTQuNGC0LXQu9GPINC+0YDQs9Cw0L3QuNC30LDRhtC40LguDQ3C
-q9CX0LDQv9GB0LjQsdC60L7QvNCx0LDQvdC6wrsg0J7QkNCeINCy0L/RgNCw0LLQtSDQvtGC0LrQsNC3
-0LDRgtGMINCyINCy0YvQtNCw0YfQtSDQutGA0LXQtNC40YLQsCDQvdCwINC+0YHQvdC+0LLQtSDQsNC9
-0LDQu9C40LfQsCDRhNC40L3QsNC90YHQvtCy0L7Qs9C+INC/0L7Qu9C+0LbQtdC90LjRjyDQuCDQv9C7
-0LDRgtC10LbQtdGB0L/QvtGB0L7QsdC90L7RgdGC0Lgg0L/QvtGC0LXQvdGG0LjQsNC70YzQvdC+0LPQ
-viDQt9Cw0LXQvNGJ0LjQutCwLg</bytes>
+stCwINGB0L7QsdGB0YLQstC10L3QvdC40LrQvtCyINC90LAg0L/QvtGA0YPRh9C40YLQtdC70YzRgdGC
+0LLQviDRgNGD0LrQvtCy0L7QtNC40YLQtdC70Y8g0L7RgNCz0LDQvdC40LfQsNGG0LjQuC4NDcKr0JfQ
+sNC/0YHQuNCx0LrQvtC80LHQsNC90LrCuyDQntCQ0J4g0LLQv9GA0LDQstC1INC+0YLQutCw0LfQsNGC
+0Ywg0LIg0LLRi9C00LDRh9C1INC60YDQtdC00LjRgtCwINC90LAg0L7RgdC90L7QstC1INCw0L3QsNC7
+0LjQt9CwINGE0LjQvdCw0L3RgdC+0LLQvtCz0L4g0L/QvtC70L7QttC10L3QuNGPINC4INC/0LvQsNGC
+0LXQttC10YHQv9C+0YHQvtCx0L3QvtGB0YLQuCDQv9C+0YLQtdC90YbQuNCw0LvRjNC90L7Qs9C+INC3
+0LDQtdC80YnQuNC60LAuA</bytes>
 								</object>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">1</int>
@@ -1304,17 +1304,17 @@ uNGC0LAg0L/QviDQutGA0LXQtNC40YLQvdC+0Lkg0LvQuNC90LjQuC4NKirQlNC+0L/Rg9GB0LrQsNC1
 gNGD0L/QvdC10LnRiNC40YUg0YHQvtCx0YHRgtCy0LXQvdC90LjQutC+0LIgKNGD0YfQsNGB0YLQvdC4
 0LrQvtCyL9Cw0LrRhtC40L7QvdC10YDQvtCyKSDRgSDQvtCx0YnQtdC5ICjRgdC+0LLQvtC60YPQv9C9
 0L7QuSkg0LTQvtC70LXQuSDQvdC1INC80LXQvdC10LUgNTElLiDQkiDRgdC70YPRh9Cw0LUsINC10YHQ
-u9C4INC+0YHQvdC+0LLQvdGL0LwNICAgINGB0L7QsdGB0YLQstC10L3QvdC40LrQvtC8INCX0LDQtdC8
-0YnQuNC60LAg0Y/QstC70Y/QtdGC0YHRjyDQvNGD0L3QuNGG0LjQv9Cw0LvRjNC90L7QtSDQvtCx0YDQ
-sNC30L7QstCw0L3QuNC1INC40LvQuCDRgdGD0LHRitC10LrRgiDQpNC10LTQtdGA0LDRhtC40LgsINC0
-0L7Qv9GD0YHQutCw0LXRgtGB0Y8g0LfQsNC80LXQvdCwINC/0L7RgNGD0YfQuNGC0LXQu9GM0YHRgtCy
-0LAg0YHQvtCx0YHRgtCy0LXQvdC90LjQutC+0LIg0L3QsCDQv9C+0YDRg9GH0LjRgtC10LvRjNGB0YLQ
-stC+DSAgICDRgNGD0LrQvtCy0L7QtNC40YLQtdC70Y8g0L7RgNCz0LDQvdC40LfQsNGG0LjQuC4NDcKr
-0JfQsNC/0YHQuNCx0LrQvtC80LHQsNC90LrCuyDQntCQ0J4g0LLQv9GA0LDQstC1INC+0YLQutCw0LfQ
-sNGC0Ywg0LIg0LLRi9C00LDRh9C1INC60YDQtdC00LjRgtCwINC90LAg0L7RgdC90L7QstC1INCw0L3Q
-sNC70LjQt9CwINGE0LjQvdCw0L3RgdC+0LLQvtCz0L4g0L/QvtC70L7QttC10L3QuNGPINC4INC/0LvQ
-sNGC0LXQttC10YHQv9C+0YHQvtCx0L3QvtGB0YLQuCDQv9C+0YLQtdC90YbQuNCw0LvRjNC90L7Qs9C+
-INC30LDQtdC80YnQuNC60LAuA</bytes>
+u9C4INC+0YHQvdC+0LLQvdGL0Lwg0YHQvtCx0YHRgtCy0LXQvdC90LjQutC+0Lwg0JfQsNC10LzRidC4
+0LrQsCDRj9Cy0LvRj9C10YLRgdGPINC80YPQvdC40YbQuNC/0LDQu9GM0L3QvtC1INC+0LHRgNCw0LfQ
+vtCy0LDQvdC40LUg0LjQu9C4INGB0YPQsdGK0LXQutGCINCk0LXQtNC10YDQsNGG0LjQuCwg0LTQvtC/
+0YPRgdC60LDQtdGC0YHRjyDQt9Cw0LzQtdC90LAg0L/QvtGA0YPRh9C40YLQtdC70YzRgdGC0LLQsCDR
+gdC+0LHRgdGC0LLQtdC90L3QuNC60L7QsiDQvdCwINC/0L7RgNGD0YfQuNGC0LXQu9GM0YHRgtCy0L4g
+0YDRg9C60L7QstC+0LTQuNGC0LXQu9GPINC+0YDQs9Cw0L3QuNC30LDRhtC40LguDQ3Cq9CX0LDQv9GB
+0LjQsdC60L7QvNCx0LDQvdC6wrsg0J7QkNCeINCy0L/RgNCw0LLQtSDQvtGC0LrQsNC30LDRgtGMINCy
+INCy0YvQtNCw0YfQtSDQutGA0LXQtNC40YLQsCDQvdCwINC+0YHQvdC+0LLQtSDQsNC90LDQu9C40LfQ
+sCDRhNC40L3QsNC90YHQvtCy0L7Qs9C+INC/0L7Qu9C+0LbQtdC90LjRjyDQuCDQv9C70LDRgtC10LbQ
+tdGB0L/QvtGB0L7QsdC90L7RgdGC0Lgg0L/QvtGC0LXQvdGG0LjQsNC70YzQvdC+0LPQviDQt9Cw0LXQ
+vNGJ0LjQutCwLg</bytes>
 								</object>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">1</int>
@@ -1460,13 +1460,13 @@ gNGD0L/QvdC10LnRiNC40YUg0YHQvtCx0YHRgtCy0LXQvdC90LjQutC+0LIgKNGD0YfQsNGB0YLQvdC4
 vNGJ0LjQutCwINGP0LLQu9GP0LXRgtGB0Y8g0LzRg9C90LjRhtC40L/QsNC70YzQvdC+0LUg0L7QsdGA
 0LDQt9C+0LLQsNC90LjQtSDQuNC70Lgg0YHRg9Cx0YrQtdC60YIg0KTQtdC00LXRgNCw0YbQuNC4LCDQ
 tNC+0L/Rg9GB0LrQsNC10YLRgdGPINC30LDQvNC10L3QsCDQv9C+0YDRg9GH0LjRgtC10LvRjNGB0YLQ
-stCwINGB0L7QsdGB0YLQstC10L3QvdC40LrQvtCyDSAgICDQvdCwINC/0L7RgNGD0YfQuNGC0LXQu9GM
-0YHRgtCy0L4g0YDRg9C60L7QstC+0LTQuNGC0LXQu9GPINC+0YDQs9Cw0L3QuNC30LDRhtC40LguDQ3C
-q9CX0LDQv9GB0LjQsdC60L7QvNCx0LDQvdC6wrsg0J7QkNCeINCy0L/RgNCw0LLQtSDQvtGC0LrQsNC3
-0LDRgtGMINCyINCy0YvQtNCw0YfQtSDQutGA0LXQtNC40YLQsCDQvdCwINC+0YHQvdC+0LLQtSDQsNC9
-0LDQu9C40LfQsCDRhNC40L3QsNC90YHQvtCy0L7Qs9C+INC/0L7Qu9C+0LbQtdC90LjRjyDQuCDQv9C7
-0LDRgtC10LbQtdGB0L/QvtGB0L7QsdC90L7RgdGC0Lgg0L/QvtGC0LXQvdGG0LjQsNC70YzQvdC+0LPQ
-viDQt9Cw0LXQvNGJ0LjQutCwLg</bytes>
+stCwINGB0L7QsdGB0YLQstC10L3QvdC40LrQvtCyINC90LAg0L/QvtGA0YPRh9C40YLQtdC70YzRgdGC
+0LLQviDRgNGD0LrQvtCy0L7QtNC40YLQtdC70Y8g0L7RgNCz0LDQvdC40LfQsNGG0LjQuC4NDcKr0JfQ
+sNC/0YHQuNCx0LrQvtC80LHQsNC90LrCuyDQntCQ0J4g0LLQv9GA0LDQstC1INC+0YLQutCw0LfQsNGC
+0Ywg0LIg0LLRi9C00LDRh9C1INC60YDQtdC00LjRgtCwINC90LAg0L7RgdC90L7QstC1INCw0L3QsNC7
+0LjQt9CwINGE0LjQvdCw0L3RgdC+0LLQvtCz0L4g0L/QvtC70L7QttC10L3QuNGPINC4INC/0LvQsNGC
+0LXQttC10YHQv9C+0YHQvtCx0L3QvtGB0YLQuCDQv9C+0YLQtdC90YbQuNCw0LvRjNC90L7Qs9C+INC3
+0LDQtdC80YnQuNC60LAuA</bytes>
 								</object>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">1</int>
@@ -1504,7 +1504,7 @@ viDQt9Cw0LXQvNGJ0LjQutCwLg</bytes>
 								<reference key="IBUIFont" ref="812812038"/>
 							</object>
 						</array>
-						<string key="NSFrameSize">{1024, 748}</string>
+						<string key="NSFrameSize">{1024, 6500}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="413171775"/>
@@ -1519,6 +1519,7 @@ viDQt9Cw0LXQvNGJ0LjQutCwLg</bytes>
 						<string key="NSFrame">{{840, 550}, {186, 125}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1538,7 +1539,7 @@ viDQt9Cw0LXQvNGJ0LjQutCwLg</bytes>
 						<reference key="IBUIFont" ref="762755905"/>
 					</object>
 				</array>
-				<string key="NSFrameSize">{1024, 748}</string>
+				<string key="NSFrameSize">{1024, 6500}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="629785140"/>
@@ -1723,9 +1724,6 @@ viDQt9Cw0LXQvNGJ0LjQutCwLg</bytes>
 							<reference ref="1061860239"/>
 							<reference ref="295949840"/>
 							<reference ref="1048978237"/>
-							<reference ref="494954100"/>
-							<reference ref="50995417"/>
-							<reference ref="450973877"/>
 							<reference ref="1049359779"/>
 							<reference ref="563929530"/>
 							<reference ref="721696901"/>
@@ -1768,6 +1766,9 @@ viDQt9Cw0LXQvNGJ0LjQutCwLg</bytes>
 							<reference ref="200214478"/>
 							<reference ref="750232396"/>
 							<reference ref="862264368"/>
+							<reference ref="50995417"/>
+							<reference ref="450973877"/>
+							<reference ref="494954100"/>
 						</array>
 						<reference key="parent" ref="766721923"/>
 					</object>
@@ -2204,10 +2205,6 @@ viDQt9Cw0LXQvNGJ0LjQutCwLg</bytes>
 		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBIPadFramework</string>
-		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
-			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaTouchPlugin.iPhoneOS</string>
-			<real value="1296" key="NS.object.0"/>
-		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">

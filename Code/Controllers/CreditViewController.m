@@ -33,7 +33,8 @@
 - (void)viewDidLoad
 {
     [self.startImages addObject:[self.view viewWithTag:2]];
-    [self.startImages addObject:[UIImage imageNamed:@"00_start_8_photo.png"]];
+    [self.startImages addObject:[UIImage imageNamed:@"06_01_start08_2.png"]];
+    [self.startImages addObject:[UIImage imageNamed:@"06_01_start08_1.png"]];
     self.scrollVIew.contentSize = CGSizeMake(1024, 1080);
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.

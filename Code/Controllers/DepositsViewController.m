@@ -237,6 +237,26 @@
     [UIView commitAnimations];
 }
 
+- (IBAction)btnConstructClick:(id)sender {
+    [self scrollTo:2900];
+}
+
+- (IBAction)btnOvernightClick:(id)sender {
+    [self scrollTo:900];
+}
+
+- (IBAction)btnStandartClick:(id)sender {
+    [self scrollTo:1900];
+}
+
+- (IBAction)btnPartnerClick:(id)sender {
+    [self scrollTo:3900];
+}
+
+- (IBAction)btnIpClick:(id)sender {
+    [self scrollTo:4900];
+}
+
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     if (self.scrollView.contentOffset.y >= 60)
     {
@@ -246,7 +266,7 @@
     }
 }
 - (IBAction)backToTop:(id)sender {
-    [self scrollTo:0];
+    [self scrollTo:280];
 }
 
 

@@ -21,8 +21,7 @@
     if (self) {
         // Custom initialization
         // Добавление стартовых страниц
-        [self.startImages addObject:[UIImage imageNamed:@"01_02_page2.png"]];
-        [self.startImages addObject:[UIImage imageNamed:@"01_02_page1.png"]];
+       
     }
     return self;
 }

@@ -538,7 +538,7 @@ A</string>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{494, 3737}, {10, 10}}</string>
 								<reference key="NSSuperview" ref="834257275"/>
-								<reference key="NSNextKeyView" ref="203911064"/>
+								<reference key="NSNextKeyView" ref="901486749"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -560,7 +560,7 @@ A</string>
 							<object class="IBUIImageView" id="109948367">
 								<reference key="NSNextResponder" ref="834257275"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{20, 2236}, {985, 732}}</string>
+								<string key="NSFrame">{{20, 2236}, {982, 381}}</string>
 								<reference key="NSSuperview" ref="834257275"/>
 								<reference key="NSNextKeyView" ref="1000873982"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -568,13 +568,13 @@ A</string>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<object class="NSCustomResource" key="IBUIImage">
 									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">01_03_7.png</string>
+									<string key="NSResourceName">01_03_8.png</string>
 								</object>
 							</object>
 							<object class="IBUILabel" id="1072880154">
 								<reference key="NSNextResponder" ref="834257275"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{20, 3158}, {640, 21}}</string>
+								<string key="NSFrame">{{20, 2802}, {640, 21}}</string>
 								<reference key="NSSuperview" ref="834257275"/>
 								<reference key="NSNextKeyView" ref="99877928"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -597,15 +597,15 @@ A</string>
 							<object class="IBUIImageView" id="99877928">
 								<reference key="NSNextResponder" ref="834257275"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{20, 3192}, {984, 561}}</string>
+								<string key="NSFrame">{{20, 2836}, {984, 561}}</string>
 								<reference key="NSSuperview" ref="834257275"/>
-								<reference key="NSNextKeyView" ref="258722893"/>
+								<reference key="NSNextKeyView" ref="203911064"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<object class="NSCustomResource" key="IBUIImage">
 									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">01_03_8.png</string>
+									<string key="NSResourceName">01_03_10.png</string>
 								</object>
 							</object>
 							<object class="IBUIImageView" id="635790717">
@@ -625,7 +625,7 @@ A</string>
 							<object class="IBUIImageView" id="1000873982">
 								<reference key="NSNextResponder" ref="834257275"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{20, 2999}, {982, 136}}</string>
+								<string key="NSFrame">{{21, 2634}, {982, 136}}</string>
 								<reference key="NSSuperview" ref="834257275"/>
 								<reference key="NSNextKeyView" ref="1072880154"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -639,7 +639,7 @@ A</string>
 							<object class="IBUIImageView" id="203911064">
 								<reference key="NSNextResponder" ref="834257275"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{17, 3770}, {987, 295}}</string>
+								<string key="NSFrame">{{17, 3414}, {987, 295}}</string>
 								<reference key="NSSuperview" ref="834257275"/>
 								<reference key="NSNextKeyView" ref="208597377"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -653,9 +653,9 @@ A</string>
 							<object class="IBUILabel" id="208597377">
 								<reference key="NSNextResponder" ref="834257275"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{20, 4091}, {984, 24}}</string>
+								<string key="NSFrame">{{20, 3735}, {984, 24}}</string>
 								<reference key="NSSuperview" ref="834257275"/>
-								<reference key="NSNextKeyView" ref="901486749"/>
+								<reference key="NSNextKeyView" ref="258722893"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -676,7 +676,7 @@ A</string>
 							<object class="IBUIImageView" id="901486749">
 								<reference key="NSNextResponder" ref="834257275"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{19, 4130}, {983, 607}}</string>
+								<string key="NSFrame">{{19, 3774}, {983, 732}}</string>
 								<reference key="NSSuperview" ref="834257275"/>
 								<reference key="NSNextKeyView" ref="525178053"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -684,13 +684,13 @@ A</string>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<object class="NSCustomResource" key="IBUIImage">
 									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">01_03_9.png</string>
+									<string key="NSResourceName">01_03_7.png</string>
 								</object>
 							</object>
 							<object class="IBUIImageView" id="525178053">
 								<reference key="NSNextResponder" ref="834257275"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{17, 4751}, {987, 156}}</string>
+								<string key="NSFrame">{{17, 4541}, {987, 156}}</string>
 								<reference key="NSSuperview" ref="834257275"/>
 								<reference key="NSNextKeyView" ref="873636274"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -704,7 +704,7 @@ A</string>
 							<object class="IBUILabel" id="873636274">
 								<reference key="NSNextResponder" ref="834257275"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{17, 4925}, {523, 21}}</string>
+								<string key="NSFrame">{{17, 4715}, {523, 21}}</string>
 								<reference key="NSSuperview" ref="834257275"/>
 								<reference key="NSNextKeyView" ref="369485739"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -727,7 +727,7 @@ A</string>
 							<object class="IBUILabel" id="369485739">
 								<reference key="NSNextResponder" ref="834257275"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{17, 4944}, {987, 80}}</string>
+								<string key="NSFrame">{{17, 4734}, {987, 80}}</string>
 								<reference key="NSSuperview" ref="834257275"/>
 								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -750,7 +750,7 @@ vdC+0Lkg0YTQvtGA0LzRiy4</string>
 								<reference key="IBUIFont" ref="723342150"/>
 							</object>
 						</array>
-						<string key="NSFrameSize">{1024, 4670}</string>
+						<string key="NSFrameSize">{1024, 5000}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSNextKeyView" ref="29557728"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -760,7 +760,7 @@ vdC+0Lkg0YTQvtGA0LzRiy4</string>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 					</object>
 				</array>
-				<string key="NSFrameSize">{1024, 4670}</string>
+				<string key="NSFrameSize">{1024, 5000}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSNextKeyView" ref="834257275"/>
 				<reference key="IBUIBackgroundColor" ref="753125805"/>
@@ -856,16 +856,16 @@ vdC+0Lkg0YTQvtGA0LzRiy4</string>
 							<reference ref="549961451"/>
 							<reference ref="234638976"/>
 							<reference ref="109948367"/>
-							<reference ref="1072880154"/>
 							<reference ref="99877928"/>
 							<reference ref="635790717"/>
-							<reference ref="1000873982"/>
 							<reference ref="203911064"/>
 							<reference ref="208597377"/>
 							<reference ref="901486749"/>
 							<reference ref="92167207"/>
 							<reference ref="525178053"/>
+							<reference ref="1000873982"/>
 							<reference ref="29557728"/>
+							<reference ref="1072880154"/>
 						</array>
 						<reference key="parent" ref="766721923"/>
 					</object>
@@ -1126,6 +1126,7 @@ vdC+0Lkg0YTQvtGA0LzRiy4</string>
 			<string key="01_03_06_tab_+.png">{985, 295}</string>
 			<string key="01_03_1-1.png">{306, 277}</string>
 			<string key="01_03_1-2.png">{158, 116}</string>
+			<string key="01_03_10.png">{981, 561}</string>
 			<string key="01_03_2-1.png">{159, 277}</string>
 			<string key="01_03_2-2.png">{161, 116}</string>
 			<string key="01_03_3-1.png">{159, 277}</string>
@@ -1136,8 +1137,7 @@ vdC+0Lkg0YTQvtGA0LzRiy4</string>
 			<string key="01_03_5-2.png">{160, 116}</string>
 			<string key="01_03_6.png">{1460, 711}</string>
 			<string key="01_03_7.png">{985, 732}</string>
-			<string key="01_03_8.png">{981, 561}</string>
-			<string key="01_03_9.png">{983, 607}</string>
+			<string key="01_03_8.png">{982, 381}</string>
 			<string key="01_03_photo.png">{284, 162}</string>
 			<string key="01_03_top_bar.png">{1024, 67}</string>
 			<string key="04_frame_2.png">{984, 105}</string>

@@ -38,10 +38,13 @@
 
 - (void)viewDidLoad
 {
+    [self.startImages addObject:[UIImage imageNamed:@"01_02_page2.png"]];
+    [self.startImages addObject:[UIImage imageNamed:@"01_02_page1.png"]];
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.scrollView.contentSize = CGSizeMake(1024, 5000);
     self.tableScrollView.contentSize = CGSizeMake(1486, 712);
+    
 }
 
 - (void)viewDidUnload

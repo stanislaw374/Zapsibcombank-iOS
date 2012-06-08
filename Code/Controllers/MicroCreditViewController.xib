@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="8.00">
 	<data>
-		<int key="IBDocument.SystemTarget">1280</int>
+		<int key="IBDocument.SystemTarget">1296</int>
 		<string key="IBDocument.SystemVersion">11D50b</string>
 		<string key="IBDocument.InterfaceBuilderVersion">2182</string>
 		<string key="IBDocument.AppKitVersion">1138.32</string>
@@ -47,7 +47,7 @@
 								<string key="NSFrameSize">{1024, 977}</string>
 								<reference key="NSSuperview" ref="218077855"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="302390995"/>
+								<reference key="NSNextKeyView" ref="5446303"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -56,9 +56,9 @@
 									<string key="NSResourceName">00_background.png</string>
 								</object>
 							</object>
-							<object class="IBUIImageView" id="302390995">
+							<object class="IBUIImageView" id="5446303">
 								<reference key="NSNextResponder" ref="218077855"/>
-								<int key="NSvFlags">274</int>
+								<int key="NSvFlags">292</int>
 								<string key="NSFrameSize">{1024, 67}</string>
 								<reference key="NSSuperview" ref="218077855"/>
 								<reference key="NSWindow"/>
@@ -68,7 +68,7 @@
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<object class="NSCustomResource" key="IBUIImage">
 									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">06_03_00_top_bar_bg.png</string>
+									<string key="NSResourceName">01_02_top_bar.png</string>
 								</object>
 							</object>
 							<object class="IBUILabel" id="831265993">
@@ -192,7 +192,7 @@ vdC+0YHRgtC4INC/0L7RgtC10L3RhtC40LDQu9GM0L3QvtCz0L4g0LfQsNC10LzRidC40LrQsC4</str
 								</object>
 							</object>
 						</array>
-						<string key="NSFrame">{{0, 77}, {1024, 1500}}</string>
+						<string key="NSFrame">{{0, 97}, {1024, 768}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="640215743"/>
@@ -202,7 +202,7 @@ vdC+0YHRgtC4INC/0L7RgtC10L3RhtC40LDQu9GM0L3QvtCz0L4g0LfQsNC10LzRidC40LrQsC4</str
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 					</object>
 				</array>
-				<string key="NSFrameSize">{1024, 1500}</string>
+				<string key="NSFrameSize">{1024, 768}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="218077855"/>
@@ -271,12 +271,12 @@ vdC+0YHRgtC4INC/0L7RgtC10L3RhtC40LDQu9GM0L3QvtCz0L4g0LfQsNC10LzRidC40LrQsC4</str
 						<int key="objectID">4</int>
 						<reference key="object" ref="218077855"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="302390995"/>
 							<reference ref="831265993"/>
 							<reference ref="606580878"/>
 							<reference ref="97504446"/>
 							<reference ref="10569569"/>
 							<reference ref="640215743"/>
+							<reference ref="5446303"/>
 						</array>
 						<reference key="parent" ref="766721923"/>
 					</object>
@@ -301,13 +301,13 @@ vdC+0YHRgtC4INC/0L7RgtC10L3RhtC40LDQu9GM0L3QvtCz0L4g0LfQsNC10LzRidC40LrQsC4</str
 						<reference key="parent" ref="218077855"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">5</int>
-						<reference key="object" ref="302390995"/>
+						<int key="objectID">11</int>
+						<reference key="object" ref="640215743"/>
 						<reference key="parent" ref="218077855"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">11</int>
-						<reference key="object" ref="640215743"/>
+						<int key="objectID">13</int>
+						<reference key="object" ref="5446303"/>
 						<reference key="parent" ref="218077855"/>
 					</object>
 				</array>
@@ -318,9 +318,9 @@ vdC+0YHRgtC4INC/0L7RgtC10L3RhtC40LDQu9GM0L3QvtCz0L4g0LfQsNC10LzRidC40LrQsC4</str
 				<string key="-2.CustomClassName">UIResponder</string>
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="11.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="13.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="4.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="5.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="7.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="8.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -330,7 +330,7 @@ vdC+0YHRgtC4INC/0L7RgtC10L3RhtC40LDQu9GM0L3QvtCz0L4g0LfQsNC10LzRidC40LrQsC4</str
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">12</int>
+			<int key="maxID">13</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -365,12 +365,16 @@ vdC+0YHRgtC4INC/0L7RgtC10L3RhtC40LDQu9GM0L3QvtCz0L4g0LfQsNC10LzRidC40LrQsC4</str
 		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBIPadFramework</string>
+		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
+			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaTouchPlugin.iPhoneOS</string>
+			<real value="1296" key="NS.object.0"/>
+		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="00_background.png">{1024, 768}</string>
-			<string key="06_03_00_top_bar_bg.png">{1024, 67}</string>
-			<string key="06_03_02_tab.png">{986, 596}</string>
+			<string key="01_02_top_bar.png">{1024, 67}</string>
+			<string key="06_03_02_tab.png">{984, 598}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">1181</string>
 	</data>

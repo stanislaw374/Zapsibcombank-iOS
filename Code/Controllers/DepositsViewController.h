@@ -45,4 +45,11 @@
 -(void)animateThirdGears;
 -(void)animateFoursGears;
 -(void)scrollTo:(float)height;
+- (IBAction)btnConstructClick:(id)sender;
+- (IBAction)btnOvernightClick:(id)sender;
+- (IBAction)btnStandartClick:(id)sender;
+- (IBAction)btnPartnerClick:(id)sender;
+
+- (IBAction)btnIpClick:(id)sender;
+
 @end
